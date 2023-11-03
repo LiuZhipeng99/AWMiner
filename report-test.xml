@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.12.0"/>
+    <errors>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;ChatClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;ChatClient&apos;" cwe="758">
+            <location file="tmp\brpc\examples\asio\chat\client.cc" line="15" column="1"/>
+            <location file="tmp\brpc\examples\asio\chat\loadtest.cc" line="24" column="1"/>
+            <symbol>ChatClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;ChatServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;ChatServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\asio\chat\server.cc" line="15" column="1"/>
+            <location file="tmp\brpc\examples\asio\chat\server_threaded.cc" line="15" column="1"/>
+            <symbol>ChatServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;ChatServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;ChatServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\asio\chat\server.cc" line="15" column="1"/>
+            <location file="tmp\brpc\examples\asio\chat\server_threaded_efficient.cc" line="15" column="1"/>
+            <symbol>ChatServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;ChatServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;ChatServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\asio\chat\server.cc" line="15" column="1"/>
+            <location file="tmp\brpc\examples\asio\chat\server_threaded_highperformance.cc" line="16" column="1"/>
+            <symbol>ChatServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Printer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Printer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\asio\tutorial\timer4\timer.cc" line="5" column="1"/>
+            <location file="tmp\brpc\examples\asio\tutorial\timer5\timer.cc" line="7" column="1"/>
+            <symbol>Printer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Printer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Printer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\asio\tutorial\timer4\timer.cc" line="5" column="1"/>
+            <location file="tmp\brpc\examples\asio\tutorial\timer6\timer.cc" line="11" column="1"/>
+            <symbol>Printer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;MultiplexServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;MultiplexServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\multiplexer\multiplexer.cc" line="27" column="1"/>
+            <location file="tmp\brpc\examples\multiplexer\multiplexer_simple.cc" line="24" column="1"/>
+            <symbol>MultiplexServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;EchoServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;EchoServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\idleconnection\sortedlist.cc" line="12" column="1"/>
+            <location file="tmp\brpc\examples\netty\echo\server.cc" line="19" column="1"/>
+            <symbol>EchoServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;EchoServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;EchoServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\idleconnection\sortedlist.cc" line="12" column="1"/>
+            <location file="tmp\brpc\examples\netty\echo\server2.cc" line="21" column="1"/>
+            <symbol>EchoServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Client&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Client&apos;" cwe="758">
+            <location file="tmp\brpc\examples\memcached\client\bench.cc" line="16" column="1"/>
+            <location file="tmp\brpc\examples\pingpong\client.cc" line="77" column="1"/>
+            <symbol>Client</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;RpcClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;RpcClient&apos;" cwe="758">
+            <location file="tmp\brpc\examples\protobuf\resolver\client.cc" line="18" column="1"/>
+            <location file="tmp\brpc\examples\protobuf\rpc\client.cc" line="16" column="1"/>
+            <symbol>RpcClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;BackendSession&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;BackendSession&apos;" cwe="758">
+            <location file="tmp\brpc\examples\protobuf\rpcbalancer\balancer.cc" line="16" column="1"/>
+            <location file="tmp\brpc\examples\protobuf\rpcbalancer\balancer_raw.cc" line="71" column="1"/>
+            <symbol>BackendSession</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Balancer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Balancer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\protobuf\rpcbalancer\balancer.cc" line="116" column="1"/>
+            <location file="tmp\brpc\examples\protobuf\rpcbalancer\balancer_raw.cc" line="204" column="1"/>
+            <symbol>Balancer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;RpcClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;RpcClient&apos;" cwe="758">
+            <location file="tmp\brpc\examples\protobuf\resolver\client.cc" line="18" column="1"/>
+            <location file="tmp\brpc\examples\protobuf\rpcbench\client.cc" line="20" column="1"/>
+            <symbol>RpcClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;SudokuClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;SudokuClient&apos;" cwe="758">
+            <location file="tmp\brpc\examples\sudoku\batch.cc" line="59" column="1"/>
+            <location file="tmp\brpc\examples\sudoku\loadtest.cc" line="36" column="1"/>
+            <symbol>SudokuClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;SudokuClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;SudokuClient&apos;" cwe="758">
+            <location file="tmp\brpc\examples\sudoku\batch.cc" line="59" column="1"/>
+            <location file="tmp\brpc\examples\sudoku\pipeline.cc" line="22" column="1"/>
+            <symbol>SudokuClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;SudokuServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;SudokuServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\sudoku\server_basic.cc" line="18" column="1"/>
+            <location file="tmp\brpc\examples\sudoku\server_hybrid.cc" line="23" column="1"/>
+            <symbol>SudokuServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;SudokuServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;SudokuServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\sudoku\server_basic.cc" line="18" column="1"/>
+            <location file="tmp\brpc\examples\sudoku\server_multiloop.cc" line="18" column="1"/>
+            <symbol>SudokuServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;SudokuServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;SudokuServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\sudoku\server_basic.cc" line="18" column="1"/>
+            <location file="tmp\brpc\examples\sudoku\server_prod.cc" line="23" column="1"/>
+            <symbol>SudokuServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;SudokuServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;SudokuServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\sudoku\server_basic.cc" line="18" column="1"/>
+            <location file="tmp\brpc\examples\sudoku\server_threadpool.cc" line="19" column="1"/>
+            <symbol>SudokuServer</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" cwe="758">
+            <location file="tmp\brpc\muduo\base\tests\BlockingQueue_test.cc" line="11" column="1"/>
+            <location file="tmp\brpc\muduo\base\tests\BoundedBlockingQueue_test.cc" line="11" column="1"/>
+            <symbol>Test</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" cwe="758">
+            <location file="tmp\brpc\muduo\base\tests\BlockingQueue_test.cc" line="11" column="1"/>
+            <location file="tmp\brpc\muduo\base\tests\SingletonThreadLocal_test.cc" line="9" column="1"/>
+            <symbol>Test</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" cwe="758">
+            <location file="tmp\brpc\muduo\base\tests\BlockingQueue_test.cc" line="11" column="1"/>
+            <location file="tmp\brpc\muduo\base\tests\Singleton_test.cc" line="7" column="1"/>
+            <symbol>Test</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" cwe="758">
+            <location file="tmp\brpc\muduo\base\tests\BlockingQueue_test.cc" line="11" column="1"/>
+            <location file="tmp\brpc\muduo\base\tests\ThreadLocalSingleton_test.cc" line="7" column="1"/>
+            <symbol>Test</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;Test&apos;" cwe="758">
+            <location file="tmp\brpc\muduo\base\tests\BlockingQueue_test.cc" line="11" column="1"/>
+            <location file="tmp\brpc\muduo\base\tests\ThreadLocal_test.cc" line="7" column="1"/>
+            <symbol>Test</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;EchoClient&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;EchoClient&apos;" cwe="758">
+            <location file="tmp\brpc\examples\netty\echo\client.cc" line="16" column="1"/>
+            <location file="tmp\brpc\muduo\net\tests\EchoClient_unittest.cc" line="21" column="1"/>
+            <symbol>EchoClient</symbol>
+        </error>
+        <error id="ctuOneDefinitionRuleViolation" severity="error" msg="The one definition rule is violated, different classes/structs have the same name &apos;EchoServer&apos;" verbose="The one definition rule is violated, different classes/structs have the same name &apos;EchoServer&apos;" cwe="758">
+            <location file="tmp\brpc\examples\idleconnection\sortedlist.cc" line="12" column="1"/>
+            <location file="tmp\brpc\muduo\net\tests\EchoServer_unittest.cc" line="18" column="1"/>
+            <symbol>EchoServer</symbol>
+        </error>
+    </errors>
+</results>
