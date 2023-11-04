@@ -33,10 +33,12 @@ import static edu.cqu.zhipengliu.Main.logger;
  */
 
 //其实c_repos_sorted描述的项目信息可以更多比如：爬取时date、项目描述、作者、语言类型等等，甚至是个数据库不知道有没有现成的
+
 public class GithubTraverser {
     GitServiceImpl gitService = new GitServiceImpl(); //这里用多态特性实例化GitService，也没什么意义不如直接实例化，主要是也没其他gitservice实现
 
-    public ArrayList<Repository> githubtraverser(String filePath1) throws Exception {
+    public ArrayList<Repository> getGithubSet(String filePath1) throws Exception {
+        //函数克隆很多github项目》返回repolist，考虑到网络和io可以优化。
         ArrayList<Repository> repolist = new ArrayList<>();
         String projectpath = "tmp/brpc/";
         String filePath = "D:\\0Workspace\\IDEA-CODE\\SAWMiner\\c_repos_sorted.txt";
@@ -51,7 +53,7 @@ public class GithubTraverser {
                     String starCount = parts[1];
                     String link = parts[2];
                     String name = parts[3];
-                    String[] values = {starCount, link, name};
+                    String[] values = {starCount, link, name}; //can also use list
                     dataMap.put(id, values);
                 } else {
                     logger.warning("无效的行: " + line);
@@ -60,11 +62,16 @@ public class GithubTraverser {
         } catch (IOException e) {
             e.printStackTrace();
         }
-//        Repository repo = gitService.cloneIfNotExists(
-//                projectpath,
-//                "https://github.com/chenshuo/muduo.git");
+        for (String key : dataMap.keySet()) {
+            String[] values = dataMap.get(key);
+            Repository repo = gitService.cloneIfNotExists(
+                    "githubTmp/"+values[2],
+                    "https://github.com/chenshuo/muduo.git");
+            repolist.add(repo);
+        }
+
         return repolist;
-    } //这个函数就是克隆很多github项目，考虑到网络和io可以优化。
+    }
     public void traverser(ArrayList<Repository> repoList) throws FileNotFoundException {
 //        for (Repository repo : repoList) {
 //            RevWalk walk = gitService.createAllRevsWalk(repo, "master");
