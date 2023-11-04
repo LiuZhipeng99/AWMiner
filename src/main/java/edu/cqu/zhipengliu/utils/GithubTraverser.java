@@ -72,18 +72,14 @@ public class GithubTraverser {
     public void commitTraverser(ArrayList<GithubDetail> repoList) throws Exception {
         for (GithubDetail repo : repoList) {
             RevWalk walk = gitService.createAllRevsWalk(repo.getRepo(), repo.getBranch());
-            int count = 0;
             ArrayList<WarningCppcheck> wr_old = new ArrayList<>();
             walk.setRevFilter(RevFilter.ALL); //后续发现遍历没有包含merge，查看这创建walk的源码他自己实现了过滤只能有一个父也就是没merge
             for (RevCommit currentCommit : walk) {
-                logger.info(currentCommit.getId().getName());
                 gitService.checkout(repo.getRepo(), currentCommit.getId().getName());
                 //不用写太多文件，根据commitid再扫一次就有了GenerateCppcheckXML.report(projectpath,projectpath+"report"+currentCommit.getId().getName()+".xml",projectpath+"log"+currentCommit.getId().getName());
-//                GenerateCppcheckXML.report(repo.getGithubName(), repo.getLocalTmpPath() + "report.xml", repo.getLocalTmpPath() + "log");
-//                ArrayList<WarningCppcheck> wr = new CppcheckParser().parseWarningsXML(repo.getLocalTmpPath() + "report.xml", currentCommit.getId().getName());
-                count++;
-                //            if(count>1){break;}
-
+                GenerateCppcheckXML.report(repo.getLocalTmpPath(), "tmp/"+ repo.getGithubName() + "/report.xml", "tmp/"+ repo.getGithubName() + "/log");
+                ArrayList<WarningCppcheck> wr = new CppcheckParser().parseWarningsXML("tmp/"+ repo.getGithubName() + "/report.xml", currentCommit.getId().getName());
+                System.out.println("warning count:"+wr.size());
             }
         }
     }

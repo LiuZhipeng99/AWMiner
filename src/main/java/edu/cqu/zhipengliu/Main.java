@@ -12,11 +12,15 @@ import java.util.logging.Logger;
 
 public class Main {
     public static final Logger logger = Logger.getLogger("SAWMiner");
-//    logger.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(filename)s[line:%(lineno)d] - %(levelname)s: %(message)s')
-//    logger.setLevel(Level.INFO);
-//    logger.addHandler(new fileHandler);
+
+
+
 
     public static void main(String[] args) throws Exception {
+        logger.setLevel(Level.INFO);
+        logger.setUseParentHandlers(false);
+//    logger.addHandler(new fileHandler);
+//        logger.addHandler(handler);
         // Press Alt+Enter with your caret at the highlighted text to see how
         // IntelliJ IDEA suggests fixing it.
         logger.info("项目启动");

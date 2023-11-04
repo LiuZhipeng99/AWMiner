@@ -16,26 +16,30 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class GenerateCppcheckXML {
-    public static void report(String scanFile, String reportFileName,String logFile){
+    public static void report(String scanFilesPath, String reportXmlPath, String logFilePath){
         try { //用Runtime.exec执行命令时会阻塞不知道为啥，Linux不会阻塞但产生不了文件。在win下，用命令行产生文件有cppcheck报错：所在位置 行:1 字符: 1，但用proBuilder就解决了
             // 指定要扫描的目录
 
             // 创建ProcessBuilder对象，指定cppcheck命令及参数
 //            ProcessBuilder processBuilder = new ProcessBuilder("cppcheck","--xml", scanFile);
-            ProcessBuilder processBuilder = new ProcessBuilder("cppcheck","--enable=warning","--xml", scanFile);
+            ProcessBuilder processBuilder = new ProcessBuilder("cppcheck","--enable=warning","--xml", scanFilesPath);
 
             // 设置重定向输出到文件
-            processBuilder.redirectError(ProcessBuilder.Redirect.to(new File(reportFileName)));
-            processBuilder.redirectOutput(ProcessBuilder.Redirect.to(new File(logFile)));
+            File errorfile = new File(reportXmlPath);
+            File logfile = new File(logFilePath);
+            if(errorfile.getParentFile().exists() | errorfile.getParentFile().mkdir()){
+                processBuilder.redirectError(ProcessBuilder.Redirect.to(errorfile));
+            }
+            if(logfile.getParentFile().exists() | logfile.getParentFile().mkdir()){
+                processBuilder.redirectOutput(ProcessBuilder.Redirect.to(logfile));
+            }
 
             // 启动进程并等待其完成
             Process process = processBuilder.start();
             int exitCode = process.waitFor();
             process.destroy();
             // 检查进程的退出代码
-            if (exitCode == 0) {
-                System.out.println("扫描完成！");
-            } else {
+            if (exitCode != 0) {
                 System.out.println("扫描失败！");
             }
         } catch (IOException | InterruptedException e) {
