@@ -1,7 +1,9 @@
 package edu.cqu.zhipengliu;
 
+import edu.cqu.zhipengliu.entity.GithubDetail;
 import edu.cqu.zhipengliu.utils.GithubTraverser;
 
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -25,8 +27,9 @@ public class Main {
             // Press Shift+F9 to start debugging your code. We have set one breakpoint
             // for you, but you can always add more by pressing Ctrl+F8.
             System.out.println("i = " + i);
-            GithubTraverser ts = new GithubTraverser();
-            ts.githubtraverser("ttt");
         }
+        GithubTraverser ts = new GithubTraverser();
+        ArrayList<GithubDetail> gds = ts.getGithubSet("D:\\0Workspace\\IDEA-CODE\\SAWMiner\\c_repos_sorted.txt");
+        ts.commitTraverser(gds);
     }
 }
