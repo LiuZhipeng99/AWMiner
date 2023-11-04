@@ -1,8 +1,8 @@
 package zhipeng;
 
 
-import edu.cqu.zhipengliu.CppcheckParser;
-import edu.cqu.zhipengliu.GenerateCppcheckXML;
+import edu.cqu.zhipengliu.parser.CppcheckParser;
+import edu.cqu.zhipengliu.utils.GenerateCppcheckXML;
 import edu.cqu.zhipengliu.entity.WarningCppcheck;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
@@ -68,5 +68,11 @@ public class GItserviceTest {
 //                }
 //            }
 //        });
+    }
+
+
+    @Test //测试遍历多个项目的commit
+    public void testtravelgit(){
+
     }
 }

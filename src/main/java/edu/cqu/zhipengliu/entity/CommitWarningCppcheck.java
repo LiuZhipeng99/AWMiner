@@ -1,5 +1,13 @@
 package edu.cqu.zhipengliu.entity;
-
+/**
+ * @projectName: SAWMiner
+ * @package: edu.cqu.zhipengliu.entity
+ * @className: CommitWarningCppcheck
+ * @author: Zhipengliu
+ * @description: TODO
+ * @date: 2023/7/4 14:26
+ * @version: 1.1
+ */
 import java.util.ArrayList;
 import java.util.Date;
 

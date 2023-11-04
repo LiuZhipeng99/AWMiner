@@ -1,6 +1,14 @@
 package edu.cqu.zhipengliu.entity;
 
-
+/**
+ * @projectName: SAWMiner
+ * @package: edu.cqu.zhipengliu.entity
+ * @className: WarningCppcheck
+ * @author: Zhipengliu
+ * @description: TODO
+ * @date: 2023/9/4 10:26
+ * @version: 1.1
+ */
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

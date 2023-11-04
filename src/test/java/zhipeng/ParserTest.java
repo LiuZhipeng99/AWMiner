@@ -1,6 +1,6 @@
 package zhipeng;
 
-import edu.cqu.zhipengliu.CppcheckParser;
+import edu.cqu.zhipengliu.parser.CppcheckParser;
 import edu.cqu.zhipengliu.entity.WarningCppcheck;
 import org.dom4j.DocumentException;
 import org.junit.Test;
@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class ParserTest {
 
     @Test // 测试了xml到数据库、java调用cppcheck产生xml
-    public void testcppcheckwarning() throws DocumentException {
+    public void testCppcheckwarning() throws DocumentException {
         ArrayList<WarningCppcheck> wr = new CppcheckParser().parseWarningsXML("D:\\0Workspace\\IDEA-CODE\\SAWMiner\\src\\test\\java\\zhipeng\\cppcheckreport-no-addon.xml","testid");
         System.out.println(wr.size());
 
