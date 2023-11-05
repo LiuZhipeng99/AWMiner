@@ -78,7 +78,9 @@ public class GithubTraverser {
                 String logPath = "tmp/"+ repo.getGithubName() + "/log";
                 GenerateCppcheckXML.report(repo.getLocalTmpPath(), xmlOutputPath, logPath);
                 ArrayList<StaticWarning> wr = new ParserCppcheckWarning().parseXml(xmlOutputPath, repo.getGithubName(), currentCommit.getId().getName());
-                System.out.println("warning count:"+wr.size());
+                System.out.println(wr);
+
+                return;
             }
         }
     }

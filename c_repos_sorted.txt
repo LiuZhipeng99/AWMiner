@@ -1,5 +1,6 @@
 此文件保存github信息，（id，starcount，url，name，branch）用\t分割，branch没注明就是默认的master  注：使用了镜像的url请确认 如https://hub.fgit.cf/ 、 https://kkgithub.com
-145387362	201	https://hub.fgit.cf/twelvesec/passcat.git	passcat
-18666758	23394	https://hub.fgit.cf/pjreddie/darknet.git	darknet
 77592175	201	https://hub.fgit.cf/sky-big/Linux-0.12.git	Linux-0.12
+18666758	23394	https://hub.fgit.cf/pjreddie/darknet.git	darknet
+145387362	201	https://hub.fgit.cf/twelvesec/passcat.git	passcat
+
 

@@ -35,7 +35,7 @@ public class ParserCppcheckTest {
 
             // 设置重定向输出到文件
             processBuilder.redirectError(ProcessBuilder.Redirect.to(new File("report-test.xml")));
-            processBuilder.redirectOutput(ProcessBuilder.Redirect.to(new File("output-test.txt")));
+            processBuilder.redirectOutput(ProcessBuilder.Redirect.to(new File("log-test.txt")));
             // 启动进程并等待其完成
             Process process = processBuilder.start();
 //           第一个BUG：用Runtime.exec执行命令时会阻塞不知道为啥，Linux不会阻塞但产生不了文件。在win下，用命令行产生文件有cppcheck报错：所在位置 行:1 字符: 1，但用proBuilder就解决了

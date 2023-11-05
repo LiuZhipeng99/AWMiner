@@ -53,10 +53,10 @@ public class ParserCppcheckWarning implements ParserWarning {
                     wr.setCwe(attr.getValue());
                 }
             }
-            //这里dom层次是在遍历单个error下的location和symbol
+            // Traverse the location and symbol under a single error.
             for(Iterator itt = error.elementIterator(); itt.hasNext();){
                 Element errorChild = (Element) itt.next();
-                if(errorChild.getName().equals("location")){
+                if(errorChild.getName().equals("location")){ //not use symbol
 //                    WarningLocation location = new WarningLocation();
                     List<Attribute> childattrs = errorChild.attributes();
                     for(Attribute attr: childattrs){
@@ -66,14 +66,14 @@ public class ParserCppcheckWarning implements ParserWarning {
                             wr.setColumn_number(attr.getValue());
                         }else if(attr.getName().equals("line")){
                             wr.setLine_number(attr.getValue());
+                        }else if(attr.getName().equals("info")){
+                            wr.setInfo(attr.getValue());
                         }
                     }
-                }else if(errorChild.getName().equals("symbol")){
-                    wr.setSymbol(errorChild.getText());
+                    warningList.add(wr.clone());
+//                    warningList.add(wr); //一边add一边遍历location。 这里有个bug：当list更新后add，之前加入的list也会同时改变，应该用个深拷贝
                 }
             }
-            // 遍历完一个节点，将该节点信息添加到列表中
-            warningList.add(wr);
         }
         return warningList;
     }

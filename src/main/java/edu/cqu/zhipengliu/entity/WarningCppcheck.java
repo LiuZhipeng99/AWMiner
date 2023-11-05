@@ -13,6 +13,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 
@@ -23,27 +24,44 @@ import java.util.Objects;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class WarningCppcheck extends StaticWarning{ // extends StaticWarning 不能像接口一样做多态
+public class WarningCppcheck extends StaticWarning implements Cloneable{ // extends StaticWarning 不能像接口一样做多态
     private final String tool_name = "cppcheck";
     private String cppcheck_version;
 
     private String verbose;
     private String cwe;
-    private String symbol;
-//    private WarningLocation location; //暂时每个warningid对应一个location，如果做成list不好分，对于想计算一个文件有多少bug可以考虑算法。
+//    private String symbol; //和location同级xml对象，目前看小于等于一个。 看到msg包含了symbol就舍弃
+//    private ArrayList<Location> locations; //每个warningid对应多个location。 如果用String[]后续比较麻烦。  一个error标签视为一个Warning->> 一个location实例化一个Wr
+
     private String file_path;
     private String line_number; //cppcheck只有单行
     private String column_number;
-// 为了方便猜测不多做表都用基本类型，且一个location对应一个warning。
-    @Override
-    public boolean equals(Object obj){
+    private String info;
 
-        if(this == obj){return true;}
-        if(obj == null || getClass() != obj.getClass()){
-            return false;
+
+    // 拷贝函数(非拷贝构造函数)，用于深拷贝
+    @Override
+    public WarningCppcheck clone() {
+        try {
+            return (WarningCppcheck) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError();
         }
-        WarningCppcheck other = (WarningCppcheck) obj;
-    //        return Objects.equals(msg, other.getMsg()); 用==而不是equal出来了bug操
-        return Objects.equals(bug_severity, other.getBug_severity()) && Objects.equals(this.warning_message, other.getWarning_message()) && Objects.equals(line_number, other.getLine_number()) && Objects.equals(column_number, other.getColumn_number());
     }
+//    @Override
+//    public boolean equals(Object obj){
+//
+//        if(this == obj){return true;}
+//        if(obj == null || getClass() != obj.getClass()){
+//            return false;
+//        }
+//        WarningCppcheck other = (WarningCppcheck) obj;
+//    //        return Objects.equals(msg, other.getMsg()); 用==而不是equal出来了bug操
+//        return Objects.equals(bug_severity, other.getBug_severity()) && Objects.equals(this.warning_message, other.getWarning_message()) && Objects.equals(line_number, other.getLine_number()) && Objects.equals(column_number, other.getColumn_number());
+//    }
+    public String computeHash(){
+        return null;
+    }
+
+
 }
