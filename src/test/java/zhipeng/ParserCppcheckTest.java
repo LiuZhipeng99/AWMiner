@@ -1,7 +1,7 @@
 package zhipeng;
 
-import edu.cqu.zhipengliu.parser.CppcheckParser;
-import edu.cqu.zhipengliu.entity.WarningCppcheck;
+import edu.cqu.zhipengliu.entity.StaticWarning;
+import edu.cqu.zhipengliu.parser.ParserCppcheckWarning;
 import org.dom4j.DocumentException;
 import org.junit.Test;
 
@@ -9,11 +9,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class ParserTest {
+public class ParserCppcheckTest {
 
     @Test // 测试了xml到数据库、java调用cppcheck产生xml
     public void testCppcheckwarning() throws DocumentException {
-        ArrayList<WarningCppcheck> wr = new CppcheckParser().parseWarningsXML("D:\\0Workspace\\IDEA-CODE\\SAWMiner\\src\\test\\java\\zhipeng\\cppcheckreport-no-addon.xml","testid");
+        ArrayList<StaticWarning> wr = new ParserCppcheckWarning().parseXml("D:\\0Workspace\\IDEA-CODE\\SAWMiner\\src\\test\\java\\zhipeng\\cppcheckreport-no-addon.xml", "testgit","testid");
         System.out.println(wr.size());
 
 //        cppcheck --addon=misra --xml-version=2 --enable=all dir

@@ -1,24 +1,21 @@
 package edu.cqu.zhipengliu.utils;
 
 import edu.cqu.zhipengliu.entity.GithubDetail;
+import edu.cqu.zhipengliu.entity.StaticWarning;
 import edu.cqu.zhipengliu.entity.WarningCppcheck;
-import edu.cqu.zhipengliu.parser.CppcheckParser;
-import org.eclipse.jgit.lib.Repository;
+import edu.cqu.zhipengliu.parser.ParserCppcheckWarning;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.refactoringminer.util.GitServiceImpl;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static edu.cqu.zhipengliu.Main.logger;
 
@@ -77,20 +74,22 @@ public class GithubTraverser {
             for (RevCommit currentCommit : walk) {
                 gitService.checkout(repo.getRepo(), currentCommit.getId().getName());
                 //不用写太多文件，根据commitid再扫一次就有了GenerateCppcheckXML.report(projectpath,projectpath+"report"+currentCommit.getId().getName()+".xml",projectpath+"log"+currentCommit.getId().getName());
-                GenerateCppcheckXML.report(repo.getLocalTmpPath(), "tmp/"+ repo.getGithubName() + "/report.xml", "tmp/"+ repo.getGithubName() + "/log");
-                ArrayList<WarningCppcheck> wr = new CppcheckParser().parseWarningsXML("tmp/"+ repo.getGithubName() + "/report.xml", currentCommit.getId().getName());
+                String xmlOutputPath = "tmp/"+ repo.getGithubName() + "/report.xml";
+                String logPath = "tmp/"+ repo.getGithubName() + "/log";
+                GenerateCppcheckXML.report(repo.getLocalTmpPath(), xmlOutputPath, logPath);
+                ArrayList<StaticWarning> wr = new ParserCppcheckWarning().parseXml(xmlOutputPath, repo.getGithubName(), currentCommit.getId().getName());
                 System.out.println("warning count:"+wr.size());
             }
         }
     }
-    public void tmps(ArrayList<GithubDetail> repoList) throws Exception {
+    public void testgitservice(ArrayList<GithubDetail> repoList) throws Exception {
         FileOutputStream logos = new FileOutputStream("D:/log-brpc-wr" + ".txt", true);
         for (GithubDetail repo : repoList) {
             RevWalk walk = gitService.createAllRevsWalk(repo.getRepo(), repo.getBranch());
             //        Iterable<RevCommit> walk = gitService.createRevsWalkBetweenCommits(repo,"88db699b4d5935d8dcce4daf90b1aa2b28b2a48b","9ad9f45db59bd69a943a7c759859031da2051f8e");
             //        Iterator<RevCommit> walk = gitService.createRevsWalkBetweenTags(repo,"")
             int count = 0;
-            ArrayList<WarningCppcheck> wr_old = new ArrayList<>();
+            ArrayList<StaticWarning> wr_old = new ArrayList<>();
             walk.setRevFilter(RevFilter.ALL); //后续发现遍历没有包含merge，查看这创建walk的源码他自己实现了过滤只能有一个父也就是没merge
             for (RevCommit currentCommit : walk) {
                 System.out.println(currentCommit.getId().getName());
@@ -98,14 +97,14 @@ public class GithubTraverser {
                 gitService.checkout(repo.getRepo(), currentCommit.getId().getName());
                 //不用写太多文件，根据commitid再扫一次就有了GenerateCppcheckXML.report(projectpath,projectpath+"report"+currentCommit.getId().getName()+".xml",projectpath+"log"+currentCommit.getId().getName());
                 GenerateCppcheckXML.report(repo.getGithubName(), repo.getLocalTmpPath() + "report.xml", repo.getLocalTmpPath() + "log");
-                ArrayList<WarningCppcheck> wr = new CppcheckParser().parseWarningsXML(repo.getLocalTmpPath() + "report.xml", currentCommit.getId().getName());
+                ArrayList<StaticWarning> wr = new ParserCppcheckWarning().parseXml(repo.getLocalTmpPath() + "report.xml",currentCommit.getId().getName(), currentCommit.getId().getName());
                 System.out.println("warning_nums:" + wr.size());
                 //            warningCppchekRepository.saveAll(wr);
                 //true表示在文件末尾追加
 
-                String log = GenerateCppcheckXML.compare(wr_old, wr);//找出新版本v2减少了哪些warning 对调参数就是找增加了哪些
+//                String log = GenerateCppcheckXML.compare(wr_old, wr);//找出新版本v2减少了哪些warning 对调参数就是找增加了哪些
 
-                logos.write(log.getBytes());
+//                logos.write(log.getBytes());
                 logos.write(System.getProperty("line.separator").getBytes());
                 logos.write(System.getProperty("line.separator").getBytes());
                 wr_old = wr;
@@ -116,4 +115,14 @@ public class GithubTraverser {
         }
         logos.close();
     }
+    //        GitHistoryRefactoringMiner miner = new GitHistoryRefactoringMinerImpl();
+//        miner.detectAll(repo, "master", new RefactoringHandler() {
+//            @Override
+//            public void handle(String commitId, List<Refactoring> refactorings) {
+//                System.out.println("Refactorings at " + commitId);
+//                for (Refactoring ref : refactorings) {
+////                    System.out.println(ref.toString());
+//                }
+//            }
+//        });
 }

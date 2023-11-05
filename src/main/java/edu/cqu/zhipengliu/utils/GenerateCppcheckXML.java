@@ -1,20 +1,21 @@
 package edu.cqu.zhipengliu.utils;
-/**
- * @projectName: SAWMiner
- * @package: edu.cqu.zhipengliu.utils
- * @className: GenerateCppcheckXML
- * @author: Zhipengliu
- * @description: TODO
- * @date: 2023/11/4 14:26
- * @version: 1.1
- */
+
 
 import edu.cqu.zhipengliu.entity.WarningCppcheck;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
-
+/**
+ * @projectName: SAWMiner
+ * @package: edu.cqu.zhipengliu.utils
+ * @className: GenerateCppcheckXML
+ * @author: Zhipengliu
+ * @description: 利用cppcheck二进制程序扫描产生xml输出， 需要了解其参数用法以高效产出所需的  命令参数如 xml、j、enable、addon
+ * --rule=misra_c --addon=/usr/share/cppcheck/addons/misra.json -j 32 --xml --xml-version=2
+ * @date: 2023/11/4 14:26
+ * @version: 1.1
+ */
 public class GenerateCppcheckXML {
     public static void report(String scanFilesPath, String reportXmlPath, String logFilePath){
         try { //用Runtime.exec执行命令时会阻塞不知道为啥，Linux不会阻塞但产生不了文件。在win下，用命令行产生文件有cppcheck报错：所在位置 行:1 字符: 1，但用proBuilder就解决了

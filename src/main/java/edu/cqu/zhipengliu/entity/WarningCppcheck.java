@@ -5,7 +5,7 @@ package edu.cqu.zhipengliu.entity;
  * @package: edu.cqu.zhipengliu.entity
  * @className: WarningCppcheck
  * @author: Zhipengliu
- * @description: TODO
+ * @description: 根据cppcheck产生的输出属性进行定义
  * @date: 2023/9/4 10:26
  * @version: 1.1
  */
@@ -23,20 +23,17 @@ import java.util.Objects;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class WarningCppcheck { // extends StaticWarning 不能像接口一样做多态
+public class WarningCppcheck extends StaticWarning{ // extends StaticWarning 不能像接口一样做多态
+    private final String tool_name = "cppcheck";
     private String cppcheck_version;
-    private String commit_id; //这可能 之后作为外键
-    private String id; //这个id不是唯一id，类似ConfigurationNotChecked
-    private String severity;
-    private String msg;
+
     private String verbose;
     private String cwe;
     private String symbol;
-
 //    private WarningLocation location; //暂时每个warningid对应一个location，如果做成list不好分，对于想计算一个文件有多少bug可以考虑算法。
-    private String file;
-    private String line; //cppcheck只有单行
-    private String  column;
+    private String file_path;
+    private String line_number; //cppcheck只有单行
+    private String column_number;
 // 为了方便猜测不多做表都用基本类型，且一个location对应一个warning。
     @Override
     public boolean equals(Object obj){
@@ -46,7 +43,7 @@ public class WarningCppcheck { // extends StaticWarning 不能像接口一样做
             return false;
         }
         WarningCppcheck other = (WarningCppcheck) obj;
-//        return Objects.equals(msg, other.getMsg()); 用==而不是equal出来了bug操
-        return Objects.equals(severity, other.getSeverity()) && Objects.equals(msg, other.getMsg()) && Objects.equals(line, other.getLine()) && Objects.equals(column, other.getColumn());
+    //        return Objects.equals(msg, other.getMsg()); 用==而不是equal出来了bug操
+        return Objects.equals(bug_severity, other.getBug_severity()) && Objects.equals(this.warning_message, other.getWarning_message()) && Objects.equals(line_number, other.getLine_number()) && Objects.equals(column_number, other.getColumn_number());
     }
 }
