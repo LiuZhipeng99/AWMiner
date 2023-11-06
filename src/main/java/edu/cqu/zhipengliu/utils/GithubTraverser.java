@@ -1,5 +1,8 @@
 package edu.cqu.zhipengliu.utils;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.reflect.TypeToken;
 import edu.cqu.zhipengliu.entity.GithubDetail;
 import edu.cqu.zhipengliu.entity.StaticWarning;
 import edu.cqu.zhipengliu.entity.WarningCppcheck;
@@ -10,7 +13,9 @@ import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.refactoringminer.util.GitServiceImpl;
 
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -69,20 +74,64 @@ public class GithubTraverser {
     public void commitTraverser(ArrayList<GithubDetail> repoList) throws Exception {
         for (GithubDetail repo : repoList) {
             RevWalk walk = gitService.createAllRevsWalk(repo.getRepo(), repo.getBranch());
-            ArrayList<WarningCppcheck> wr_old = new ArrayList<>();
+            ArrayList<WarningCppcheck> pre_wr = new ArrayList<>();
             walk.setRevFilter(RevFilter.ALL); //后续发现遍历没有包含merge，查看这创建walk的源码他自己实现了过滤只能有一个父也就是没merge
+            int count = 0;
             for (RevCommit currentCommit : walk) {
                 gitService.checkout(repo.getRepo(), currentCommit.getId().getName());
                 //不用写太多文件，根据commitid再扫一次就有了GenerateCppcheckXML.report(projectpath,projectpath+"report"+currentCommit.getId().getName()+".xml",projectpath+"log"+currentCommit.getId().getName());
-                String xmlOutputPath = "tmp/"+ repo.getGithubName() + "/report.xml";
-                String logPath = "tmp/"+ repo.getGithubName() + "/log";
+                String xmlOutputPath = "tmp/"+ repo.getGithubName() + "/cppcheck_report.xml";
+                String logPath = "tmp/"+ repo.getGithubName() + "/cppcheck_log";
                 GenerateCppcheckXML.report(repo.getLocalTmpPath(), xmlOutputPath, logPath);
-                ArrayList<StaticWarning> wr = new ParserCppcheckWarning().parseXml(xmlOutputPath, repo.getGithubName(), currentCommit.getId().getName());
-                System.out.println(wr);
+                ArrayList<WarningCppcheck> cur_wr = new ParserCppcheckWarning().parseXml(xmlOutputPath, repo.getGithubName(), currentCommit.getId().getName());
 
-                return;
+                ArrayList<WarningCppcheck> fixed = getFixed(pre_wr,cur_wr);
+//                ArrayList<WarningCppcheck> introduced = getIntroduced(pre_wr,cur_wr); 此工具没有研究引入的，只关注fixed warning
+//                for (WarningCppcheck warning : fixed) {
+//                    System.out.println(warning.getHash_id());
+//                    System.out.println(warning);
+//                }
+//                for (WarningCppcheck warning : introduced) {
+//                    System.out.println(warning.getHash_id());
+//                    System.out.println(warning);
+//                }
+                // 将ArrayList转换为JSON
+                Gson gson = new GsonBuilder().setPrettyPrinting().create();
+                Type arrayListType = new TypeToken<ArrayList<WarningCppcheck>>() {}.getType();
+                String json = gson.toJson(fixed, arrayListType);
+                // 将JSON保存到文件
+                FileWriter writer = new FileWriter("output.json");
+                writer.write(json);
+
+
+                pre_wr = cur_wr;
+                if(count++ > 5) return;
             }
         }
+    }
+
+    //    public void diffReport(ArrayList<WarningCppcheck> pre, ArrayList<WarningCppcheck> cur){}
+    public ArrayList<WarningCppcheck> getFixed(ArrayList<WarningCppcheck> pre, ArrayList<WarningCppcheck> cur){
+        // 查找消失的元素
+        ArrayList<WarningCppcheck> removedElements = new ArrayList<>();
+        for (WarningCppcheck warning : pre) {
+            if (!cur.contains(warning)) {
+                removedElements.add(warning);
+            }
+        }
+        return removedElements;
+    }
+    public ArrayList<WarningCppcheck> getIntroduced(ArrayList<WarningCppcheck> pre, ArrayList<WarningCppcheck> cur){
+        // 查找新增的元素
+//        System.out.println(pre);
+//        System.out.println(cur);
+        ArrayList<WarningCppcheck> addedElements = new ArrayList<>();
+        for (WarningCppcheck warning : cur) {
+            if (!pre.contains(warning)) {
+                addedElements.add(warning);
+            }
+        }
+        return addedElements;
     }
     public void testgitservice(ArrayList<GithubDetail> repoList) throws Exception {
         FileOutputStream logos = new FileOutputStream("D:/log-brpc-wr" + ".txt", true);
@@ -91,7 +140,7 @@ public class GithubTraverser {
             //        Iterable<RevCommit> walk = gitService.createRevsWalkBetweenCommits(repo,"88db699b4d5935d8dcce4daf90b1aa2b28b2a48b","9ad9f45db59bd69a943a7c759859031da2051f8e");
             //        Iterator<RevCommit> walk = gitService.createRevsWalkBetweenTags(repo,"")
             int count = 0;
-            ArrayList<StaticWarning> wr_old = new ArrayList<>();
+            ArrayList<WarningCppcheck> wr_old = new ArrayList<>();
             walk.setRevFilter(RevFilter.ALL); //后续发现遍历没有包含merge，查看这创建walk的源码他自己实现了过滤只能有一个父也就是没merge
             for (RevCommit currentCommit : walk) {
                 System.out.println(currentCommit.getId().getName());
@@ -99,7 +148,7 @@ public class GithubTraverser {
                 gitService.checkout(repo.getRepo(), currentCommit.getId().getName());
                 //不用写太多文件，根据commitid再扫一次就有了GenerateCppcheckXML.report(projectpath,projectpath+"report"+currentCommit.getId().getName()+".xml",projectpath+"log"+currentCommit.getId().getName());
                 GenerateCppcheckXML.report(repo.getGithubName(), repo.getLocalTmpPath() + "report.xml", repo.getLocalTmpPath() + "log");
-                ArrayList<StaticWarning> wr = new ParserCppcheckWarning().parseXml(repo.getLocalTmpPath() + "report.xml",currentCommit.getId().getName(), currentCommit.getId().getName());
+                ArrayList<WarningCppcheck> wr = new ParserCppcheckWarning().parseXml(repo.getLocalTmpPath() + "report.xml",currentCommit.getId().getName(), currentCommit.getId().getName());
                 System.out.println("warning_nums:" + wr.size());
                 //            warningCppchekRepository.saveAll(wr);
                 //true表示在文件末尾追加

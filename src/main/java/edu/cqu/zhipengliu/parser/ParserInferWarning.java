@@ -1,6 +1,7 @@
 package edu.cqu.zhipengliu.parser;
 
 import edu.cqu.zhipengliu.entity.StaticWarning;
+import edu.cqu.zhipengliu.entity.WarningCppcheck;
 import org.dom4j.DocumentException;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class ParserInferWarning implements ParserWarning {
 
 
     @Override
-    public ArrayList<StaticWarning> parseXml(String xmlPath, String git_name, String commit_id) throws DocumentException {
+    public ArrayList<WarningCppcheck> parseXml(String xmlPath, String git_name, String commit_id) throws DocumentException {
         return null;
     }
 

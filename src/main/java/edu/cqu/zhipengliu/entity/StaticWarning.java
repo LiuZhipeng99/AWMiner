@@ -18,14 +18,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-public abstract class StaticWarning {
+public abstract class StaticWarning{
     String tool_name; //工具名字如cppcheck、infer
     String git_name; //项目名+commit可以确定代码扫描的结果
     String commit_id; //这可能之后作为外键， 不能从报告中得到
     String warning_message;
-
+    String hash_id; //用于增量分析
 
     String bug_severity;
     String bug_type;
+
+
 //    String file_name; 每个工具标识代码location的方法不太一样有的分开路径和文件名有的直接是path
 }

@@ -13,8 +13,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.Objects;
+import java.util.regex.Pattern;
 
 
 //从产生的xml文件分析出
@@ -39,6 +43,44 @@ public class WarningCppcheck extends StaticWarning implements Cloneable{ // exte
     private String info;
 
 
+
+
+    @Override
+    public boolean equals(Object obj){
+
+        if(this == obj){return true;}
+        if(obj == null || getClass() != obj.getClass()){
+            return false;
+        }
+        WarningCppcheck other = (WarningCppcheck) obj;
+    //        return Objects.equals(msg, other.getMsg()); 用==而不是equal出来了bug操
+        return Objects.equals(this.hash_id, other.getHash_id()) ;
+    }
+    public String computeHash() {
+        Pattern numPattern = Pattern.compile("\\(:\\)[0-9]+");
+        Pattern qualifierPattern = Pattern.compile("(line |column |:|parameter |\\$)[0-9]+");
+
+//        String baseFilename = Paths.get(file).getFileName().toString();
+//        String hashableProcedureName = hashableName(procName);
+
+//        String locationIndependentProcName = numPattern.matcher(procName).replaceAll("\\$_");
+        String locationIndependentQualifier = qualifierPattern.matcher(this.warning_message).replaceAll("\\$_");
+
+        String[] data = {this.bug_severity, this.bug_type, this.file_path, this.info,locationIndependentQualifier};
+
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hashBytes = digest.digest(String.join(",", data).getBytes(StandardCharsets.UTF_8));
+            StringBuilder hashValue = new StringBuilder();
+            for (byte b : hashBytes) {
+                hashValue.append(String.format("%02x", b));
+            }
+            return hashValue.toString();
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
     // 拷贝函数(非拷贝构造函数)，用于深拷贝
     @Override
     public WarningCppcheck clone() {
@@ -48,20 +90,4 @@ public class WarningCppcheck extends StaticWarning implements Cloneable{ // exte
             throw new AssertionError();
         }
     }
-//    @Override
-//    public boolean equals(Object obj){
-//
-//        if(this == obj){return true;}
-//        if(obj == null || getClass() != obj.getClass()){
-//            return false;
-//        }
-//        WarningCppcheck other = (WarningCppcheck) obj;
-//    //        return Objects.equals(msg, other.getMsg()); 用==而不是equal出来了bug操
-//        return Objects.equals(bug_severity, other.getBug_severity()) && Objects.equals(this.warning_message, other.getWarning_message()) && Objects.equals(line_number, other.getLine_number()) && Objects.equals(column_number, other.getColumn_number());
-//    }
-    public String computeHash(){
-        return null;
-    }
-
-
 }
