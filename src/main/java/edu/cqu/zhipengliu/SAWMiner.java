@@ -1,8 +1,9 @@
 package edu.cqu.zhipengliu;
 
 import edu.cqu.zhipengliu.entity.GithubDetail;
-import edu.cqu.zhipengliu.utils.GithubTraverser;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -10,10 +11,8 @@ import java.util.logging.Logger;
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 
-public class Main {
+public class SAWMiner {
     public static final Logger logger = Logger.getLogger("SAWMiner");
-
-
 
 
     public static void main(String[] args) throws Exception {
@@ -25,15 +24,21 @@ public class Main {
         // IntelliJ IDEA suggests fixing it.
         logger.info("项目启动");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
         GithubTraverser ts = new GithubTraverser();
-        ArrayList<GithubDetail> gds = ts.getGithubSet("D:\\0Workspace\\IDEA-CODE\\SAWMiner\\c_repos_sorted.txt");
+        ArrayList<GithubDetail> gds = ts.getGithubSet(args[0]);
+        System.out.println("本次克隆结束数量(已缓存在tmp目录）：" + gds.size());
         ts.commitTraverser(gds);
+
+
+        //        GitHistoryRefactoringMiner miner = new GitHistoryRefactoringMinerImpl();
+//        miner.detectAll(repo, "master", new RefactoringHandler() {
+//            @Override
+//            public void handle(String commitId, List<Refactoring> refactorings) {
+//                System.out.println("Refactorings at " + commitId);
+//                for (Refactoring ref : refactorings) {
+////                    System.out.println(ref.toString());
+//                }
+//            }
     }
 }

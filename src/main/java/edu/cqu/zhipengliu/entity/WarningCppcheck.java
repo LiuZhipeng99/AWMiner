@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 @NoArgsConstructor
 @Data
 public class WarningCppcheck extends StaticWarning implements Cloneable{ // extends StaticWarning 不能像接口一样做多态
-    private final String tool_name = "cppcheck";
+//    private final String tool_name = "cppcheck"; 这和父类重复了
     private String cppcheck_version;
 
     private String verbose;
@@ -45,6 +45,7 @@ public class WarningCppcheck extends StaticWarning implements Cloneable{ // exte
 
 
 
+
     @Override
     public boolean equals(Object obj){
 
@@ -53,7 +54,8 @@ public class WarningCppcheck extends StaticWarning implements Cloneable{ // exte
             return false;
         }
         WarningCppcheck other = (WarningCppcheck) obj;
-    //        return Objects.equals(msg, other.getMsg()); 用==而不是equal出来了bug操
+//      AWR paper
+//        return Objects.equals(this.hash_id, other.getHash_id()) && sim(warning_message,other.warning_message) ;
         return Objects.equals(this.hash_id, other.getHash_id()) ;
     }
     public String computeHash() {

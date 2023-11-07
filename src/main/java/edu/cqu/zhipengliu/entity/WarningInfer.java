@@ -10,6 +10,5 @@ package edu.cqu.zhipengliu.entity;
  * @version: 1.1
  */
 public class WarningInfer {
-    private final String tool_name = "infer";
     private String infer_version;
 }

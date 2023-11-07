@@ -1,7 +1,6 @@
 package edu.cqu.zhipengliu.parser;
 
 import edu.cqu.zhipengliu.entity.StaticWarning;
-import edu.cqu.zhipengliu.entity.WarningCppcheck;
 import org.dom4j.DocumentException;
 import java.util.ArrayList;
 /**
@@ -15,7 +14,7 @@ import java.util.ArrayList;
  */
 public interface ParserWarning {
 
-    ArrayList<WarningCppcheck> parseXml(String xmlPath, String git_name, String commit_id)  throws DocumentException;
+    ArrayList<StaticWarning> parseXml(String xmlPath, String git_name, String commit_id)  throws DocumentException;
     ArrayList<StaticWarning> parseJson(String jsonPath, String git_name, String commit_id);
 
 }

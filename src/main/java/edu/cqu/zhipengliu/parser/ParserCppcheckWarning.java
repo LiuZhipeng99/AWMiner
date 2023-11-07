@@ -20,6 +20,7 @@ import java.util.List;
  * @className: ParserCppcheckWarning
  * @author: Zhipengliu
  * @description: 针对cppcheck输出报告的解析，目前是2.12版本。目前仅实现对cppcheck已格式化xml的输出，虽然原版还没有json输出但可以考虑用template参数输出json或行格式，用gson库或字符串分割来得到Warning对象
+ * 解析代码
  * @date: 2023/11/4 14:26
  * @version: 1.1
  */
@@ -27,8 +28,8 @@ import java.util.List;
 
 public class ParserCppcheckWarning implements ParserWarning {
     @Override
-    public ArrayList<WarningCppcheck> parseXml(String xmlPath, String git_name, String commit_id) throws DocumentException {
-        ArrayList<WarningCppcheck> warningList = new ArrayList<>();
+    public ArrayList<StaticWarning> parseXml(String xmlPath, String git_name, String commit_id) throws DocumentException {
+        ArrayList<StaticWarning> warningList = new ArrayList<>();
         SAXReader reader = new SAXReader();
         Document document = reader.read(new File(xmlPath));
         Element waringRoot = document.getRootElement();
@@ -38,6 +39,7 @@ public class ParserCppcheckWarning implements ParserWarning {
             WarningCppcheck wr = new WarningCppcheck();
             List<Attribute> error_attrs = error.attributes();
             for(Attribute attr: error_attrs){
+                wr.setTool_name("cppcheck");
                 wr.setCppcheck_version(cppcheck_version);
                 wr.setCommit_id(commit_id);
                 wr.setGit_name(git_name);
