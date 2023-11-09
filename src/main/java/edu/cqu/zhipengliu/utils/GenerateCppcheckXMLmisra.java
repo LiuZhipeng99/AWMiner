@@ -24,5 +24,4 @@ public class GenerateCppcheckXMLmisra {
         ProcessUtils util = new ProcessUtils();
         util.run_process(os_command,reportXmlPath,logFilePath);
     }
-
 }

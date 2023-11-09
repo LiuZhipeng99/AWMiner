@@ -24,14 +24,21 @@ import java.util.List;
  * 也可以用其python实现的misra规范（需要python环境和misra.json）：
  * --rule=misra_c --addon=/usr/share/cppcheck/addons/misra.json
  * 参考说明：官网、<a href="https://www.cnblogs.com/young525/p/5873771.html">...</a>
+ *
+ * 后续遇到的问题：扫描时间过久有可能是上M的c文件如sqlite.c、miniaudio这种库文件引起的，可通过find找出文件也可考虑找到这种库的列表
+ * find . -type f -name "*.c" -exec du -Sh {} + | sort -rh | head -n 20 找出这些文件用i参数跳过
  * @date: 2023/11/6 14:26
  * @version: 1.2
  */
 public class GenerateCppcheckXML {
-    public static void report(String scanFilesPath, String reportXmlPath, String logFilePath) {
+    public static void report(String scanFilesPath, String reportXmlPath, String logFilePath,String commit_id) {
 //        Set cppcheck command
         int cpuCores = Runtime.getRuntime().availableProcessors();
-        List<String> os_command = List.of(new String[]{"cppcheck", "-j", String.valueOf(cpuCores),"--enable=warning", "--xml", scanFilesPath});
+        List<String> os_command = List.of(new String[]{"cppcheck", "-j", String.valueOf(cpuCores),
+                "-i","lib","-i","assets","-i","images","-i","qlxgbe","-i","zydis",
+                "-i","packet-rrc.c","-i","u8g2_fonts.c","-i","miniaudio.c","-i","u8g_font_data.c","-i","udivmodti4_test.c","-i","transliteration_data.c","-i","dataframe.addons.tests.c",
+                "-i","sqlcipher.c","-i","sqlite3-binding.c","-i","sqlite3.c","-i","sqlitestudio.c","-i","wxsqlite3.c",// 通配符？
+                "--enable=warning", "--xml", scanFilesPath});
 
         ProcessUtils util = new ProcessUtils();
         util.run_process(os_command,reportXmlPath,logFilePath);

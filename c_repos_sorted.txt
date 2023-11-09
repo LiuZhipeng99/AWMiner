@@ -1,4 +1,0 @@
-此文件保存github信息，（id，starcount，url，name，branch）用\t分割，branch没注明就是默认的master  注：使用了镜像的url请确认 如https://hub.fgit.cf/ 、 https://kkgithub.com
-77592175	201	https://hub.fgit.cf/sky-big/Linux-0.12.git	Linux-0.12
-28841640	201	https://hub.fgit.cf/HdrHistogram/HdrHistogram_c.git	HdrHistogram_c
-111583593	71798	https://hub.fgit.cf/Genymobile/scrcpy.git	scrcpy

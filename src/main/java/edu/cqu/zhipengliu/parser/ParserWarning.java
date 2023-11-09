@@ -14,7 +14,9 @@ import java.util.ArrayList;
  */
 public interface ParserWarning {
 
-    ArrayList<StaticWarning> parseXml(String xmlPath, String git_name, String commit_id)  throws DocumentException;
-    ArrayList<StaticWarning> parseJson(String jsonPath, String git_name, String commit_id);
+
+    ArrayList<StaticWarning> parseXml(String xmlPath, String git_name, String commit_id, String next_commit_id) throws DocumentException;
+
+    ArrayList<StaticWarning> parseJson(String jsonPath, String git_name, String commit_id, String next_commit_id);
 
 }

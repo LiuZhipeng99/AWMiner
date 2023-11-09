@@ -18,12 +18,12 @@ public class ParserInferWarning implements ParserWarning {
 
 
     @Override
-    public ArrayList<StaticWarning> parseXml(String xmlPath, String git_name, String commit_id) throws DocumentException {
+    public ArrayList<StaticWarning> parseXml(String xmlPath, String git_name, String commit_id, String next_commit_id) throws DocumentException {
         return null;
     }
 
     @Override
-    public ArrayList<StaticWarning> parseJson(String jsonPath, String git_name, String commit_id) {
+    public ArrayList<StaticWarning> parseJson(String jsonPath, String git_name, String commit_id, String next_commit_id) {
         return null;
     }
 }

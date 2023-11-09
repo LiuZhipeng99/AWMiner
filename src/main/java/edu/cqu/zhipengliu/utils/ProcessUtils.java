@@ -1,5 +1,9 @@
 package edu.cqu.zhipengliu.utils;
 
+import edu.cqu.zhipengliu.SAWMiner;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
@@ -14,6 +18,7 @@ import java.util.List;
  * @version: 1.1
  */
 public class ProcessUtils {
+    Logger logger = LoggerFactory.getLogger(ProcessUtils.class);
     public void run_process(List<String> os_command, String errorFilePath, String logFilePath){
         //        start command
         ProcessBuilder processBuilder = null;
@@ -37,10 +42,10 @@ public class ProcessUtils {
             process.destroy();
             // 第二个BUG：扫描某个项目退出代码不是0，一番波折发现由于项目中有软连接指向的文件不存在。过程中发现停止是因为遇到了这种不存在的链接同样是.c文件就终止了，而Linux上更快遇到所以终止快
             if (exitCode != 0) {
-                System.out.println("Scan failed !!  check "+logFilePath+" for errors\n");
+                logger.error("command stop !!  check logfile: "+logFilePath);
             }
         } catch (InterruptedException | IOException e) {
-            System.out.println("command start failed, check args: " +processBuilder.command());
+            logger.error("command start failed, check args: " +processBuilder.command());
             e.printStackTrace();
         }
     }

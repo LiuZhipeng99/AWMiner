@@ -28,7 +28,7 @@ import java.util.List;
 
 public class ParserCppcheckWarning implements ParserWarning {
     @Override
-    public ArrayList<StaticWarning> parseXml(String xmlPath, String git_name, String commit_id) throws DocumentException {
+    public ArrayList<StaticWarning> parseXml(String xmlPath, String github_link, String commit_id, String next_commit_id) throws DocumentException {
         ArrayList<StaticWarning> warningList = new ArrayList<>();
         SAXReader reader = new SAXReader();
         Document document = reader.read(new File(xmlPath));
@@ -42,7 +42,8 @@ public class ParserCppcheckWarning implements ParserWarning {
                 wr.setTool_name("cppcheck");
                 wr.setCppcheck_version(cppcheck_version);
                 wr.setCommit_id(commit_id);
-                wr.setGit_name(git_name);
+                wr.setCommit_id_repair(next_commit_id);
+                wr.setGit_link(github_link);
                 if(attr.getName().equals("id")){
                     wr.setBug_type(attr.getValue());
                 }else if(attr.getName().equals("msg")){
@@ -82,7 +83,7 @@ public class ParserCppcheckWarning implements ParserWarning {
     }
 
     @Override
-    public ArrayList<StaticWarning> parseJson(String jsonPath, String git_name, String commit_id) {
+    public ArrayList<StaticWarning> parseJson(String jsonPath, String git_name, String commit_id,String next_commit_id) {
         return null;
     }
 
