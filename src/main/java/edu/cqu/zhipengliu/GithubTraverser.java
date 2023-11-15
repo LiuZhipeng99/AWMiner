@@ -10,6 +10,7 @@ import edu.cqu.zhipengliu.entity.StaticWarning;
 import edu.cqu.zhipengliu.entity.WarningCppcheck;
 import edu.cqu.zhipengliu.parser.ParserCppcheckWarning;
 import edu.cqu.zhipengliu.utils.GenerateCppcheckXML;
+import edu.cqu.zhipengliu.utils.ThreadSpecificLoggerFactory;
 import org.dom4j.DocumentException;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
@@ -23,15 +24,12 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
-import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Objects;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 
 /**
  * @projectName: SAWMiner
@@ -47,6 +45,9 @@ import java.util.concurrent.Executors;
 public class GithubTraverser {
     GitServiceImpl gitService = new GitServiceImpl(); //这里用多态特性实例化GitService，也没什么意义不如直接实例化，主要是也没其他gitservice实现
     public final static String tempDir = "tmp_github/"; //克隆下来的目录设置（目前写死）
+    public final static String dataSetDir = "GeneratedDataset/ActionableWarning/";
+    public final static String dataSetDir2 = "GeneratedDataset/NonActionableWarning/";
+
     Logger logger = LoggerFactory.getLogger(GithubTraverser.class);
     public ArrayList<GithubDetail> getGithubSet(String filePath) throws IOException, CsvValidationException {
         //TODO 添加GitHub镜像功能。 函数克隆很多github项目》返回repolist，考虑到网络和io可以优化。克隆时间是否应该区分，为方便更新代码（简单实现就是把目录加上date比如带月或者日）
@@ -57,22 +58,33 @@ public class GithubTraverser {
         CSVReader reader = new CSVReader(new FileReader(path.toString()));
         String[] line;
         while ((line = reader.readNext()) != null) {
-            if (line.length >= 4) {
-                String id = line[0];
+            if (line.length >= 3) {  //直接用line有两处：恢复扫描和加入列表
+                File directory = new File(dataSetDir);
+                String githubName = line[0];
+                if (directory.exists() && directory.isDirectory()) { // 增加继续扫描的能力（导致重扫需要删文件）
+                    File[] files = directory.listFiles();
+                    if (files != null) {
+                        for (File file : files) {
+                            if (file.isFile() && file.getName().equals(githubName+".json")) {
+                                System.out.print(githubName + "已存在于" + dataSetDir+"  ");
+                                line = reader.readNext(); // 有可能line变为null导致while报错
+                            }
+                        }
+                    }
+                }
                 try {
                     GithubDetail hub = new GithubDetail();
-                    hub.setGithubName(line[3]);
-                    hub.setGithubLink(line[2]);
-                    hub.setStarCount(line[1]);
-                    hub.setBranch(line.length >= 5 ? line[4] : "master"); //The default branch of git version 2.28 becomes main, some projects are
-                    hub.setLocalTmpPath(tempDir + line[3]);
+                    hub.setGithubName(line[0]);
+                    hub.setGithubLink(line[1]);
+                    hub.setBranch(line[2]);
+                    if(line.length>=4) hub.setStarCount(line[3]);
+                    hub.setLocalTmpPath(tempDir + line[0]); //考虑用user_name的形式避免fork项目一样的文件夹
                     hub.setRepo(gitService.cloneIfNotExists(
-                            hub.getLocalTmpPath(),hub.getGithubLink()));
+                            hub.getLocalTmpPath(), hub.getGithubLink()));
                     repoList.add(hub);
                 } catch (Exception e) {
-//                        throw new RuntimeException(e); //打印出错误栈能知道详细信息 国内环境大概率需要魔法。
-                    logger.warn(tempDir + line[3]+" can't loaded");
-                    logger.error(line[2] + " Try clone failed, there is a network problem. Please run clone_git.py or manual git clone");
+                    //                        throw new RuntimeException(e); //打印出错误栈能知道详细信息 国内环境大概率需要魔法。
+                    logger.error(line[1] + " Try git clone failed, there is a network problem. Please run Script_clone_github.py");
                 }
             } else {
                 logger.error(filePath + " have invalid line: " + Arrays.toString(line));
@@ -80,20 +92,40 @@ public class GithubTraverser {
         }
         return repoList;
     }
-    public void commitTraverser(ArrayList<GithubDetail> repoList, boolean flag) {
-        int numThreads = Runtime.getRuntime().availableProcessors()/2; // 获取可用的处理器数量
-        ExecutorService executor = Executors.newFixedThreadPool(numThreads);
+    public void commitTraverser(ArrayList<GithubDetail> repoList, int numThread) {
+//        int numThreads = Runtime.getRuntime().availableProcessors() / 8; // 获取可用的处理器数量 ， 考虑到不好控制如果用cpu数量那么每个cpu最大负载是cpuNum个cppcheck
+        ExecutorService executor = Executors.newFixedThreadPool(numThread); //因为cppcheck命令总是用并发，但并发是单独扫描上下限差异大会有单个线程等很久的cppcheck（超时一定程度避免），这里并发让同时扫描等待长的个数增长到Thread个
+        List<Future<?>> futures = new ArrayList<>();
+
         for (GithubDetail repo : repoList) {
-            executor.submit(() -> {
+            Future<?> future = executor.submit(() -> {
                 try {
-                    traverserThread(repo,flag);
+                    traverserThread(repo);
                 } catch (Exception e) {
                     throw new RuntimeException(e);
                 }
             });
+            futures.add(future);
         }
+//        设置扫描每个repo的超时逻辑 ， 首先每个repo能忍受的时间能上百小时
+//        总体超时时间，但流程是计时-cppcheck-结束，应该继续优化检测cppcheck不能太长。 限制了单个commit超时时间这里也没什么用了
+        long timeout = 60 * 60 * 720 ; // 超时时间（单位：秒）
+        for (Future<?> future : futures) {
+            try {
+                future.get(timeout, TimeUnit.SECONDS); //通过commit数量进行预估
+            } catch (TimeoutException e) {
+                // 任务超时处理逻辑
+                future.cancel(true); // 取消任务
+                // 其他处理代码...
+            } catch (Exception e) {
+                // 其他异常处理逻辑
+            }
+        }
+        executor.shutdown(); // 关闭线程池
     }
-    public void traverserThread(GithubDetail repo, boolean flag) throws Exception {
+    public void traverserThread(GithubDetail repo) throws Exception {
+        Logger logger = ThreadSpecificLoggerFactory.getLogger();
+        String repoName = repo.getGithubName();
         ArrayList<StaticWarning> fixed_all = new ArrayList<>();
         ArrayList<StaticWarning> introduced_all = new ArrayList<>();
         ArrayList<StaticWarning> cur_wr = null;
@@ -103,72 +135,70 @@ public class GithubTraverser {
         // you can use other parser and generate report.
         RevWalk walk = gitService.createAllRevsWalk(repo.getRepo(), repo.getBranch());
         walk.setRevFilter(RevFilter.ALL); //后续发现遍历没有包含merge，查看这创建walk的源码他自己实现了过滤只能有一个父也就是没merge
-        if (walk.next() == null) {
+        if (walk.next() == null) { //git 2.28 默认分支变为main，这里尝试兼容
             walk = gitService.createAllRevsWalk(repo.getRepo(), "main");
             walk.setRevFilter(RevFilter.ALL);
             repo.setBranch("main");
         }
+        long startTime = System.currentTimeMillis();
         try {
-            int commit_count = gitService.countCommits(repo.getRepo(), repo.getBranch());
-            logger.warn("\n\nScan repo: " + repo.getGithubLink() + " Commits count: " + commit_count);
+            int commitCount = gitService.countCommits(repo.getRepo(), repo.getBranch());
             int count = 0;
             for (RevCommit currentCommit : walk) {  //从最新commit到最早的
-                if(count++%100==0) logger.warn("current commit:"+count);
-                gitService.checkout(repo.getRepo(), currentCommit.getId().getName());
-                long startTime = System.currentTimeMillis();
-                //GenerateCppcheckXML.report(tempDir,tempDir+"report"+currentCommit+".xml");不用保留每次扫描文件，结果存在fixed all
+                if(count++ % (commitCount/8)==0) logger.warn(repoName+": Scanning progress "+count+"/"+commitCount); //打印十次文本形式进度条
+//                currentCommit.getShortMessage();
+                String curCommitId = currentCommit.getId().getName();
+                gitService.checkout(repo.getRepo(), curCommitId);
                 String xmlOutputPath = tempDir + repo.getGithubName() + "/cppcheck_report.xml";
-                String logPath = tempDir + repo.getGithubName() + "/cppcheck_log";
-                GenerateCppcheckXML.report(repo.getLocalTmpPath(), xmlOutputPath, logPath,currentCommit.getId().getName());
-                cur_wr = parser1.parseXml(xmlOutputPath, repo.getGithubLink(), currentCommit.getId().getName(), next_commit_id);
+                String logPath = tempDir + repo.getGithubName() + "/cppcheck_log"; //不用保留每次扫描文件 覆盖此文件，用数据结构保留
+                GenerateCppcheckXML.report(repo.getLocalTmpPath(), xmlOutputPath, logPath, curCommitId);
+                cur_wr = parser1.parseXml(xmlOutputPath, repo.getGithubLink(), curCommitId, next_commit_id);
                 //                System.out.println(next_commit_id);
                 next_commit_id = currentCommit.getId().getName();
-                ArrayList<StaticWarning> fixed = getDiff(cur_wr, next_wr); // cur - next
+                ArrayList<StaticWarning> fixed = getDiff(cur_wr, next_wr); // cur - next //考虑下next为空的初始状态含义
                 ArrayList<StaticWarning> introduced = getDiff(next_wr, cur_wr); // next - cur 暂时粗略划分为false类型/不像定义修复那样准确
                 fixed_all.addAll(fixed);
                 introduced_all.addAll(introduced);
                 next_wr = cur_wr;
-                long elapsedTime =  System.currentTimeMillis() - startTime; // 计算已经经过的时间
-
-                if (flag==Boolean.FALSE && elapsedTime * (commit_count-count) > 60 * 60 * 1000) { // 预估一下最大时间 大于30min的 并记录在日志里
-                    logger.warn(repo.getGithubLink()+" run will over 60 Min.  Please remove large c file. Skipping");
-                    return; // 跳出循环 并且不调用save | 如果使用break还会调用下面的save
-                }
+//                if (flag==Boolean.FALSE && elapsedTime * (commit_count-count) > 60 * 60 * 1000) { // 预估一下最大时间（单个commit耗时*总数）做timeout
+//                    logger.error(repo.getGithubLink()+" run will over 60 Min.  Please remove large c file. Skipping");
+//                    return; // 跳出循环 并且不调用save | 如果使用break还会调用下面的save
+//                } 实现了cppcheck等二进制调用超时控制
             }
         }catch (DocumentException e){
-            logger.error("Check "+tempDir + repo.getGithubName() + "/cppcheck_log"+"，无法解析报告（可能没有c文件）"); // 不会中断
+            logger.error("Check "+tempDir + repoName + "/cppcheck_log"+", can't parse report."); // 不会中断
         }catch (NullPointerException e){
-            e.printStackTrace();
-            logger.error("Check "+tempDir + repo.getGithubName()+"/, 无法check out（可能没有.git目录或分支不是master） ");
+            logger.error("Check "+tempDir + repoName+"/, can't git checkout（可能没有.git目录或分支不是 " + repo.getBranch());
         }
+//                long elapsedTime =  System.currentTimeMillis() - startTime; // 计算已经经过的时间
         introduced_all.removeAll(fixed_all); // 这里intro - fixed 操作：考虑到某个bug在未来被fix了fixed会记录但introduced_all仍然保留着。
-        if (!fixed_all.isEmpty() || !introduced_all.isEmpty()) {
-            save(repo.getGithubName(), introduced_all, fixed_all);
-        }
+        if (!fixed_all.isEmpty() || !introduced_all.isEmpty()) { //是否保存的条件，同时前面会出现解析异常和git空指针的异常 此处选择全部认为
+            save(repoName, introduced_all, fixed_all);
+            logger.warn(repoName + " generate fixed: " + fixed_all.size()+" introduced: " + introduced_all.size());
+        }else  logger.warn(repoName + " have no fixed or introduced warning.");
+
+        logger.warn(repoName + " runs for "+ (System.currentTimeMillis() - startTime)/1000 + " seconds.\n\n\n");
     }
 
 
     public void save(String repoName, ArrayList<StaticWarning> introduced_all, ArrayList<StaticWarning> fixed_all) throws IOException {
         // 将ArrayList转换为JSON
-//        if(count%100 != 0) return; // 每100个count 保存一次 //未实现每50个commit保存一次
+//        if(count%100 != 0) return; //未实现每100个commit保存一次
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        String jsonStr_fixed = null;
-        String jsonStr_introduced = null;
+
         //这里可以添加判断fixed中tool_name来确定TypeToken
         Type CppcheckType = new TypeToken<ArrayList<WarningCppcheck>>() {
         }.getType();
-        jsonStr_fixed = gson.toJson(fixed_all, CppcheckType);
-        jsonStr_introduced = gson.toJson(introduced_all, CppcheckType);
-        logger.warn(repoName + " Cppcheck generate fixed: " + fixed_all.size());
-        logger.warn(repoName + " Cppcheck generate introduced: " + introduced_all.size());
+        String jsonStr_fixed = gson.toJson(fixed_all, CppcheckType);
+        String jsonStr_introduced = gson.toJson(introduced_all, CppcheckType);
         // 将JSON保存到文件
 //        String jsonPath_fixed = "GeneratedDataset/ActionableWarning/" + repoName+"_commit_"+(count-100)+"to"+count+".json";
-        String jsonPath_fixed = "GeneratedDataset/ActionableWarning/" + repoName+".json";
-        String jsonPath_introduced = "GeneratedDataset/NonActionableWarning/" + repoName+".json";
+        String jsonPath_fixed = dataSetDir + repoName+".json";
+        String jsonPath_introduced = dataSetDir2 + repoName+".json";
         toJsonFile(jsonPath_fixed, jsonStr_fixed);
         toJsonFile(jsonPath_introduced, jsonStr_introduced);
-        introduced_all.clear();
-        fixed_all.clear();
+//        introduced_all.clear(); // 不需要清除
+//        fixed_all.clear();
     }
 
 
@@ -176,7 +206,7 @@ public class GithubTraverser {
         File fjson = new File(jsonPath);
         File parentDir = fjson.getParentFile();
         if (parentDir != null && !parentDir.exists()) {
-            parentDir.mkdirs();
+            boolean exit = parentDir.mkdirs();
         }
         FileWriter writer = new FileWriter(fjson);
         writer.write(jsonStr);

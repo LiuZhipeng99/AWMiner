@@ -35,8 +35,8 @@ public class GenerateCppcheckXML {
 //        Set cppcheck command
         int cpuCores = Runtime.getRuntime().availableProcessors();
         List<String> os_command = List.of(new String[]{"cppcheck", "-j", String.valueOf(cpuCores),
-                "-i","lib","-i","assets","-i","images","-i","qlxgbe","-i","zydis",
-                "-i","packet-rrc.c","-i","u8g2_fonts.c","-i","miniaudio.c","-i","u8g_font_data.c","-i","udivmodti4_test.c","-i","transliteration_data.c","-i","dataframe.addons.tests.c",
+                "-i","lib","-i","assets","-i","images","-i","data_file.c","-i","ql_fw.c","-i","Zydis.c", "-i","packet-rrc.c","-i","u8g2_fonts.c",
+                "-i","miniaudio.c","-i","u8g_font_data.c","-i","udivmodti4_test.c","-i","transliteration_data.c","-i","dataframe.addons.tests.c",
                 "-i","sqlcipher.c","-i","sqlite3-binding.c","-i","sqlite3.c","-i","sqlitestudio.c","-i","wxsqlite3.c",// 通配符？
                 "--enable=warning", "--xml", scanFilesPath});
 

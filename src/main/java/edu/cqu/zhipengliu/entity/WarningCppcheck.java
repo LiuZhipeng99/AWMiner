@@ -56,7 +56,7 @@ public class WarningCppcheck extends StaticWarning implements Cloneable{ // exte
         WarningCppcheck other = (WarningCppcheck) obj;
 //      AWR paper
 //        return Objects.equals(this.hash_id, other.getHash_id()) && sim(warning_message,other.warning_message) ;
-        return Objects.equals(this.hash_id, other.getHash_id()) ;
+        return Objects.equals(this.hash_id, other.getHash_id()) ; // 后续发现没有考虑移除文件导致的警告修复（后续可以结合commit标题和diff是否有remove/rename进行判断）。 如果在这简单的排除filepath容易使一个警告和其他文件相同msg的警告有相同特征，即使这个警告被修复，仍然被认为还在。
     }
     public String computeHash() {
         Pattern numPattern = Pattern.compile("\\(:\\)[0-9]+");
