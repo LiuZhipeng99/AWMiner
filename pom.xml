@@ -7,6 +7,13 @@
     <groupId>edu.cqu.zhipengliu</groupId>
     <artifactId>SAWMiner</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+        <!-- Add other repositories if necessary -->
+    </repositories>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -132,6 +139,19 @@
                     </execution>
                 </executions>
             </plugin>
+
+<!--            <plugin>-->
+<!--                <groupId>org.codenarc</groupId>-->
+<!--                <artifactId>codenarc-maven-plugin</artifactId>-->
+<!--                <version>2.4</version>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>codenarc</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 </project>

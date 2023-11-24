@@ -7,17 +7,17 @@ def read_json_files(folder_path):
     for filename in os.listdir(folder_path):
         if filename.endswith('.json'):
             file_path = os.path.join(folder_path, filename)
-            with open(file_path, 'r') as file:
+            with open(file_path, 'r', encoding='utf-8') as file:
                 try:
                     data = json.load(file)
                     json_data.extend(data)
                 except json.JSONDecodeError:
-                    print(f"edu.cqu.zhipeng.parser.Error decoding JSON in file: {file_path}")
+                    print(f"Error decoding JSON in file: {file_path}")
     
     return json_data
 
 
-folder_ = 'GeneratedDataset/V1_TMP/GeneratedDataset-cqu1/'  # 替换为实际的GeneratedDataset文件夹路径
+folder_ = '../GeneratedDataset/V1_TMP/GeneratedDataset-cqu1/'  # 替换为实际的GeneratedDataset文件夹路径
 
 
 
