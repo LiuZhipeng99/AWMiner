@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Possible null pointer dereference: Ey",
+    "cwe": "476",
+    "file_path": "tmp_github/rnnoise/src/denoise.c",
+    "line_number": "292",
+    "column_number": "56",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/xiph/rnnoise.git",
+    "commit_id": "261d773f5b4ef2ab0560995c0c84566950500b91",
+    "commit_id_repair": "c7277fa47c8dfdac3c3f2b20c141bd4d06bd4df8",
+    "warning_message": "Possible null pointer dereference: Ey",
+    "hash_id": "ea0ee8f0affcab63dab1d200fe76605456648b875996d6497e982c6eb32cd2c5",
+    "bug_severity": "warning",
+    "bug_type": "nullPointer"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Possible null pointer dereference: Ey",
+    "cwe": "476",
+    "file_path": "tmp_github/rnnoise/src/denoise.c",
+    "line_number": "358",
+    "column_number": "25",
+    "info": "Calling function \u0027frame_analysis\u0027, 3rd argument \u0027NULL\u0027 value is 0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/xiph/rnnoise.git",
+    "commit_id": "261d773f5b4ef2ab0560995c0c84566950500b91",
+    "commit_id_repair": "c7277fa47c8dfdac3c3f2b20c141bd4d06bd4df8",
+    "warning_message": "Possible null pointer dereference: Ey",
+    "hash_id": "fedd6492038d9022263e6bfea275aac1af1df5b4703f4cc2dc370f8fdfa5d054",
+    "bug_severity": "warning",
+    "bug_type": "nullPointer"
+  }
+]

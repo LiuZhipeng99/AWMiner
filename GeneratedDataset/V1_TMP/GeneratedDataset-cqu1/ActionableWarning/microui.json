@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Identical inner \u0027if\u0027 condition is always true (outer condition is \u0027~opt\u0026MU_OPT_NOTITLE\u0027 and inner condition is \u0027~opt\u0026MU_OPT_NOTITLE\u0027).",
+    "cwe": "398",
+    "file_path": "tmp_github/microui/src/microui.c",
+    "line_number": "1087",
+    "column_number": "14",
+    "info": "identical inner condition: ~opt\u0026MU_OPT_NOTITLE",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/rxi/microui.git",
+    "commit_id": "c988730f1b744ce3c7169da8794e4d8dbd4ee777",
+    "commit_id_repair": "a7477e156e8843f32925b04463f4ad3ed916ebfd",
+    "warning_message": "Identical inner \u0027if\u0027 condition is always true.",
+    "hash_id": "50caf639400cbbaa0a7e810cc097cab0c230c5a666af68d6cd7b7afb6bf6d94f",
+    "bug_severity": "warning",
+    "bug_type": "identicalInnerCondition"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Identical inner \u0027if\u0027 condition is always true (outer condition is \u0027~opt\u0026MU_OPT_NOTITLE\u0027 and inner condition is \u0027~opt\u0026MU_OPT_NOTITLE\u0027).",
+    "cwe": "398",
+    "file_path": "tmp_github/microui/src/microui.c",
+    "line_number": "1083",
+    "column_number": "12",
+    "info": "outer condition: ~opt\u0026MU_OPT_NOTITLE",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/rxi/microui.git",
+    "commit_id": "c988730f1b744ce3c7169da8794e4d8dbd4ee777",
+    "commit_id_repair": "a7477e156e8843f32925b04463f4ad3ed916ebfd",
+    "warning_message": "Identical inner \u0027if\u0027 condition is always true.",
+    "hash_id": "a373d1fb24f4297c3748ec9c0279be5a747b0168fabe62802c7844e35d144f9e",
+    "bug_severity": "warning",
+    "bug_type": "identicalInnerCondition"
+  }
+]

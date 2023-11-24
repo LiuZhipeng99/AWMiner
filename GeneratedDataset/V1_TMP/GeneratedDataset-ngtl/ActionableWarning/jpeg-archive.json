@@ -1,0 +1,52 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Common realloc mistake: \u0027nargv\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/jpeg-archive/src/commander.c",
+    "line_number": "147",
+    "column_number": "7",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/danielgtaylor/jpeg-archive.git",
+    "commit_id": "3893faa78f8d5972d97ff76b842f20cde388e804",
+    "commit_id_repair": "ae6df69a3bbed0d25b3544da0c6682e53a749745",
+    "warning_message": "Common realloc mistake: \u0027nargv\u0027 nulled but not freed upon failure",
+    "hash_id": "481e40c3e3869b9944420186ae4b1c8a40862d5957b67a0a2a484467ad885e6c",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027!buffer\u0027 is redundant or there is possible null pointer dereference: buffer.",
+    "cwe": "476",
+    "file_path": "tmp_github/jpeg-archive/src/util.c",
+    "line_number": "31",
+    "column_number": "6",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/danielgtaylor/jpeg-archive.git",
+    "commit_id": "e2d17751f08a18c317cfeb148655d961f7f713ce",
+    "commit_id_repair": "0b4f5a29b10bdc686992e43baab1131c383aa22e",
+    "warning_message": "Either the condition \u0027!buffer\u0027 is redundant or there is possible null pointer dereference: buffer.",
+    "hash_id": "efbef9e676d96a3694e79195788c7ca0338ac04feff4add9ac909e5bf6dab10d",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027!buffer\u0027 is redundant or there is possible null pointer dereference: buffer.",
+    "cwe": "476",
+    "file_path": "tmp_github/jpeg-archive/src/util.c",
+    "line_number": "32",
+    "column_number": "9",
+    "info": "Assuming that condition \u0027!buffer\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/danielgtaylor/jpeg-archive.git",
+    "commit_id": "e2d17751f08a18c317cfeb148655d961f7f713ce",
+    "commit_id_repair": "0b4f5a29b10bdc686992e43baab1131c383aa22e",
+    "warning_message": "Either the condition \u0027!buffer\u0027 is redundant or there is possible null pointer dereference: buffer.",
+    "hash_id": "17ba12e219de8a24ea4ba79ee972833b68fdbeccc03d6b93304d828b662331b9",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

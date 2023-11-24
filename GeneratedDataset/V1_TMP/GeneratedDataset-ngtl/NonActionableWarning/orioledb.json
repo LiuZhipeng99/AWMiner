@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: sharedRootInfo",
+    "cwe": "457",
+    "file_path": "tmp_github/orioledb/src/tableam/descr.c",
+    "line_number": "798",
+    "column_number": "40",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/orioledb/orioledb.git",
+    "commit_id": "5af1b746f7e50eeb11ec540f3e9a13598aca47a7",
+    "commit_id_repair": "1c2fd3da9db589e01afdf7d07e8f2d04adffbf62",
+    "warning_message": "Uninitialized variable: sharedRootInfo",
+    "hash_id": "7d429a712ba6f3ab6a07e4243555b4697802e41d4feeefe6430b7b2f4702c5d3",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: relOids",
+    "cwe": "457",
+    "file_path": "tmp_github/orioledb/src/btree/undo.c",
+    "line_number": "713",
+    "column_number": "49",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/orioledb/orioledb.git",
+    "commit_id": "4ab268531ee0837d2991b9e02494ba03779c2c50",
+    "commit_id_repair": "676813066d026fa552355192972fb2ee95d222ae",
+    "warning_message": "Uninitialized variable: relOids",
+    "hash_id": "3d5eb920ba872a37295eb084aae0eb24a76ffbde1d4e5a08d6dbf1a86678e534",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

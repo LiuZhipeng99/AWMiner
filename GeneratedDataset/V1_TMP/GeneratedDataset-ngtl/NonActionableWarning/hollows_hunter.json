@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: \u0026time_info",
+    "cwe": "457",
+    "file_path": "tmp_github/hollows_hunter/util/time_util.cpp",
+    "line_number": "14",
+    "column_number": "21",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/hasherezade/hollows_hunter.git",
+    "commit_id": "2d04d09028babdc58edf938b7749f46062eb6c25",
+    "commit_id_repair": "27fd777276b167b5ecc56750acf38d558ce96a13",
+    "warning_message": "Uninitialized variable: \u0026time_info",
+    "hash_id": "e6a82d72188fc6687822457d070d432bab9587a58d295a423d641446f3e8a37f",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

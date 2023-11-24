@@ -1,0 +1,47 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "The obsolete function \u0027alloca\u0027 is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function \u0027alloca\u0027 is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca).",
+    "file_path": "tmp_github/glusterfs/xlators/cluster/afr/src/afr-self-heal-entry.c",
+    "line_number": "65",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/gluster/glusterfs.git",
+    "commit_id": "9ecbd69127d373ac000e9e1be00c1829e49e64a4",
+    "commit_id_repair": "268faabed00995537394c04ac168c018167fbe27",
+    "warning_message": "Obsolete function \u0027alloca\u0027 called. In C99 and later it is recommended to use a variable length array instead.",
+    "hash_id": "4624e57031b5743a2ccefa1ea7bd06e4772d5b42e9fa05209242c7114e6d265b",
+    "bug_severity": "warning",
+    "bug_type": "allocaCalled"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "The obsolete function \u0027alloca\u0027 is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function \u0027alloca\u0027 is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca).",
+    "file_path": "tmp_github/glusterfs/xlators/cluster/afr/src/afr-self-heald.c",
+    "line_number": "890",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/gluster/glusterfs.git",
+    "commit_id": "9ecbd69127d373ac000e9e1be00c1829e49e64a4",
+    "commit_id_repair": "268faabed00995537394c04ac168c018167fbe27",
+    "warning_message": "Obsolete function \u0027alloca\u0027 called. In C99 and later it is recommended to use a variable length array instead.",
+    "hash_id": "1c7ff40fca505f8200d8a720559bdbd8249075ac39ac692633b61c7ab170d26a",
+    "bug_severity": "warning",
+    "bug_type": "allocaCalled"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "The obsolete function \u0027alloca\u0027 is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function \u0027alloca\u0027 is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca).",
+    "file_path": "tmp_github/glusterfs/xlators/cluster/afr/src/afr-self-heald.c",
+    "line_number": "935",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/gluster/glusterfs.git",
+    "commit_id": "9ecbd69127d373ac000e9e1be00c1829e49e64a4",
+    "commit_id_repair": "268faabed00995537394c04ac168c018167fbe27",
+    "warning_message": "Obsolete function \u0027alloca\u0027 called. In C99 and later it is recommended to use a variable length array instead.",
+    "hash_id": "1c7ff40fca505f8200d8a720559bdbd8249075ac39ac692633b61c7ab170d26a",
+    "bug_severity": "warning",
+    "bug_type": "allocaCalled"
+  }
+]

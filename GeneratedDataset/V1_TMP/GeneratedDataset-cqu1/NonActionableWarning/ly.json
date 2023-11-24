@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Common realloc mistake: \u0027name\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/ly/src/utils.c",
+    "line_number": "105",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fairyglade/ly.git",
+    "commit_id": "33934f3ab2124d8bc8b5e961219b79efffc4b1b8",
+    "commit_id_repair": "825544f7e2bf263c029d325a8af91c227d8c9793",
+    "warning_message": "Common realloc mistake: \u0027name\u0027 nulled but not freed upon failure",
+    "hash_id": "fda3b7d6ecbbcc84de2d1fe27adbf4c3cbb8a6f43c10e0e1fc75224d3addb126",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Resource leak: fp",
+    "cwe": "775",
+    "file_path": "tmp_github/Adafruit_Python_DHT/source/Raspberry_Pi_2/pi_2_mmio.c",
+    "line_number": "50",
+    "column_number": "7",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/adafruit/Adafruit_Python_DHT.git",
+    "commit_id": "a5acb6ab96e257077993cc1ac2a7aea3ad900c46",
+    "commit_id_repair": "b9209626d50375bad5b1bcc5c0270440d75f2653",
+    "warning_message": "Resource leak: fp",
+    "hash_id": "56f2c05a7dacf3599000ee55085cc10dd1e45c91b64b7889b050b2706116abba",
+    "bug_severity": "error",
+    "bug_type": "resourceLeak"
+  }
+]

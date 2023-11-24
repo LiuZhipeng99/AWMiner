@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found suspicious operator \u0027,\u0027, result is not used.",
+    "cwe": "398",
+    "file_path": "tmp_github/jansson/src/strconv.c",
+    "line_number": "91",
+    "column_number": "51",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/akheron/jansson.git",
+    "commit_id": "8f2298bad8f77a22efe0dc9a95676fae6c203e36",
+    "commit_id_repair": "db0213ae561156611eaa54dfeac0d6684c2f1883",
+    "warning_message": "Found suspicious operator \u0027,\u0027, result is not used.",
+    "hash_id": "efca7eb0a60dc1e3b521784a5c2a6863875e567818ce1aa90f1455abf2ba0e3f",
+    "bug_severity": "warning",
+    "bug_type": "constStatement"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: ret",
+    "cwe": "457",
+    "file_path": "tmp_github/jansson/src/strconv.c",
+    "line_number": "91",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/akheron/jansson.git",
+    "commit_id": "8f2298bad8f77a22efe0dc9a95676fae6c203e36",
+    "commit_id_repair": "db0213ae561156611eaa54dfeac0d6684c2f1883",
+    "warning_message": "Uninitialized variable: ret",
+    "hash_id": "26cd7f25d9a7529f081548e0e8aad113cd530dca0abef8783731ad06cabbd4b4",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Common realloc mistake: \u0027buf\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/jo/jo.c",
+    "line_number": "135",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/jpmens/jo.git",
+    "commit_id": "51fc1b289ce6ec9117b41c87f23646193970380a",
+    "commit_id_repair": "7d3965a663db327dc9ebc72f15de60f8b783d819",
+    "warning_message": "Common realloc mistake: \u0027buf\u0027 nulled but not freed upon failure",
+    "hash_id": "bbcd0057ebcba0586c6aac523451d6dd59179d6c24a47c5d058b5a69fcf9e781",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  }
+]

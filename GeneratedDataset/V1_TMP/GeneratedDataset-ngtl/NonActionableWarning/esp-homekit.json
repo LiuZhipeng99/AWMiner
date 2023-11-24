@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/esp-homekit/src/server.c",
+    "line_number": "3512",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/maximkulkin/esp-homekit.git",
+    "commit_id": "8225db03611b66e157c52b2705c2635bfb08e402",
+    "commit_id_repair": "fbfd93ef342d6d9dda5e0b440cf9369db18ecab7",
+    "warning_message": "syntax error",
+    "hash_id": "8fb88942de6dac629f21d288a66c02ff6089dcb7233d0968d3715b592c9adf5b",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

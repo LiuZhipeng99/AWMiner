@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "The obsolete function \u0027alloca\u0027 is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function \u0027alloca\u0027 is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca).",
+    "file_path": "tmp_github/vlmcsd/src/ntservice.c",
+    "line_number": "134",
+    "column_number": "50",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Wind4/vlmcsd.git",
+    "commit_id": "ce1dfa16b26a64dfe58d8e8154ce862cafe396d7",
+    "commit_id_repair": "e599080486478e219cd065e141d6de050a450c27",
+    "warning_message": "Obsolete function \u0027alloca\u0027 called. In C99 and later it is recommended to use a variable length array instead.",
+    "hash_id": "ece852b62c0d3622ae7c767e645150bba6f05c99fc559b5e83c13e468cd5fc1f",
+    "bug_severity": "warning",
+    "bug_type": "allocaCalled"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "The obsolete function \u0027alloca\u0027 is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function \u0027alloca\u0027 is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca).",
+    "file_path": "tmp_github/vlmcsd/src/ntservice.c",
+    "line_number": "137",
+    "column_number": "30",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Wind4/vlmcsd.git",
+    "commit_id": "ce1dfa16b26a64dfe58d8e8154ce862cafe396d7",
+    "commit_id_repair": "e599080486478e219cd065e141d6de050a450c27",
+    "warning_message": "Obsolete function \u0027alloca\u0027 called. In C99 and later it is recommended to use a variable length array instead.",
+    "hash_id": "ece852b62c0d3622ae7c767e645150bba6f05c99fc559b5e83c13e468cd5fc1f",
+    "bug_severity": "warning",
+    "bug_type": "allocaCalled"
+  }
+]

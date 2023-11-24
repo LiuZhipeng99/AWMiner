@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/hyperkit/src/hyperkit.c",
+    "line_number": "1052",
+    "column_number": "52",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/moby/hyperkit.git",
+    "commit_id": "28c1d7e0ded2c2c757465a7c4c7c3f5de702a8f7",
+    "commit_id_repair": "9e2ad19068530f4e062c1de91e7716f0f047213d",
+    "warning_message": "syntax error",
+    "hash_id": "941d5fa1d8368d0359023b9f2f40351b0dd2d0de84b113591827ea146fd8691c",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

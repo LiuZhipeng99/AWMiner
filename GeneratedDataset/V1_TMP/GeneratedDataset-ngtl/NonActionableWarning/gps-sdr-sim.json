@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%u in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027signed int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/gps-sdr-sim/player/bladeplayer.c",
+    "line_number": "57",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/osqzss/gps-sdr-sim.git",
+    "commit_id": "dfd966f31504bd890b68d79b92087709d0df2030",
+    "commit_id_repair": "0bfbdc390c8d00288b266007f8862050e4895b1c",
+    "warning_message": "%u in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027signed int\u0027.",
+    "hash_id": "391629df36b4426fcbfd7660828851e3b754f2acefcd47864d74c2fd9063a7d3",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_uint"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%u in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027signed int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/gps-sdr-sim/player/bladeplayer.c",
+    "line_number": "66",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/osqzss/gps-sdr-sim.git",
+    "commit_id": "dfd966f31504bd890b68d79b92087709d0df2030",
+    "commit_id_repair": "0bfbdc390c8d00288b266007f8862050e4895b1c",
+    "warning_message": "%u in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027signed int\u0027.",
+    "hash_id": "391629df36b4426fcbfd7660828851e3b754f2acefcd47864d74c2fd9063a7d3",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_uint"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%u in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027signed int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/gps-sdr-sim/player/bladeplayer.c",
+    "line_number": "75",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/osqzss/gps-sdr-sim.git",
+    "commit_id": "dfd966f31504bd890b68d79b92087709d0df2030",
+    "commit_id_repair": "0bfbdc390c8d00288b266007f8862050e4895b1c",
+    "warning_message": "%u in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027signed int\u0027.",
+    "hash_id": "391629df36b4426fcbfd7660828851e3b754f2acefcd47864d74c2fd9063a7d3",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_uint"
+  }
+]

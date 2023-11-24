@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Redundant assignment of \u0027res\u0027 to itself.",
+    "cwe": "398",
+    "file_path": "tmp_github/python-midi/src/sequencer_alsa/sequencer_alsa_wrap.c",
+    "line_number": "2040",
+    "column_number": "11",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/vishnubob/python-midi.git",
+    "commit_id": "6eb5746930ee18b20b36da3d59a912bae79a1fb3",
+    "commit_id_repair": "bb089fe5568f0a4e91806e6fabf054700c9a81c6",
+    "warning_message": "Redundant assignment of \u0027res\u0027 to itself.",
+    "hash_id": "44f7a13f8207fa4ad6423bbcca3c5b5d0843e6ec16e68b5fa198eedc89835f24",
+    "bug_severity": "warning",
+    "bug_type": "selfAssignment"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Redundant assignment of \u0027res\u0027 to itself.",
+    "cwe": "398",
+    "file_path": "tmp_github/python-midi/src/sequencer_alsa/sequencer_alsa_wrap.c",
+    "line_number": "2043",
+    "column_number": "11",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/vishnubob/python-midi.git",
+    "commit_id": "6eb5746930ee18b20b36da3d59a912bae79a1fb3",
+    "commit_id_repair": "bb089fe5568f0a4e91806e6fabf054700c9a81c6",
+    "warning_message": "Redundant assignment of \u0027res\u0027 to itself.",
+    "hash_id": "44f7a13f8207fa4ad6423bbcca3c5b5d0843e6ec16e68b5fa198eedc89835f24",
+    "bug_severity": "warning",
+    "bug_type": "selfAssignment"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Redundant assignment of \u0027clientdata\u0027 to itself.",
+    "cwe": "398",
+    "file_path": "tmp_github/python-midi/src/sequencer_alsa/sequencer_alsa_wrap.c",
+    "line_number": "16534",
+    "column_number": "14",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/vishnubob/python-midi.git",
+    "commit_id": "6eb5746930ee18b20b36da3d59a912bae79a1fb3",
+    "commit_id_repair": "bb089fe5568f0a4e91806e6fabf054700c9a81c6",
+    "warning_message": "Redundant assignment of \u0027clientdata\u0027 to itself.",
+    "hash_id": "ed6ea8e2ba87626d96a6715a4fa8ab978f9b74866a6be0f443be4976068dabb4",
+    "bug_severity": "warning",
+    "bug_type": "selfAssignment"
+  }
+]

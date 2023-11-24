@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "printf format string requires 0 parameters but 1 is given.",
+    "cwe": "685",
+    "file_path": "tmp_github/loadlibrary/intercept/hook.c",
+    "line_number": "135",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/taviso/loadlibrary.git",
+    "commit_id": "7511a8adffbc03c2c92259f976943e26ddb809c3",
+    "commit_id_repair": "fc38e3021486a2180ac63b725d1658d7694d7753",
+    "warning_message": "printf format string requires 0 parameters but 1 is given.",
+    "hash_id": "42c57279580750556c15495f1b7ab6f3362d25d78a6bebaedea2a35b3bf5149f",
+    "bug_severity": "warning",
+    "bug_type": "wrongPrintfScanfArgNum"
+  }
+]

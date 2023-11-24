@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027i\u003e0\u0027 is redundant or the array \u0027bits[112]\u0027 is accessed at index -1, which is out of bounds.",
+    "cwe": "786",
+    "file_path": "tmp_github/dump1090/dump1090.c",
+    "line_number": "1414",
+    "column_number": "33",
+    "info": "Negative array index",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antirez/dump1090.git",
+    "commit_id": "c2e79d4555d6692956b6fdaa2c3660db0d3620b2",
+    "commit_id_repair": "11d8db0d38b833e2b2d10cb406bc582e2380f04d",
+    "warning_message": "Either the condition \u0027i\u003e0\u0027 is redundant or the array \u0027bits[112]\u0027 is accessed at index -1, which is out of bounds.",
+    "hash_id": "51d92ae642ee4222f0645db49d913c518d209403457694bc22019316115066a8",
+    "bug_severity": "warning",
+    "bug_type": "negativeIndex"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027i\u003e0\u0027 is redundant or the array \u0027bits[112]\u0027 is accessed at index -1, which is out of bounds.",
+    "cwe": "786",
+    "file_path": "tmp_github/dump1090/dump1090.c",
+    "line_number": "1413",
+    "column_number": "19",
+    "info": "Assuming that condition \u0027i\u003e0\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antirez/dump1090.git",
+    "commit_id": "c2e79d4555d6692956b6fdaa2c3660db0d3620b2",
+    "commit_id_repair": "11d8db0d38b833e2b2d10cb406bc582e2380f04d",
+    "warning_message": "Either the condition \u0027i\u003e0\u0027 is redundant or the array \u0027bits[112]\u0027 is accessed at index -1, which is out of bounds.",
+    "hash_id": "7eec7a8678f89e3758b0a5e8826b593c7aeff643975369a97fb64ea21edb0f60",
+    "bug_severity": "warning",
+    "bug_type": "negativeIndex"
+  }
+]

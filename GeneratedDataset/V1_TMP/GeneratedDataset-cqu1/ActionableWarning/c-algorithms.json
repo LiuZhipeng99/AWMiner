@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/c-algorithms/src/rb-tree.c",
+    "line_number": "500",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fragglet/c-algorithms.git",
+    "commit_id": "d880c1b6feb7e45ef83a599295dab64b1d8a31f5",
+    "commit_id_repair": "d6bc967330a3fe3f8ad55079b176aa1e1acc92d4",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "464e88cfb0a2839d2ec6421944c0d74e1f40ad03514242e6e773dcba20c1ab68",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/c-algorithms/algorithms/queue/queue.c",
+    "line_number": "62",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fragglet/c-algorithms.git",
+    "commit_id": "36840ebc4472ac7a29db73d80ea4129461d4f6ce",
+    "commit_id_repair": "4e0707d05ae8fd959a61960ca09f959123e2bbbc",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "57dbd90faf956cc3ee0602ffb181139737056a9df4dfc63a996ff26e3cb8ecc6",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: queue",
+    "cwe": "401",
+    "file_path": "tmp_github/c-algorithms/algorithms/queue/queue.c",
+    "line_number": "63",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fragglet/c-algorithms.git",
+    "commit_id": "36840ebc4472ac7a29db73d80ea4129461d4f6ce",
+    "commit_id_repair": "4e0707d05ae8fd959a61960ca09f959123e2bbbc",
+    "warning_message": "Memory leak: queue",
+    "hash_id": "30c8860f37f4c182140f7eb188e8179e3c5529a473ec1d665f7c2c6d7e37abef",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]

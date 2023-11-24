@@ -1,0 +1,19 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027currenthash\u0027 is redundant or there is possible null pointer dereference: hash.",
+    "cwe": "476",
+    "file_path": "tmp_github/passcat/passcat/libwinscp.cpp",
+    "line_number": "144",
+    "column_number": "22",
+    "info": "Calling function \u0027decrypt_char\u0027, 1st argument \u0027currenthash\u0027 value is 0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/twelvesec/passcat.git",
+    "commit_id": "2282c031f49d3900bb3027e2f75d325ba69895a2",
+    "commit_id_repair": "3a7819bba5b1c0267db341b2960199e58bbea3bf",
+    "warning_message": "Either the condition \u0027currenthash\u0027 is redundant or there is possible null pointer dereference: hash.",
+    "hash_id": "60449d993bef7d4ca0050fb11486ad8499eb5bcc42a95a2ca903d0086520aed9",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

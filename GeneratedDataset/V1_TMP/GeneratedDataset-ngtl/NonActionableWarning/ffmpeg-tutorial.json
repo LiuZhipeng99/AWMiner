@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027dst_data\u0027 is redundant or there is possible null pointer dereference: dst_data.",
+    "cwe": "476",
+    "file_path": "tmp_github/ffmpeg-tutorial/tutorial07.c",
+    "line_number": "378",
+    "column_number": "24",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/mpenkov/ffmpeg-tutorial.git",
+    "commit_id": "f4ae68f11ead513b8f94419e70a8f4139fd3b52e",
+    "warning_message": "Either the condition \u0027dst_data\u0027 is redundant or there is possible null pointer dereference: dst_data.",
+    "hash_id": "4b203195e594c47b7a678ada8ad0ba162d3338872195d6be76b66bc15db48472",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027dst_data\u0027 is redundant or there is possible null pointer dereference: dst_data.",
+    "cwe": "476",
+    "file_path": "tmp_github/ffmpeg-tutorial/tutorial07.c",
+    "line_number": "385",
+    "column_number": "6",
+    "info": "Assuming that condition \u0027dst_data\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/mpenkov/ffmpeg-tutorial.git",
+    "commit_id": "f4ae68f11ead513b8f94419e70a8f4139fd3b52e",
+    "warning_message": "Either the condition \u0027dst_data\u0027 is redundant or there is possible null pointer dereference: dst_data.",
+    "hash_id": "c4cdf5636bbd49908796ad9f62cee349dc6773dbc98ce8bc90245c93e3a6b948",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

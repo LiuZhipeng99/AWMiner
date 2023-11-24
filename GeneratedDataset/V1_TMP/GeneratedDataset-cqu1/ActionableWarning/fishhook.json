@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: info",
+    "cwe": "457",
+    "file_path": "tmp_github/fishhook/fishhook.c",
+    "line_number": "97",
+    "column_number": "102",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/facebook/fishhook.git",
+    "commit_id": "6da9db8376aefd6c93aa781963129ccc9fe9cd77",
+    "commit_id_repair": "31e51827675cbdee0a8ed2533d1dd700ea4c8306",
+    "warning_message": "Uninitialized variable: info",
+    "hash_id": "9967f4ac2bf943ab69a611d49a0c58db09894151ff072f816a1196572735325e",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: info",
+    "cwe": "457",
+    "file_path": "tmp_github/fishhook/fishhook.c",
+    "line_number": "93",
+    "column_number": "77",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/facebook/fishhook.git",
+    "commit_id": "6da9db8376aefd6c93aa781963129ccc9fe9cd77",
+    "commit_id_repair": "31e51827675cbdee0a8ed2533d1dd700ea4c8306",
+    "warning_message": "Uninitialized variable: info",
+    "hash_id": "9967f4ac2bf943ab69a611d49a0c58db09894151ff072f816a1196572735325e",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: new_entry",
+    "cwe": "401",
+    "file_path": "tmp_github/fishhook/fishhook.c",
+    "line_number": "50",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/facebook/fishhook.git",
+    "commit_id": "becd6c43f4891011676fc283b8b4afaf767747a2",
+    "commit_id_repair": "823e2eb9dbf450d7a38b00bc31aa08d18b834ec9",
+    "warning_message": "Memory leak: new_entry",
+    "hash_id": "c2db6070a37f0f460c6ad831db769a46aeb0a037e1ac36bf5e87eba2fa4854eb",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]

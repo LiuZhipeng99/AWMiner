@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Member variable \u0027AugmentedImageApplication::asset_manager_\u0027 is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.",
+    "cwe": "398",
+    "file_path": "tmp_github/arcore-android-sdk/samples/augmented_image_c/app/src/main/cpp/augmented_image_application.h",
+    "line_number": "41",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/google-ar/arcore-android-sdk.git",
+    "commit_id": "525add12a76c601fd357f2fcac687155e536a4c4",
+    "commit_id_repair": "2ac280b17cba4a5295519ecd59bb25dff8bf45ce",
+    "warning_message": "Member variable \u0027AugmentedImageApplication::asset_manager_\u0027 is not initialized in the constructor.",
+    "hash_id": "823f560623cbdd0216228fa1234bf3379d5f107d654c5c127165eeeb17a5e40f",
+    "bug_severity": "warning",
+    "bug_type": "uninitMemberVar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Member variable \u0027HelloArApplication::asset_manager_\u0027 is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.",
+    "cwe": "398",
+    "file_path": "tmp_github/arcore-android-sdk/samples/hello_ar_c/app/src/main/cpp/hello_ar_application.h",
+    "line_number": "43",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/google-ar/arcore-android-sdk.git",
+    "commit_id": "525add12a76c601fd357f2fcac687155e536a4c4",
+    "commit_id_repair": "2ac280b17cba4a5295519ecd59bb25dff8bf45ce",
+    "warning_message": "Member variable \u0027HelloArApplication::asset_manager_\u0027 is not initialized in the constructor.",
+    "hash_id": "f3a69e6433cc8ac714978484f2df3e97dd03e74ce93d302b90c1b8bb9df616bf",
+    "bug_severity": "warning",
+    "bug_type": "uninitMemberVar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Member variable \u0027BackgroundRenderer::transformed_uvs_\u0027 is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.",
+    "cwe": "398",
+    "file_path": "tmp_github/arcore-android-sdk/samples/cloud_anchor_c/app/src/main/cpp/background_renderer.h",
+    "line_number": "33",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/google-ar/arcore-android-sdk.git",
+    "commit_id": "a87eded256510dff6067283e522c368a3c2694ad",
+    "commit_id_repair": "25b4589b55c02344cee5fd5722b06202c8b8776d",
+    "warning_message": "Member variable \u0027BackgroundRenderer::transformed_uvs_\u0027 is not initialized in the constructor.",
+    "hash_id": "e9f9d5d0d7f0cc77a1b9e199dc250ff2d1bc37765e4fdc7f4973869f27fd3f68",
+    "bug_severity": "warning",
+    "bug_type": "uninitMemberVar"
+  }
+]

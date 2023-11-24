@@ -16,11 +16,12 @@ def read_json_files(folder_path):
     
     return json_data
 
-ACW_folder_path = './GeneratedDataset/ActionableWarning'  # 替换为实际的文件夹路径
-NACW_folder_path = './GeneratedDataset/NonActionableWarning'
+
+folder_ = 'GeneratedDataset/V1_TMP/GeneratedDataset-cqu1/'  # 替换为实际的GeneratedDataset文件夹路径
 
 
 
-
-Acw_json_list = read_json_files(ACW_folder_path)
-print(len(Acw_json_list)) # ActionableWarning 目前总数
+Acw_json_list = read_json_files(folder_ + "/ActionableWarning")
+NAcw_json_list = read_json_files(folder_ + "/NonActionableWarning")
+print("AW & NAW") # ActionableWarning 目前总数
+print( len(Acw_json_list), len(NAcw_json_list)) # ActionableWarning 目前总数

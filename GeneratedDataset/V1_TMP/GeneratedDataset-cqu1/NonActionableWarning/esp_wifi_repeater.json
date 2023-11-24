@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/esp_wifi_repeater/user/rboot-ota.c",
+    "line_number": "208",
+    "column_number": "14",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/martin-ger/esp_wifi_repeater.git",
+    "commit_id": "a14c93b40fe97f3f0363206f8ea9b31f3b59283c",
+    "commit_id_repair": "24e7df286427b281f1ab7803b2a09a389cc9cfa6",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "d5407f83bd518b9e59f2bbfc29ee0ce4da4523df2c8596f05dc1712e61d366af",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  }
+]

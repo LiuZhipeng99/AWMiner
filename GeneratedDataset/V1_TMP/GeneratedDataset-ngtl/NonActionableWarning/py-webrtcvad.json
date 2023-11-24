@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/py-webrtcvad/cbits/pywebrtcvad.c",
+    "line_number": "33",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/wiseman/py-webrtcvad.git",
+    "commit_id": "cea3fd37a1a1fa4b28802c22b7ada5d158f5d805",
+    "commit_id_repair": "448a4c259e0968c0106c9040430072072748fa7a",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "f0e56db59132e3961b54ebed6cf03cc8c570d26001f238b1810b996581f95a1a",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/py-webrtcvad/cbits/pywebrtcvad.c",
+    "line_number": "55",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/wiseman/py-webrtcvad.git",
+    "commit_id": "cea3fd37a1a1fa4b28802c22b7ada5d158f5d805",
+    "commit_id_repair": "448a4c259e0968c0106c9040430072072748fa7a",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "f0e56db59132e3961b54ebed6cf03cc8c570d26001f238b1810b996581f95a1a",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/py-webrtcvad/cbits/pywebrtcvad.c",
+    "line_number": "80",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/wiseman/py-webrtcvad.git",
+    "commit_id": "cea3fd37a1a1fa4b28802c22b7ada5d158f5d805",
+    "commit_id_repair": "448a4c259e0968c0106c9040430072072748fa7a",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "f0e56db59132e3961b54ebed6cf03cc8c570d26001f238b1810b996581f95a1a",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If CRLF is a macro then please configure it.",
+    "file_path": "tmp_github/ngx_http_google_filter_module/src/ngx_http_google_response.c",
+    "line_number": "285",
+    "column_number": "38",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cuber/ngx_http_google_filter_module.git",
+    "commit_id": "6a84798a9ca7b678456eb969b4b6c4656bf2c6ea",
+    "commit_id_repair": "1dfd77e17e018ca8943619885563e7d077bdbb73",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If CRLF is a macro then please configure it.",
+    "hash_id": "75833cf6564a4e38294588b9bed383b06bc5c35f911ce42f2c80b88a5eab10cf",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

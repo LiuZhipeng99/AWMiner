@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027!event_thread\u0027 is redundant or there is possible null pointer dereference: event_thread.",
+    "cwe": "476",
+    "file_path": "tmp_github/Atlas/src/chassis-event-thread.c",
+    "line_number": "140",
+    "column_number": "24",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Qihoo360/Atlas.git",
+    "commit_id": "448265de6e8c13a0f879f7d85b0a3c5a43cf8949",
+    "commit_id_repair": "a7946e4b810eed001286e4b37ef92a27a5c1b965",
+    "warning_message": "Either the condition \u0027!event_thread\u0027 is redundant or there is possible null pointer dereference: event_thread.",
+    "hash_id": "47e1aa93800682d2f0605f5a1149cd9c988f99eea3665f069dafab51bde87c72",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027!event_thread\u0027 is redundant or there is possible null pointer dereference: event_thread.",
+    "cwe": "476",
+    "file_path": "tmp_github/Atlas/src/chassis-event-thread.c",
+    "line_number": "142",
+    "column_number": "6",
+    "info": "Assuming that condition \u0027!event_thread\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Qihoo360/Atlas.git",
+    "commit_id": "448265de6e8c13a0f879f7d85b0a3c5a43cf8949",
+    "commit_id_repair": "a7946e4b810eed001286e4b37ef92a27a5c1b965",
+    "warning_message": "Either the condition \u0027!event_thread\u0027 is redundant or there is possible null pointer dereference: event_thread.",
+    "hash_id": "8dad57ed04b23af308cd44371f2c28c958cfdf87378a81fdc515164a3b9a9167",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

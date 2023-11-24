@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027terminal_app\u003d\u003dNULL\u0027 is redundant or there is possible null pointer dereference: terminal_app.",
+    "cwe": "476",
+    "file_path": "tmp_github/ttygif/ttygif.c",
+    "line_number": "314",
+    "column_number": "16",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/icholy/ttygif.git",
+    "commit_id": "018a6f2573b8049a9e12b42ab2ff1f3675143000",
+    "commit_id_repair": "2c0fdb201b39d7065e5808a2d044ad21a5f02aea",
+    "warning_message": "Either the condition \u0027terminal_app\u003d\u003dNULL\u0027 is redundant or there is possible null pointer dereference: terminal_app.",
+    "hash_id": "a9a69c0096e65606bac870151971878db2e79b9a0e6109908d6ff24be18bea19",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027terminal_app\u003d\u003dNULL\u0027 is redundant or there is possible null pointer dereference: terminal_app.",
+    "cwe": "476",
+    "file_path": "tmp_github/ttygif/ttygif.c",
+    "line_number": "311",
+    "column_number": "22",
+    "info": "Assuming that condition \u0027terminal_app\u003d\u003dNULL\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/icholy/ttygif.git",
+    "commit_id": "018a6f2573b8049a9e12b42ab2ff1f3675143000",
+    "commit_id_repair": "2c0fdb201b39d7065e5808a2d044ad21a5f02aea",
+    "warning_message": "Either the condition \u0027terminal_app\u003d\u003dNULL\u0027 is redundant or there is possible null pointer dereference: terminal_app.",
+    "hash_id": "f217383f76a0c5211bce724da60e73fe6652f7665d1143f45d98217ba8e10111",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

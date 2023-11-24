@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Unmatched \u0027}\u0027. Configuration: \u0027\u0027.",
+    "file_path": "tmp_github/magspoof/magspoof.c",
+    "line_number": "34",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/samyk/magspoof.git",
+    "commit_id": "ea2c359e8c8f8f22216d29fb0d52337096446d7f",
+    "commit_id_repair": "2ae1ff0241bf765503ed55247988cc65466d2b7a",
+    "warning_message": "Unmatched \u0027}\u0027. Configuration: \u0027\u0027.",
+    "hash_id": "df30c8a75a38de442550b696b4a08489e1ec4834278d6eb0c2ff39afabbde1fe",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

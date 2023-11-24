@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: fwd_ptr-\u003edata",
+    "cwe": "457",
+    "file_path": "tmp_github/Reading-and-comprehense-linux-Kernel-network-protocol-stack/linux-net-kernel/net/ipv4/netfilter/nf_sfc50_l_data.c",
+    "line_number": "191",
+    "column_number": "15",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/y123456yz/Reading-and-comprehense-linux-Kernel-network-protocol-stack.git",
+    "commit_id": "56bbdbe282a3b2b84fadc311fde03fbf04580afd",
+    "commit_id_repair": "0d9d5288d576f4524372a0d96a5b32a7a41b8965",
+    "warning_message": "Uninitialized variable: fwd_ptr-\u003edata",
+    "hash_id": "56862b09a79897ecf821fd4ac4ca92c97a722d5eb7c7982b7de4f62ae8180584",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: cache_ptr-\u003edst",
+    "cwe": "457",
+    "file_path": "tmp_github/Reading-and-comprehense-linux-Kernel-network-protocol-stack/linux-net-kernel/net/ipv4/netfilter/nf_sfc50_l_data.c",
+    "line_number": "364",
+    "column_number": "17",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/y123456yz/Reading-and-comprehense-linux-Kernel-network-protocol-stack.git",
+    "commit_id": "56bbdbe282a3b2b84fadc311fde03fbf04580afd",
+    "commit_id_repair": "0d9d5288d576f4524372a0d96a5b32a7a41b8965",
+    "warning_message": "Uninitialized variable: cache_ptr-\u003edst",
+    "hash_id": "f02a10355c087213ef42813c2a70499a1f53f7b9c4e87cacddd7ca920c8969ad",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: fwd_ptr-\u003edata",
+    "cwe": "457",
+    "file_path": "tmp_github/Reading-and-comprehense-linux-Kernel-network-protocol-stack/linux-net-kernel/net/ipv4/netfilter/nf_sfc50_l_data.c",
+    "line_number": "878",
+    "column_number": "41",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/y123456yz/Reading-and-comprehense-linux-Kernel-network-protocol-stack.git",
+    "commit_id": "56bbdbe282a3b2b84fadc311fde03fbf04580afd",
+    "commit_id_repair": "0d9d5288d576f4524372a0d96a5b32a7a41b8965",
+    "warning_message": "Uninitialized variable: fwd_ptr-\u003edata",
+    "hash_id": "56862b09a79897ecf821fd4ac4ca92c97a722d5eb7c7982b7de4f62ae8180584",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

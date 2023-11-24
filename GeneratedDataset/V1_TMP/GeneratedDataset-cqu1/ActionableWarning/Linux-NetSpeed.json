@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "The code contains unhandled character(s) (character code\u003d194). Neither unicode nor extended ascii is supported.",
+    "file_path": "tmp_github/Linux-NetSpeed/bbr/centos/tcp_nanqinlang.c",
+    "line_number": "30",
+    "column_number": "52",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Chikage0o0/Linux-NetSpeed.git",
+    "commit_id": "cecaf07c19f8712fdbd0747222c4cba81189e176",
+    "commit_id_repair": "c67c3d206919e93e45e7af4b40f1bad93e6f866a",
+    "warning_message": "The code contains unhandled character(s) (character code\u003d194). Neither unicode nor extended ascii is supported.",
+    "hash_id": "008d97d7f49425c111796249edade15b22baa3d06d6099e14cfd44694a3b20cf",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

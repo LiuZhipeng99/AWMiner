@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If ENABLE_TIMEOUT is a macro then please configure it.",
+    "file_path": "tmp_github/MBE/src/lab01/lab1A.c",
+    "line_number": "20",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/RPISEC/MBE.git",
+    "commit_id": "116892ebdac254edf8d1a26bceb5f5844007e189",
+    "commit_id_repair": "597478ab6c20815919f14888fa770301f89a4521",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If ENABLE_TIMEOUT is a macro then please configure it.",
+    "hash_id": "96e607a961d3ce71b91ffb4e6d3d613fd0036389294faf099b52a95962ee9480",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variables: trigger.node, trigger.session, trigger.db, trigger.converted_db, trigger.conversion_txnid, trigger.request, trigger.reply, trigger.progress, trigger.txn_forward, trigger.created, trigger.timeout_msec, trigger.read_only, trigger.role, trigger.id",
+    "cwe": "457",
+    "file_path": "tmp_github/ovs/ovsdb/ovsdb.c",
+    "line_number": "738",
+    "column_number": "37",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/openvswitch/ovs.git",
+    "commit_id": "172c935ed9a8332004fcc15fbf4ab43c9f5fe043",
+    "commit_id_repair": "07c27226ee96a3715126c50e1dbf6d8a1886b305",
+    "warning_message": "Uninitialized variables: trigger.node, trigger.session, trigger.db, trigger.converted_db, trigger.conversion_txnid, trigger.request, trigger.reply, trigger.progress, trigger.txn_forward, trigger.created, trigger.timeout_msec, trigger.read_only, trigger.role, trigger.id",
+    "hash_id": "9af2c5f57a366b6ca2624d4b48fc18c452af4545d590a3612b886a4720158bce",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: t-\u003edb",
+    "cwe": "457",
+    "file_path": "tmp_github/ovs/ovsdb/trigger.c",
+    "line_number": "163",
+    "column_number": "16",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/openvswitch/ovs.git",
+    "commit_id": "172c935ed9a8332004fcc15fbf4ab43c9f5fe043",
+    "commit_id_repair": "07c27226ee96a3715126c50e1dbf6d8a1886b305",
+    "warning_message": "Uninitialized variable: t-\u003edb",
+    "hash_id": "e99a55fac3914cb46c17fc150833c94d0edfd0aa4b88c4a97418f41378212bf2",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: elem-\u003evalue",
+    "cwe": "457",
+    "file_path": "tmp_github/ovs/tests/test-rculist.c",
+    "line_number": "58",
+    "column_number": "39",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/openvswitch/ovs.git",
+    "commit_id": "bd14aa31e39b55d12a366c2c7a627358112f3fca",
+    "commit_id_repair": "c7da49bc64157f6dec7cfbf2d90a0217744310ee",
+    "warning_message": "Uninitialized variable: elem-\u003evalue",
+    "hash_id": "54cdf932e18b1c532f0c19ea302130ed58e6a162d291270b5b239be316c5369c",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

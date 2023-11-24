@@ -1,0 +1,48 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If LZO_EXTERN is a macro then please configure it.",
+    "file_path": "tmp_github/ics-openvpn/main/src/main/cpp/lzo/examples/precomp2.c",
+    "line_number": "45",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/schwabe/ics-openvpn.git",
+    "commit_id": "2b2dee6586048e62d066a3ea7b761649828b3aff",
+    "commit_id_repair": "597e73a7dacd52145df8b86e53eba743755330a0",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If LZO_EXTERN is a macro then please configure it.",
+    "hash_id": "1360fe059733a26b0f1f92963af6491eeebc067c7aeffbf61523bfe5539cfb0d",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If LZO_PRIVATE is a macro then please configure it.",
+    "file_path": "tmp_github/ics-openvpn/main/src/main/cpp/lzo/lzotest/wrap.h",
+    "line_number": "35",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/schwabe/ics-openvpn.git",
+    "commit_id": "2b2dee6586048e62d066a3ea7b761649828b3aff",
+    "commit_id_repair": "597e73a7dacd52145df8b86e53eba743755330a0",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If LZO_PRIVATE is a macro then please configure it.",
+    "hash_id": "8e26e33d316517441fab8f9a26e785827087ef1b9259d1bb3bb39b52179a8ea9",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: c",
+    "cwe": "457",
+    "file_path": "tmp_github/ics-openvpn/main/src/main/cpp/lzo/examples/lzopack.c",
+    "line_number": "98",
+    "column_number": "28",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/schwabe/ics-openvpn.git",
+    "commit_id": "2b2dee6586048e62d066a3ea7b761649828b3aff",
+    "commit_id_repair": "597e73a7dacd52145df8b86e53eba743755330a0",
+    "warning_message": "Uninitialized variable: c",
+    "hash_id": "c8fb3f7e8d2362e574bc9d61995a598e6bc644a848e0cd85b0dbea5a09d333df",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

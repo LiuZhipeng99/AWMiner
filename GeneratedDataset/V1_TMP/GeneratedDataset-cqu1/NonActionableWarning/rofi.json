@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If color_bold is a macro then please configure it.",
+    "file_path": "tmp_github/rofi/source/xrmoptions.c",
+    "line_number": "392",
+    "column_number": "22",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/davatorium/rofi.git",
+    "commit_id": "291d1ed16c66dc1c866a7c1e5eba257c0c4a1613",
+    "commit_id_repair": "0818fbd68b3f83941d15817f27f01b65c110c1fd",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If color_bold is a macro then please configure it.",
+    "hash_id": "c9fb8b23fb03378ad801a9d1776440405e573e285150c174891f04ab79e54f62",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

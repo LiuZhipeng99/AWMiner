@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: buf",
+    "cwe": "401",
+    "file_path": "tmp_github/xHook/docs/overview/code/libtest/jni/test.c",
+    "line_number": "12",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/iqiyi/xHook.git",
+    "commit_id": "17f59324697dd84c7d97aef7069561c92429251b",
+    "commit_id_repair": "efd958622251158a20a6592899f8750b95654eb7",
+    "warning_message": "Memory leak: buf",
+    "hash_id": "37814bab134047a346737d9155f6169d01a780924d4df3bbc42898561c4447b5",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]

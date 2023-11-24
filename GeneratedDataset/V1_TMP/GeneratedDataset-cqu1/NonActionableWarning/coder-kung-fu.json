@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%ld in format string (no. 1) requires \u0027long\u0027 but the argument type is \u0027unsigned long\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/coder-kung-fu/tests/cpu/test08/main.c",
+    "line_number": "39",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yanfeizhang/coder-kung-fu.git",
+    "commit_id": "54fe63c7694b3a0d083fd23ee5db039bc5c6961f",
+    "commit_id_repair": "815bcd087021c4471657d0e8d399ba171a284f98",
+    "warning_message": "%ld in format string (no. 1) requires \u0027long\u0027 but the argument type is \u0027unsigned long\u0027.",
+    "hash_id": "3bba1236a2b2f4bf5d78dc061003d7ad011e196bedc715bd1125b5714b126e9a",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "printf format string requires 5 parameters but 6 are given.",
+    "cwe": "685",
+    "file_path": "tmp_github/coder-kung-fu/tests/network/test04/main.c",
+    "line_number": "78",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yanfeizhang/coder-kung-fu.git",
+    "commit_id": "165c4dde9a4286b6065aae444f67557ec537ea21",
+    "commit_id_repair": "588e1f66f296e17da5640ec944a2840673834fbc",
+    "warning_message": "printf format string requires 5 parameters but 6 are given.",
+    "hash_id": "9006f9ef3e5749912ca21c8490e6b15cbcce5f20077e7fc5df1c5b589803adbc",
+    "bug_severity": "warning",
+    "bug_type": "wrongPrintfScanfArgNum"
+  }
+]

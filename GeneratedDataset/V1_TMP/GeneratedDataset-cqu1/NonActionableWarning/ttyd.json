@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: buffer",
+    "cwe": "457",
+    "file_path": "tmp_github/ttyd/src/utils.c",
+    "line_number": "193",
+    "column_number": "19",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/tsl0922/ttyd.git",
+    "commit_id": "d6921b235d1b97a57664f04e694b646f91fda5e6",
+    "commit_id_repair": "52adaba9e10b0372b3664ccda35e6e89c4b81dec",
+    "warning_message": "Uninitialized variable: buffer",
+    "hash_id": "179ccea5f3b3cf03a0fc3c2d5553618a1516cea04a3ee64c5ec202d38490ed67",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

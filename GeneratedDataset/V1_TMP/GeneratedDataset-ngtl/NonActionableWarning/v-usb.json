@@ -1,0 +1,33 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Redundant assignment of \u0027notResetState\u0027 to itself.",
+    "cwe": "398",
+    "file_path": "tmp_github/v-usb/usbdrv/usbdrv.c",
+    "line_number": "562",
+    "column_number": "19",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/obdev/v-usb.git",
+    "commit_id": "e3eee9f10132b7d16ad9b58babf0d2b64a15faf2",
+    "commit_id_repair": "c742affc7e2b35f02eef2af7607490cd9fbb002f",
+    "warning_message": "Redundant assignment of \u0027notResetState\u0027 to itself.",
+    "hash_id": "ccc16554c420b5a54b999414f47d742d14a046c37d2ab8fe0aa574633e2bc98d",
+    "bug_severity": "warning",
+    "bug_type": "selfAssignment"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/v-usb/examples/drivertest/firmware/usbconfig.h",
+    "line_number": "181",
+    "column_number": "48",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/obdev/v-usb.git",
+    "commit_id": "2b8735a2de7435ba089a91ea9309aa2c20a7600f",
+    "commit_id_repair": "715ce671e0db221ab4f31674b21c3b3f489adef1",
+    "warning_message": "syntax error",
+    "hash_id": "c26ffd38e7e7fc106f78ac2d2eb4333eda631dedeb7ed4ad823026d435ffc4ed",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

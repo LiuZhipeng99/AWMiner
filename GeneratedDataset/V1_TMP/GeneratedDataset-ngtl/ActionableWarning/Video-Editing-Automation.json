@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Null pointer dereference: cut_copy",
+    "cwe": "476",
+    "file_path": "tmp_github/Video-Editing-Automation/examples/random-splice.c",
+    "line_number": "176",
+    "column_number": "96",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/DevonCrawford/Video-Editing-Automation.git",
+    "commit_id": "baf1c55753c701d167baf481df289995fdcdcba1",
+    "commit_id_repair": "190865a15c7387bb95bddbed6b86842750812578",
+    "warning_message": "Null pointer dereference: cut_copy",
+    "hash_id": "23731314d66e7bb1d6cea3ea58370f87be1a074c79d0e613b58bc13c01f2e7e2",
+    "bug_severity": "error",
+    "bug_type": "nullPointer"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Null pointer dereference: cut_copy",
+    "cwe": "476",
+    "file_path": "tmp_github/Video-Editing-Automation/examples/random-splice.c",
+    "line_number": "175",
+    "column_number": "20",
+    "info": "Assignment \u0027cut_copy\u003dNULL\u0027, assigned value is 0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/DevonCrawford/Video-Editing-Automation.git",
+    "commit_id": "baf1c55753c701d167baf481df289995fdcdcba1",
+    "commit_id_repair": "190865a15c7387bb95bddbed6b86842750812578",
+    "warning_message": "Null pointer dereference: cut_copy",
+    "hash_id": "c71a9aa4c655048ac7aab2dd0cdac8d94909faa1b3a123e5d1d39ae7379e23f3",
+    "bug_severity": "error",
+    "bug_type": "nullPointer"
+  }
+]

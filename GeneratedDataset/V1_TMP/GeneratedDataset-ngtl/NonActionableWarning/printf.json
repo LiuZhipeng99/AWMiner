@@ -1,0 +1,49 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Virtual function \u0027next\u0027 is called from constructor \u0027FilterGenerator(P\u0026\u0026pred,GeneratorWrapper\u003cT\u003e\u0026\u0026generator)\u0027 at line 3746. Dynamic binding is not used.",
+    "file_path": "tmp_github/printf/test/catch.hpp",
+    "line_number": "3757",
+    "column_number": "14",
+    "info": "next is a virtual function",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/mpaland/printf.git",
+    "commit_id": "4012b45d7c3cca5b42507c77e3033322b5dfab3d",
+    "commit_id_repair": "1e288944e4e01d85a007562f5eca458bfcb2f9df",
+    "warning_message": "Virtual function \u0027next\u0027 is called from constructor \u0027FilterGenerator(P\u0026\u0026pred,GeneratorWrapper\u003cT\u003e\u0026\u0026generator)\u0027 at line 3746. Dynamic binding is not used.",
+    "hash_id": "0a66bff51b521a8e5daf4ccc25390cf1084837c7c81cc76000a6e21a239c1c7c",
+    "bug_severity": "style",
+    "bug_type": "virtualCallInConstructor"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Virtual function \u0027next\u0027 is called from constructor \u0027FilterGenerator(P\u0026\u0026pred,GeneratorWrapper\u003cT\u003e\u0026\u0026generator)\u0027 at line 3746. Dynamic binding is not used.",
+    "file_path": "tmp_github/printf/test/catch.hpp",
+    "line_number": "3746",
+    "column_number": "42",
+    "info": "Calling next",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/mpaland/printf.git",
+    "commit_id": "4012b45d7c3cca5b42507c77e3033322b5dfab3d",
+    "commit_id_repair": "1e288944e4e01d85a007562f5eca458bfcb2f9df",
+    "warning_message": "Virtual function \u0027next\u0027 is called from constructor \u0027FilterGenerator(P\u0026\u0026pred,GeneratorWrapper\u003cT\u003e\u0026\u0026generator)\u0027 at line 3746. Dynamic binding is not used.",
+    "hash_id": "147b5ac796201576e8b840c2e319d2aff1539980cf1e0ad76ecde451e1987748",
+    "bug_severity": "style",
+    "bug_type": "virtualCallInConstructor"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "syntax error: \u003d[...];",
+    "file_path": "tmp_github/printf/test/catch.hpp",
+    "line_number": "3328",
+    "column_number": "20",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/mpaland/printf.git",
+    "commit_id": "6eb828eb3a77af6ffac997a7ad2d9111a35062b1",
+    "commit_id_repair": "302f46860a17965018c6ee9a01a031e4c7df980c",
+    "warning_message": "syntax error: \u003d[...];",
+    "hash_id": "8c9743eeed305d5a8e97740e2b62831f5f19e9502f3ef1406660679ba4a0f611",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

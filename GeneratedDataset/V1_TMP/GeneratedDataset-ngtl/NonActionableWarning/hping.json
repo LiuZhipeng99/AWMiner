@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%lld in format string (no. 4) requires \u0027long long\u0027 but the argument type is \u0027unsigned long long\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/hping/waitpacket.c",
+    "line_number": "531",
+    "column_number": "17",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antirez/hping.git",
+    "commit_id": "4a8afe2dbf3409bfb0340796fe55f9ab6f75ab58",
+    "commit_id_repair": "3e38267a4f2870bb296e807caf967fb2978886fd",
+    "warning_message": "%lld in format string (no. 4) requires \u0027long long\u0027 but the argument type is \u0027unsigned long long\u0027.",
+    "hash_id": "b114aa7092fcf3afe9e7553fc101a08a78664691679548b3d8b1e249e0ab9a43",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

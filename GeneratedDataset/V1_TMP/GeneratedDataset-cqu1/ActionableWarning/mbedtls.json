@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If MBEDTLS_PRINTF_SIZET is a macro then please configure it.",
+    "file_path": "tmp_github/mbedtls/library/ssl_client.c",
+    "line_number": "411",
+    "column_number": "50",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Mbed-TLS/mbedtls.git",
+    "commit_id": "0a342c95120914719293c119fbe40701fe77e665",
+    "commit_id_repair": "db6b4db7a0e982b15a95e048ac14f8d56fec44a6",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If MBEDTLS_PRINTF_SIZET is a macro then please configure it.",
+    "hash_id": "3f29590bc6598ceed933e8028e8173ceebb47ad88c1944acdf577371d4e2f0c4",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

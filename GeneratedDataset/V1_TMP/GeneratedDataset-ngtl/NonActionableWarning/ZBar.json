@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/ZBar/zbar/thread.h",
+    "line_number": "38",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ZBar/ZBar.git",
+    "commit_id": "94e90873025b004adf350d4e80fd8372687e21b7",
+    "commit_id_repair": "e46f6cdf9ab2907d6a9ce7aa3013c9c14da6215c",
+    "warning_message": "syntax error",
+    "hash_id": "e0342a999d333837793ce55fe8acf9f0e543b68b663289a13a9cb0c2e5a4e5c6",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

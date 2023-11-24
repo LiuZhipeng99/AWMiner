@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%d in format string (no. 3) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/PiFmRds/src/pi_fm_rds.c",
+    "line_number": "385",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ChristopheJacquet/PiFmRds.git",
+    "commit_id": "f8613175ae280de092bd31b924ad0ce38c9c8632",
+    "commit_id_repair": "b3de5ab29d88793bb9a3f8f66c0d4f135595c9d0",
+    "warning_message": "%d in format string (no. 3) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "3935292fbff3add1b983a88addb2e86fb8235f40d0f67c26c7d7a61b9925ba4e",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%d in format string (no. 4) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/PiFmRds/src/pi_fm_rds.c",
+    "line_number": "385",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ChristopheJacquet/PiFmRds.git",
+    "commit_id": "f8613175ae280de092bd31b924ad0ce38c9c8632",
+    "commit_id_repair": "b3de5ab29d88793bb9a3f8f66c0d4f135595c9d0",
+    "warning_message": "%d in format string (no. 4) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "9b3da5fd1cc87d52823fa3ebeefa822f099b5f359193495e9839c4c74b86ee88",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

@@ -1,0 +1,49 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: sh",
+    "cwe": "401",
+    "file_path": "tmp_github/sds/sds.c",
+    "line_number": "65",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antirez/sds.git",
+    "commit_id": "d86a9b85cb4fb96430c7479ae6c956f2b605bbd1",
+    "commit_id_repair": "f74b9b785b63c6d8ea312d7e7864df5267149c85",
+    "warning_message": "Memory leak: sh",
+    "hash_id": "787aa4b8610be71ed7c990165c561a0104fdc5cf637e195027d51da6d6f28644",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Common realloc mistake: \u0027sh\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/sds/sds.c",
+    "line_number": "159",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antirez/sds.git",
+    "commit_id": "d86a9b85cb4fb96430c7479ae6c956f2b605bbd1",
+    "commit_id_repair": "f74b9b785b63c6d8ea312d7e7864df5267149c85",
+    "warning_message": "Common realloc mistake: \u0027sh\u0027 nulled but not freed upon failure",
+    "hash_id": "2b88755fde61ea799c605309c39df25d94d4cf0c93a90417155abdf227b9183b",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/sds/sds.c",
+    "line_number": "879",
+    "column_number": "17",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antirez/sds.git",
+    "commit_id": "d0d21716c637de8f2d74f5274b19ec371ad8fd41",
+    "commit_id_repair": "1cf01f7f6b40c536b45ecd0f5741357fbed2a8d3",
+    "warning_message": "syntax error",
+    "hash_id": "92702ef7fb1e71c3b10140a2892fb892e6334b344bc88c286758d1913a2b48af",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

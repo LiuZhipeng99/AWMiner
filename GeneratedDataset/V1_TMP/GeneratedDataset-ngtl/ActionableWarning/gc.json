@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "cwe": "398",
+    "file_path": "tmp_github/gc/test/test_gc.c",
+    "line_number": "12",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/mkirchner/gc.git",
+    "commit_id": "531bb531b2de9f0ea0d84a9e3d5bce045e0c4497",
+    "commit_id_repair": "dc4ac3f4c42940e3e85fb24ebb01a24898ad68c1",
+    "warning_message": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "hash_id": "609d8fde536f31cb09089f2a0d847edb4b3e4c205107be8851bbdf01231cdc4d",
+    "bug_severity": "warning",
+    "bug_type": "uselessAssignmentPtrArg"
+  }
+]

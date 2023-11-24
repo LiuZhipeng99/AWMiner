@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%i in format string (no. 1) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/c-algorithms/test/test-set.c",
+    "line_number": "52",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fragglet/c-algorithms.git",
+    "commit_id": "0acb69684ecffbea878a70d1d3a8215365d77866",
+    "commit_id_repair": "2dd90ce2f4fe2445c66c4bec7273db7145a402e0",
+    "warning_message": "%i in format string (no. 1) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "d1e70691df584eaeb919d293bbac4c8358544e8faf05c337ac8e179339d3ba61",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

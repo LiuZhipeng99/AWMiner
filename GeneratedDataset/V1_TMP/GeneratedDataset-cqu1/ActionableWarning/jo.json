@@ -1,0 +1,51 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "failed to expand \u0027errx\u0027, Wrong number of parameters for macro \u0027errx\u0027.",
+    "file_path": "tmp_github/jo/jo.c",
+    "line_number": "183",
+    "column_number": "0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/jpmens/jo.git",
+    "commit_id": "67cb39a6b737eeb159a3b90ca503cfb865c0af18",
+    "commit_id_repair": "03da38a1071f4a68d795817a8c51fb672bba16a7",
+    "warning_message": "failed to expand \u0027errx\u0027, Wrong number of parameters for macro \u0027errx\u0027.",
+    "hash_id": "cc4ca668404386a0ddb713618c9d9d37d71e228fe3260d4ebde6c2380a1c62bd",
+    "bug_severity": "error",
+    "bug_type": "preprocessorErrorDirective"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Identical inner \u0027if\u0027 condition is always true (outer condition is \u0027p\u0027 and inner condition is \u0027p\u0027).",
+    "cwe": "398",
+    "file_path": "tmp_github/jo/jo.c",
+    "line_number": "468",
+    "column_number": "7",
+    "info": "identical inner condition: p",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/jpmens/jo.git",
+    "commit_id": "0b41289255722fe4fdc729135feeec8295254677",
+    "commit_id_repair": "bd21fec285c1c1569fff0df1b319c0f584f11200",
+    "warning_message": "Identical inner \u0027if\u0027 condition is always true.",
+    "hash_id": "ab853001f726a017ff617637cbd77f5d907a2e4c5dc852f0c900863e664e3c99",
+    "bug_severity": "warning",
+    "bug_type": "identicalInnerCondition"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Identical inner \u0027if\u0027 condition is always true (outer condition is \u0027p\u0027 and inner condition is \u0027p\u0027).",
+    "cwe": "398",
+    "file_path": "tmp_github/jo/jo.c",
+    "line_number": "467",
+    "column_number": "6",
+    "info": "outer condition: p",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/jpmens/jo.git",
+    "commit_id": "0b41289255722fe4fdc729135feeec8295254677",
+    "commit_id_repair": "bd21fec285c1c1569fff0df1b319c0f584f11200",
+    "warning_message": "Identical inner \u0027if\u0027 condition is always true.",
+    "hash_id": "6bf698040d63fd7b57d36bc51d0b52b6aa031ac19fde9e2ce5ca8619407c0bcd",
+    "bug_severity": "warning",
+    "bug_type": "identicalInnerCondition"
+  }
+]

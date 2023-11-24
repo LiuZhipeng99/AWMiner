@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/reptyr/test/victim.c",
+    "line_number": "16",
+    "column_number": "35",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/nelhage/reptyr.git",
+    "commit_id": "2545fc955e92a2cfdcffbc9d2faf837ec2a7cf76",
+    "commit_id_repair": "6e8d7a08232586f3e4bf493d3b837d16c1814caf",
+    "warning_message": "syntax error",
+    "hash_id": "b8898be436802c8d68340cb8c80c16e2df4104c9359d4fe9938e372831380efa",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

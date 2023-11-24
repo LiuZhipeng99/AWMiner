@@ -1,0 +1,49 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "cwe": "398",
+    "file_path": "tmp_github/py-webrtcvad/cbits/webrtc/common_audio/signal_processing/resample_by_2_internal.c",
+    "line_number": "192",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/wiseman/py-webrtcvad.git",
+    "commit_id": "3bd761332a9404f5c9276105070ee814c4428342",
+    "commit_id_repair": "6451b2c9db9ed27a5bd30b38ee9fd5d3bcb3df16",
+    "warning_message": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "hash_id": "08df7a6c0a9beb113d643eaf10b8222116ed97c889ae2f2849d7831e86796c88",
+    "bug_severity": "warning",
+    "bug_type": "uselessAssignmentPtrArg"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If RTC_NO_SANITIZE is a macro then please configure it.",
+    "file_path": "tmp_github/py-webrtcvad/cbits/webrtc/common_audio/signal_processing/resample_by_2_internal.c",
+    "line_number": "128",
+    "column_number": "6",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/wiseman/py-webrtcvad.git",
+    "commit_id": "3b39545dbb026d998bf407f1cb86e0ed6192a5a6",
+    "commit_id_repair": "3bd761332a9404f5c9276105070ee814c4428342",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If RTC_NO_SANITIZE is a macro then please configure it.",
+    "hash_id": "529ee37aa0dbf0853205387f130bc3c6042def8834b3c3f5e190ba881f928c2c",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "cwe": "398",
+    "file_path": "tmp_github/py-webrtcvad/cbits/webrtc/common_audio/signal_processing/resample_by_2_internal.c",
+    "line_number": "192",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/wiseman/py-webrtcvad.git",
+    "commit_id": "fe9d953217932c319070a6aeeeb6860aeb1c474e",
+    "commit_id_repair": "cbc7febad9ad9a73edcbdf85d6450ded297251eb",
+    "warning_message": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "hash_id": "08df7a6c0a9beb113d643eaf10b8222116ed97c889ae2f2849d7831e86796c88",
+    "bug_severity": "warning",
+    "bug_type": "uselessAssignmentPtrArg"
+  }
+]

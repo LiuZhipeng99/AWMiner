@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/sl/sl.c",
+    "line_number": "280",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/mtoyoda/sl.git",
+    "commit_id": "e4c01afe33b21a5c8c7dc7c4185dbb084f7e835e",
+    "commit_id_repair": "b8732b5f229548527e305e8ba8e860e0cd24cf07",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "01850958210327297d1a5ad816d4ad181434f87afc6b9be7734537f2e8529368",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  }
+]

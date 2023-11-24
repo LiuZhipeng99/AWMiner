@@ -1,0 +1,35 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: color",
+    "cwe": "457",
+    "file_path": "tmp_github/activate-linux/src/color.c",
+    "line_number": "59",
+    "column_number": "10",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/MrGlockenspiel/activate-linux.git",
+    "commit_id": "be10ea964c4fbbaabc09ce5a132ddd7ef3297a27",
+    "commit_id_repair": "89f28e9347ca8d273d9eef4d3a00d63f51450a12",
+    "warning_message": "Uninitialized variable: color",
+    "hash_id": "df117a17b70e23c5c9024f69be2882e3577d0d736851e6047909da1f55317419",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: color",
+    "cwe": "457",
+    "file_path": "tmp_github/activate-linux/src/color.c",
+    "line_number": "45",
+    "column_number": "15",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/MrGlockenspiel/activate-linux.git",
+    "commit_id": "be10ea964c4fbbaabc09ce5a132ddd7ef3297a27",
+    "commit_id_repair": "89f28e9347ca8d273d9eef4d3a00d63f51450a12",
+    "warning_message": "Uninitialized variable: color",
+    "hash_id": "452b94fd7331f1ce3db592d05ac661967cc00bae55718b2e9d18058380e06adb",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

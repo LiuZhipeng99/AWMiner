@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%d in format string (no. 4) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/phc-winner-argon2/src/bench.c",
+    "line_number": "95",
+    "column_number": "17",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/P-H-C/phc-winner-argon2.git",
+    "commit_id": "a664086ca95ea5d9168a60baa5da3a5f4ac34801",
+    "commit_id_repair": "b1b70fdd4a6fef9845b63965d7bf27b0a8d32413",
+    "warning_message": "%d in format string (no. 4) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "736440de26b54bee3cdbfd5182f11f11652cd56c2cb374067e0b35478c5f1174",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

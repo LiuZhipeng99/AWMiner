@@ -1,0 +1,52 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Dereferencing \u0027jbr\u0027 after it is deallocated / released",
+    "cwe": "416",
+    "file_path": "tmp_github/ejdb/src/jbr/jbr.c",
+    "line_number": "1127",
+    "column_number": "20",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Softmotions/ejdb.git",
+    "commit_id": "8471fd95fca902a950837cf0ffbb790ffd74201c",
+    "commit_id_repair": "e0e1be97cf3abcaf1e3127d1bc5940f198e491a9",
+    "warning_message": "Dereferencing \u0027jbr\u0027 after it is deallocated / released",
+    "hash_id": "9ffc5df81613d34bb5342b0c6db59163041a650f00c4e9e701c7d9a22af4af06",
+    "bug_severity": "error",
+    "bug_type": "deallocuse"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027!spos\u0027 is redundant or there is overflow in pointer subtraction.",
+    "cwe": "682",
+    "file_path": "tmp_github/ejdb/src/jql/jql.c",
+    "line_number": "1428",
+    "column_number": "36",
+    "info": "Null pointer subtraction",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Softmotions/ejdb.git",
+    "commit_id": "3cc318fffb15c6e42d102e759629b12d1346c1f2",
+    "commit_id_repair": "e47fa76280058f61f0422f23ea1ff2a3a8e9c37e",
+    "warning_message": "Either the condition \u0027!spos\u0027 is redundant or there is overflow in pointer subtraction.",
+    "hash_id": "42edeb384284cea7cc061e709ae0674f7e208d40b331e277d7a2f93305323c3b",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerArithmeticRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027!spos\u0027 is redundant or there is overflow in pointer subtraction.",
+    "cwe": "682",
+    "file_path": "tmp_github/ejdb/src/jql/jql.c",
+    "line_number": "1422",
+    "column_number": "11",
+    "info": "Assuming that condition \u0027!spos\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Softmotions/ejdb.git",
+    "commit_id": "3cc318fffb15c6e42d102e759629b12d1346c1f2",
+    "commit_id_repair": "e47fa76280058f61f0422f23ea1ff2a3a8e9c37e",
+    "warning_message": "Either the condition \u0027!spos\u0027 is redundant or there is overflow in pointer subtraction.",
+    "hash_id": "9a5adecf20446c1d7696707556d66d7547e739f0444f7eff4d37ad4293bd40d0",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerArithmeticRedundantCheck"
+  }
+]

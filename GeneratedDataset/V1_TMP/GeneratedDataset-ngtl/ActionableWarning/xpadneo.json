@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Syntax Error: AST broken, \u0027-\u003e\u0027 doesn\u0027t have two operands.",
+    "file_path": "tmp_github/xpadneo/hid-xpadneo/src/hid-xpadneo.c",
+    "line_number": "942",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/atar-axis/xpadneo.git",
+    "commit_id": "ec6a5b594b532753c34f24b0e3ec460ceaed009a",
+    "commit_id_repair": "eaf4dafff3eceb65b62ce8244c24f95f96300acd",
+    "warning_message": "Syntax Error: AST broken, \u0027-\u003e\u0027 doesn\u0027t have two operands.",
+    "hash_id": "fac80c1407aa17322a4ce16de38b8a584981c45b3c02aea398d02f3b4d2756e7",
+    "bug_severity": "error",
+    "bug_type": "internalAstError"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Unmatched \u0027{\u0027. Configuration: \u0027\u0027.",
+    "file_path": "tmp_github/xpadneo/src/hid-xpadneo.c",
+    "line_number": "891",
+    "column_number": "78",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/atar-axis/xpadneo.git",
+    "commit_id": "150f0992d26dce4e2458731cac6ed7737ffb882a",
+    "commit_id_repair": "248c34deded0074c3e6820aff3efe039219d5ac5",
+    "warning_message": "Unmatched \u0027{\u0027. Configuration: \u0027\u0027.",
+    "hash_id": "811a0b7b1e7de7ef66a6692a1a3f2b17ac54e64d01bce4ecd45b684a897f858d",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

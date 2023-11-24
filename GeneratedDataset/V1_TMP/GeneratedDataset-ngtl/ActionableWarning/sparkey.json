@@ -1,0 +1,19 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Signed integer overflow for expression \u00271\u003c\u003c31\u0027.",
+    "cwe": "190",
+    "file_path": "tmp_github/sparkey/src/main.c",
+    "line_number": "90",
+    "column_number": "63",
+    "info": "Integer overflow",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/spotify/sparkey.git",
+    "commit_id": "d8998a67fb55bf45da6ae22886608a63ef36617b",
+    "commit_id_repair": "1c499c0ebcfc9c380dcb082293f77e50d565d1a9",
+    "warning_message": "Signed integer overflow for expression \u00271\u003c\u003c31\u0027.",
+    "hash_id": "412606af8b92e779ae0296154b20008fd7cd7184735274a82f90614255084010",
+    "bug_severity": "error",
+    "bug_type": "integerOverflow"
+  }
+]

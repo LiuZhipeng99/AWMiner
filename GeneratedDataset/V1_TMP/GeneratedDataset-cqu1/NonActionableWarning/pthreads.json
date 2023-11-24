@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error: 1 \u003d",
+    "file_path": "tmp_github/pthreads/src/socket.c",
+    "line_number": "451",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/krakjoe/pthreads.git",
+    "commit_id": "bbc47644ec5dda669d6f84fc0170f1793321aaa2",
+    "commit_id_repair": "71472f1bfa48a4a6fc0fee6847e198691b1ab869",
+    "warning_message": "syntax error: 1 \u003d",
+    "hash_id": "05a0f7b61fe95a2c72f3cc4b7b195bf3d8eb871a67dba665d0415221f5ab6a6f",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error: !()",
+    "file_path": "tmp_github/pthreads/src/globals.c",
+    "line_number": "42",
+    "column_number": "6",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/krakjoe/pthreads.git",
+    "commit_id": "b559fba6dd25234ff6c8cba233e589d660f4a453",
+    "commit_id_repair": "054d912258b7e5a7a676c456cc6aeb24e4d2175d",
+    "warning_message": "syntax error: !()",
+    "hash_id": "36789889dcb10e03771144724077c1dae127649b5b5b584c6560d8b567ac798e",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

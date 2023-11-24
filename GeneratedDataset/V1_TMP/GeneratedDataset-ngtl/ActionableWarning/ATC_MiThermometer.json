@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error: \u003c .. if",
+    "file_path": "tmp_github/ATC_MiThermometer/ATC_Thermometer/app.c",
+    "line_number": "101",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/atc1441/ATC_MiThermometer.git",
+    "commit_id": "973932eadb1ad121ea2ccf5abbe8c02bf86d68d5",
+    "commit_id_repair": "a8f5a5efaca16bb618face88dc344ff235330e8c",
+    "warning_message": "syntax error: \u003c .. if",
+    "hash_id": "960d31f8b96e569d6131a21e059fc138c529bbeb8f954e2549e5b29d9e42115e",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

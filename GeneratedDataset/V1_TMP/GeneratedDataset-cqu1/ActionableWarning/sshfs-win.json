@@ -1,0 +1,35 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: passwd",
+    "cwe": "457",
+    "file_path": "tmp_github/sshfs-win/sshfs-win.c",
+    "line_number": "197",
+    "column_number": "36",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/winfsp/sshfs-win.git",
+    "commit_id": "b722b0201314ff8a9b06cf1c20a76da62aa75fb3",
+    "commit_id_repair": "a153a02098b3012e7124223bdf430f7ceafdfdb2",
+    "warning_message": "Uninitialized variable: passwd",
+    "hash_id": "34c87b6a2e79a2298f140026fd4de898a9db00876534eaaeeff726a019a0b5e8",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: passwd",
+    "cwe": "457",
+    "file_path": "tmp_github/sshfs-win/sshfs-win.c",
+    "line_number": "185",
+    "column_number": "11",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/winfsp/sshfs-win.git",
+    "commit_id": "b722b0201314ff8a9b06cf1c20a76da62aa75fb3",
+    "commit_id_repair": "a153a02098b3012e7124223bdf430f7ceafdfdb2",
+    "warning_message": "Uninitialized variable: passwd",
+    "hash_id": "b33ff30ecb1a052d18988710266bd06c5e976b90380a52478ba5fe4eb6dc891e",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  }
+]

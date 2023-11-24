@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%d in format string (no. 2) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/bucklespring/rec.c",
+    "line_number": "62",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/zevv/bucklespring.git",
+    "commit_id": "3450be44dd2b1f28d6d1fe4bd019f82a6ab8558c",
+    "commit_id_repair": "78d5e5888ae0a13a32fde4569ed66c2ae1acb1ee",
+    "warning_message": "%d in format string (no. 2) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "b5631909d52ea60179fb596bf8407837a9b4483a63fc867d59a63a9daa83f615",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%d in format string (no. 2) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/bucklespring/rec.c",
+    "line_number": "66",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/zevv/bucklespring.git",
+    "commit_id": "3450be44dd2b1f28d6d1fe4bd019f82a6ab8558c",
+    "commit_id_repair": "78d5e5888ae0a13a32fde4569ed66c2ae1acb1ee",
+    "warning_message": "%d in format string (no. 2) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "b5631909d52ea60179fb596bf8407837a9b4483a63fc867d59a63a9daa83f615",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

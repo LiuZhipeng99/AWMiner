@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Common realloc mistake: \u0027nargv\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/mon/deps/commander.c",
+    "line_number": "118",
+    "column_number": "7",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/tj/mon.git",
+    "commit_id": "be2836a486381bf63f476ed5228231ea3addc878",
+    "commit_id_repair": "1fd1a8ff2a1fea911e5eabf9a9c0a3a9554b5f1a",
+    "warning_message": "Common realloc mistake: \u0027nargv\u0027 nulled but not freed upon failure",
+    "hash_id": "0007ac360c46ab0adf699c4b44fa1835885f24261ba88a1cc338b2855e884d12",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  }
+]

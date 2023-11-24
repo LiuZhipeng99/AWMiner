@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: binding.action_name",
+    "cwe": "401",
+    "file_path": "tmp_github/mako/config.c",
+    "line_number": "663",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/emersion/mako.git",
+    "commit_id": "94016082c82f199c02bfe420d06783d160424176",
+    "commit_id_repair": "2ff2504e1c616728166a9ba572f6e5468d1d5daa",
+    "warning_message": "Memory leak: binding.action_name",
+    "hash_id": "02f9beaddc76212c52bb442555605d25ed4fceab77e271eadbbee0d5a174b500",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: binding.command",
+    "cwe": "401",
+    "file_path": "tmp_github/mako/config.c",
+    "line_number": "630",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/emersion/mako.git",
+    "commit_id": "0103d9581bb352a9abf36423f685c941eb24b86a",
+    "commit_id_repair": "f549a7955522d483472ded020931abfc81b9163b",
+    "warning_message": "Memory leak: binding.command",
+    "hash_id": "bfe7ae49a7549d67786ec6ea675b359f2fdbdd7ba8ad419db23488c1713aa46a",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: new_output",
+    "cwe": "401",
+    "file_path": "tmp_github/mako/config.c",
+    "line_number": "328",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/emersion/mako.git",
+    "commit_id": "3aba143ff3f3c2acdabf86a3b6755dc55bf7248d",
+    "commit_id_repair": "0e9bbf92db25919f3cf71f9349f305b880e59be6",
+    "warning_message": "Memory leak: new_output",
+    "hash_id": "02fab410d26577bbb2c9744cd3f739449d577ad0c40b36a79651ab7157fc2ca1",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]

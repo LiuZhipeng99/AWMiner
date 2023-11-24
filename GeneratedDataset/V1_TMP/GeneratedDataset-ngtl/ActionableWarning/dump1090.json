@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Size of pointer \u0027icao_cache\u0027 used instead of size of its data. This is likely to lead to a buffer overflow. You probably intend to write \u0027sizeof(*icao_cache)\u0027.",
+    "cwe": "467",
+    "file_path": "tmp_github/dump1090/dump1090.c",
+    "line_number": "297",
+    "column_number": "18",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antirez/dump1090.git",
+    "commit_id": "c2e79d4555d6692956b6fdaa2c3660db0d3620b2",
+    "commit_id_repair": "11d8db0d38b833e2b2d10cb406bc582e2380f04d",
+    "warning_message": "Size of pointer \u0027icao_cache\u0027 used instead of size of its data.",
+    "hash_id": "1cf8249147c193cfb0532b393f9698b4c324708bd50e5aba96584692116fc458",
+    "bug_severity": "warning",
+    "bug_type": "pointerSize"
+  }
+]

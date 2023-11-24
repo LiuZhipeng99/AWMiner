@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Signed \u0027char\u0027 type used as array index. If the value can be greater than 127 there will be a buffer underflow because of sign extension.",
+    "cwe": "128",
+    "file_path": "tmp_github/nyancat/src/nyancat.c",
+    "line_number": "505",
+    "column_number": "7",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/klange/nyancat.git",
+    "commit_id": "bc1cda50dc411a9a42d3bab3892e3688f2fb80bd",
+    "commit_id_repair": "c035cf7f9ba1fdc07f77d6fa2e37e1e48c6ee3dd",
+    "warning_message": "Signed \u0027char\u0027 type used as array index.",
+    "hash_id": "55d129db0c4a886ab031c4f698e34414ab9a4572abf5ff5812cb334de2b75c7a",
+    "bug_severity": "warning",
+    "bug_type": "signedCharArrayIndex"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%d in format string (no. 1) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/nyancat/src/nyancat.c",
+    "line_number": "763",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/klange/nyancat.git",
+    "commit_id": "415f8251d9cfbae703275373c9e92e6930f2b298",
+    "commit_id_repair": "022fed78f0cea7cc4cbeed4d2d9f385956340949",
+    "warning_message": "%d in format string (no. 1) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "0aadc43a9484a522f382285a80076d22bb39425fa3a7d3acfce396d8b86499f5",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "printf format string requires 1 parameter but 2 are given.",
+    "cwe": "685",
+    "file_path": "tmp_github/nyancat/src/nyancat.c",
+    "line_number": "244",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/klange/nyancat.git",
+    "commit_id": "ed21034c7bd21cf93481ad7ea64a1d1ad77e1305",
+    "commit_id_repair": "415f8251d9cfbae703275373c9e92e6930f2b298",
+    "warning_message": "printf format string requires 1 parameter but 2 are given.",
+    "hash_id": "0dd3af0734ff312c85f4ee2f9aa0d36fbd5e164c2f023e1db3cca2f8f52b1027",
+    "bug_severity": "warning",
+    "bug_type": "wrongPrintfScanfArgNum"
+  }
+]

@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "The obsolete function \u0027alloca\u0027 is called. In C99 and later it is recommended to use a variable length array or a dynamically allocated array instead. The function \u0027alloca\u0027 is dangerous for many reasons (http://stackoverflow.com/questions/1018853/why-is-alloca-not-considered-good-practice and http://linux.die.net/man/3/alloca).",
+    "file_path": "tmp_github/stlink/tests/flash.c",
+    "line_number": "33",
+    "column_number": "22",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/stlink-org/stlink.git",
+    "commit_id": "79d91786f7b3fc5b461246bf5a6be3626bb06572",
+    "commit_id_repair": "438344a0da777da79d29925fe00181e8fec209fa",
+    "warning_message": "Obsolete function \u0027alloca\u0027 called. In C99 and later it is recommended to use a variable length array instead.",
+    "hash_id": "04da43ebfef70d39412d1cfb390630bd851fc200b5d73dd4ff014ee5fd6b73b5",
+    "bug_severity": "warning",
+    "bug_type": "allocaCalled"
+  }
+]

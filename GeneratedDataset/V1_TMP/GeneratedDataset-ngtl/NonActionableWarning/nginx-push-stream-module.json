@@ -1,0 +1,35 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: queue_was_empty",
+    "cwe": "457",
+    "file_path": "tmp_github/nginx-push-stream-module/src/ngx_http_push_stream_module_ipc.c",
+    "line_number": "372",
+    "column_number": "102",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/wandenberg/nginx-push-stream-module.git",
+    "commit_id": "de6be3d02a5dc81538b61225ca465ddd9e31bb9e",
+    "commit_id_repair": "18717aaf65a56102108b6d1a2c3eccbabda2e8df",
+    "warning_message": "Uninitialized variable: queue_was_empty",
+    "hash_id": "9c06b42fbee8b97f9eb25dddaca4070b7587a47adef8810209ba9d56846fa53d",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: queue_was_empty",
+    "cwe": "457",
+    "file_path": "tmp_github/nginx-push-stream-module/src/ngx_http_push_stream_module_ipc.c",
+    "line_number": "366",
+    "column_number": "85",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/wandenberg/nginx-push-stream-module.git",
+    "commit_id": "de6be3d02a5dc81538b61225ca465ddd9e31bb9e",
+    "commit_id_repair": "18717aaf65a56102108b6d1a2c3eccbabda2e8df",
+    "warning_message": "Uninitialized variable: queue_was_empty",
+    "hash_id": "778557e3a69f32fa01e437bf0629b686acd7f2406de78b9b1bf16ec86f655271",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  }
+]

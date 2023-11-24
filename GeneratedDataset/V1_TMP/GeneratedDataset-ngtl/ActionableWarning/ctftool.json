@@ -1,0 +1,51 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%u in format string (no. 2) requires \u0027unsigned int\u0027 but the argument type is \u0027signed int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/ctftool/command.c",
+    "line_number": "1300",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/taviso/ctftool.git",
+    "commit_id": "20be6d3b71eff66ba1b6bebc3ec5ed701fa5411c",
+    "commit_id_repair": "8a433e3f3afb570eed27256131d7f79b4ea0c46d",
+    "warning_message": "%u in format string (no. 2) requires \u0027unsigned int\u0027 but the argument type is \u0027signed int\u0027.",
+    "hash_id": "6997ffe6f82586fa9825f29b7de7ecd761b8f253db82e4f38d669fcccf9bf705",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_uint"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: ReturnCode",
+    "cwe": "457",
+    "file_path": "tmp_github/ctftool/command.c",
+    "line_number": "245",
+    "column_number": "25",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/taviso/ctftool.git",
+    "commit_id": "20be6d3b71eff66ba1b6bebc3ec5ed701fa5411c",
+    "commit_id_repair": "8a433e3f3afb570eed27256131d7f79b4ea0c46d",
+    "warning_message": "Uninitialized variable: ReturnCode",
+    "hash_id": "85037504aa14d3ab74a5acb29b3b5771ae21827cb31ab1bbe6b50d37fd75a62b",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: ReturnCode",
+    "cwe": "457",
+    "file_path": "tmp_github/ctftool/command.c",
+    "line_number": "233",
+    "column_number": "22",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/taviso/ctftool.git",
+    "commit_id": "20be6d3b71eff66ba1b6bebc3ec5ed701fa5411c",
+    "commit_id_repair": "8a433e3f3afb570eed27256131d7f79b4ea0c46d",
+    "warning_message": "Uninitialized variable: ReturnCode",
+    "hash_id": "1ebb85b7478070b3087c5ea0e80509f2e7b3bfe66e1c1b10f4a2d76a1159941d",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  }
+]

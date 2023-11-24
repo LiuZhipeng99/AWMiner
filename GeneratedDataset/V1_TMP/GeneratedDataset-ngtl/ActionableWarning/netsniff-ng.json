@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: n-\u003erate_bytes_src",
+    "cwe": "457",
+    "file_path": "tmp_github/netsniff-ng/flowtop.c",
+    "line_number": "1652",
+    "column_number": "28",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/netsniff-ng/netsniff-ng.git",
+    "commit_id": "e6c1b6ca7fd51a9b7d2b3c597cd9731b59330032",
+    "commit_id_repair": "322deaf9bae5dc87b174c4369e7d00b6bb0bf641",
+    "warning_message": "Uninitialized variable: n-\u003erate_bytes_src",
+    "hash_id": "44495543b79156f2762f6fc6b46c43e862fa813090069370b24d1016cc5e30e1",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

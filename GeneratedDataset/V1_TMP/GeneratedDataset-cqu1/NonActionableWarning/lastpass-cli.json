@@ -1,0 +1,53 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027cause\u0027 is redundant or there is possible null pointer dereference: cause.",
+    "cwe": "476",
+    "file_path": "tmp_github/lastpass-cli/endpoints-login.c",
+    "line_number": "274",
+    "column_number": "47",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/lastpass/lastpass-cli.git",
+    "commit_id": "1ba2e6095981f1676b81f088dd375bc3ac9297ad",
+    "commit_id_repair": "8f155ef865eea8f77054bbcadcdff51af58066e9",
+    "warning_message": "Either the condition \u0027cause\u0027 is redundant or there is possible null pointer dereference: cause.",
+    "hash_id": "b38105990d30d3cd2902d4acbceb15797f7b8fc3b723b5e34d051e647fe766a7",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027cause\u0027 is redundant or there is possible null pointer dereference: cause.",
+    "cwe": "476",
+    "file_path": "tmp_github/lastpass-cli/endpoints-login.c",
+    "line_number": "352",
+    "column_number": "74",
+    "info": "Calling function \u0027otp_login\u0027, 7th argument \u0027cause\u0027 value is 0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/lastpass/lastpass-cli.git",
+    "commit_id": "1ba2e6095981f1676b81f088dd375bc3ac9297ad",
+    "commit_id_repair": "8f155ef865eea8f77054bbcadcdff51af58066e9",
+    "warning_message": "Either the condition \u0027cause\u0027 is redundant or there is possible null pointer dereference: cause.",
+    "hash_id": "40ed2d5cb75d5d5d9288dcaae652cc7cc78f6de253092a5e57ce270e2c72604d",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027cause\u0027 is redundant or there is possible null pointer dereference: cause.",
+    "cwe": "476",
+    "file_path": "tmp_github/lastpass-cli/endpoints-login.c",
+    "line_number": "345",
+    "column_number": "6",
+    "info": "Assuming that condition \u0027cause\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/lastpass/lastpass-cli.git",
+    "commit_id": "1ba2e6095981f1676b81f088dd375bc3ac9297ad",
+    "commit_id_repair": "8f155ef865eea8f77054bbcadcdff51af58066e9",
+    "warning_message": "Either the condition \u0027cause\u0027 is redundant or there is possible null pointer dereference: cause.",
+    "hash_id": "2d1e0828009f6afa8a0e3979b68e289987bd3f49edcfd1e5ab576bb27210fa9c",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

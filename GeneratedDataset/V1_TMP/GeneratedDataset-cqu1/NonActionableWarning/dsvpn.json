@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If VERSION_STRING is a macro then please configure it.",
+    "file_path": "tmp_github/dsvpn/src/vpn.c",
+    "line_number": "513",
+    "column_number": "18",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/jedisct1/dsvpn.git",
+    "commit_id": "cbebaf53e8686f10c97c083b32776f4916f2a3a4",
+    "commit_id_repair": "666b1d89dd8c667633a698b74d7d8dc87f507bee",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If VERSION_STRING is a macro then please configure it.",
+    "hash_id": "3be79e4b0fd669863bfe0613f120d149d89cc1590a81808975f4534182f22728",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

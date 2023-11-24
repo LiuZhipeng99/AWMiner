@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If _Success_ is a macro then please configure it.",
+    "file_path": "tmp_github/simplewall/src/uwp.h",
+    "line_number": "11",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/henrypp/simplewall.git",
+    "commit_id": "ed175deb3f23a7d4093ddc28ed1a77c6c8a3b2ee",
+    "commit_id_repair": "d349ea3c2471a70dc68304eba2c6bde7d84cc7d7",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If _Success_ is a macro then please configure it.",
+    "hash_id": "ff87ccca11d328a58c120f6a5c4a3bc5d4fd0670c6264693caca17a677422b90",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If NT_SUCCESS is a macro then please configure it.",
+    "file_path": "tmp_github/simplewall/src/db.h",
+    "line_number": "73",
+    "column_number": "12",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/henrypp/simplewall.git",
+    "commit_id": "fa065007108d9ee7d6640f0e385225560a404d7b",
+    "commit_id_repair": "7c6c032b7dac70958b1431ae67b22b3ad67a3c44",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If NT_SUCCESS is a macro then please configure it.",
+    "hash_id": "74681495bc462407f569548cdf207d42f5b7e399c80e53142b6763a520bc5328",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

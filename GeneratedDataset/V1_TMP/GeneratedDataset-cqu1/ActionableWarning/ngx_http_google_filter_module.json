@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Identical condition \u0027!dup\u0027, second condition is always false",
+    "cwe": "398",
+    "file_path": "tmp_github/ngx_http_google_filter_module/src/ngx_http_google_util.c",
+    "line_number": "93",
+    "column_number": "7",
+    "info": "Testing identical condition \u0027!dup\u0027",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cuber/ngx_http_google_filter_module.git",
+    "commit_id": "cdba2b39b02597282e5d5e2c390784a81c29aaf7",
+    "commit_id_repair": "6e850e256de26036837170acfb6a359afd1533e4",
+    "warning_message": "Identical condition \u0027!dup\u0027, second condition is always false",
+    "hash_id": "7ef7bc501a740eb4cfe81a64f213f68c641e6c44041aef3bb13b869cdf13de13",
+    "bug_severity": "warning",
+    "bug_type": "identicalConditionAfterEarlyExit"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Identical condition \u0027!dup\u0027, second condition is always false",
+    "cwe": "398",
+    "file_path": "tmp_github/ngx_http_google_filter_module/src/ngx_http_google_util.c",
+    "line_number": "90",
+    "column_number": "7",
+    "info": "If condition \u0027!dup\u0027 is true, the function will return/exit",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cuber/ngx_http_google_filter_module.git",
+    "commit_id": "cdba2b39b02597282e5d5e2c390784a81c29aaf7",
+    "commit_id_repair": "6e850e256de26036837170acfb6a359afd1533e4",
+    "warning_message": "Identical condition \u0027!dup\u0027, second condition is always false",
+    "hash_id": "854bc089d06651901876d089dd374f5ed0b0fa14f914caa72c23a9fc94f29331",
+    "bug_severity": "warning",
+    "bug_type": "identicalConditionAfterEarlyExit"
+  }
+]

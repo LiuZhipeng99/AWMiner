@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: value",
+    "cwe": "457",
+    "file_path": "tmp_github/Android-Inline-Hook/relocate.c",
+    "line_number": "195",
+    "column_number": "36",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ele7enxxh/Android-Inline-Hook.git",
+    "commit_id": "860efb99240957e916a8070c716083379c1f6852",
+    "commit_id_repair": "6a05fb60091cc694b733e19622fb0c165ed5b9fd",
+    "warning_message": "Uninitialized variable: value",
+    "hash_id": "99d606a70d95fa6a4ab05d5d4e0c3e4893c08f7330436119a61b100b2a0da350",
+    "bug_severity": "error",
+    "bug_type": "legacyUninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: value",
+    "cwe": "457",
+    "file_path": "tmp_github/Android-Inline-Hook/relocate.c",
+    "line_number": "309",
+    "column_number": "36",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ele7enxxh/Android-Inline-Hook.git",
+    "commit_id": "860efb99240957e916a8070c716083379c1f6852",
+    "commit_id_repair": "6a05fb60091cc694b733e19622fb0c165ed5b9fd",
+    "warning_message": "Uninitialized variable: value",
+    "hash_id": "99d606a70d95fa6a4ab05d5d4e0c3e4893c08f7330436119a61b100b2a0da350",
+    "bug_severity": "error",
+    "bug_type": "legacyUninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: value",
+    "cwe": "457",
+    "file_path": "tmp_github/Android-Inline-Hook/relocate.c",
+    "line_number": "562",
+    "column_number": "37",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ele7enxxh/Android-Inline-Hook.git",
+    "commit_id": "860efb99240957e916a8070c716083379c1f6852",
+    "commit_id_repair": "6a05fb60091cc694b733e19622fb0c165ed5b9fd",
+    "warning_message": "Uninitialized variable: value",
+    "hash_id": "99d606a70d95fa6a4ab05d5d4e0c3e4893c08f7330436119a61b100b2a0da350",
+    "bug_severity": "error",
+    "bug_type": "legacyUninitvar"
+  }
+]

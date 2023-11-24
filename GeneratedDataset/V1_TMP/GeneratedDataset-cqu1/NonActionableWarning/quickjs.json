@@ -1,0 +1,52 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027!p\u0027 is redundant or there is overflow in pointer subtraction.",
+    "cwe": "682",
+    "file_path": "tmp_github/QuickJS/quickjs-libc.c",
+    "line_number": "698",
+    "column_number": "22",
+    "info": "Null pointer subtraction",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/quickjs-zh/QuickJS.git",
+    "commit_id": "b75403a973750fe375c16781d442c559f4334a14",
+    "commit_id_repair": "5c3788a879926b6adf1ba1cf7fe3b347755e61a0",
+    "warning_message": "Either the condition \u0027!p\u0027 is redundant or there is overflow in pointer subtraction.",
+    "hash_id": "62970d8a1f516b21c0c0a2d7f6739f88f5a588f24b396dc25bd4a349cb448f40",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerArithmeticRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027!p\u0027 is redundant or there is overflow in pointer subtraction.",
+    "cwe": "682",
+    "file_path": "tmp_github/QuickJS/quickjs-libc.c",
+    "line_number": "699",
+    "column_number": "13",
+    "info": "Assuming that condition \u0027!p\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/quickjs-zh/QuickJS.git",
+    "commit_id": "b75403a973750fe375c16781d442c559f4334a14",
+    "commit_id_repair": "5c3788a879926b6adf1ba1cf7fe3b347755e61a0",
+    "warning_message": "Either the condition \u0027!p\u0027 is redundant or there is overflow in pointer subtraction.",
+    "hash_id": "e52f793dc9530e322ba3dc5864d75080d2e1a10fdcfdf125aa113e8bf94959a8",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerArithmeticRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Memory leak: sab",
+    "cwe": "401",
+    "file_path": "tmp_github/QuickJS/quickjs-libc.c",
+    "line_number": "3022",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/quickjs-zh/QuickJS.git",
+    "commit_id": "af1420f97a7ec92dcf51349cd4af55a87437fc6c",
+    "commit_id_repair": "afd4c5489b517773dbc16aa9feb7f967b0b3ba35",
+    "warning_message": "Memory leak: sab",
+    "hash_id": "e8de7efc4e8c2c79c52e909d80dd39eb0a75b8868a7ca2758ec52c379f00b6b6",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If WDF_DECLARE_CONTEXT_TYPE_WITH_NAME is a macro then please configure it.",
+    "file_path": "tmp_github/mac-precision-touchpad/src/AmtPtpDeviceUsbUm/Device.h",
+    "line_number": "36",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/imbushuo/mac-precision-touchpad.git",
+    "commit_id": "fab42b740c7da38e8394ec07493f8b7701d9fed4",
+    "commit_id_repair": "cca6867ccd2d5faca8dd00bf9f410ca316713787",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If WDF_DECLARE_CONTEXT_TYPE_WITH_NAME is a macro then please configure it.",
+    "hash_id": "805a997766a3490dfb1e8e7782edc7811db65e6573cfcef8bb9bbd796e430265",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If WDF_DECLARE_CONTEXT_TYPE_WITH_NAME is a macro then please configure it.",
+    "file_path": "tmp_github/mac-precision-touchpad/src/AmtPtpDeviceUsbUm/Device.h",
+    "line_number": "45",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/imbushuo/mac-precision-touchpad.git",
+    "commit_id": "07c6f560c7e498f4bf50d92c5ea0cf8239c6df00",
+    "commit_id_repair": "129de401a70eacc099e071a2d7cf0d7df8c7cb15",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If WDF_DECLARE_CONTEXT_TYPE_WITH_NAME is a macro then please configure it.",
+    "hash_id": "805a997766a3490dfb1e8e7782edc7811db65e6573cfcef8bb9bbd796e430265",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If WDF_DECLARE_CONTEXT_TYPE_WITH_NAME is a macro then please configure it.",
+    "file_path": "tmp_github/mac-precision-touchpad/src/MagicTrackpad2PtpDevice/Device.h",
+    "line_number": "52",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/imbushuo/mac-precision-touchpad.git",
+    "commit_id": "a7a517a7dd0fc8975f72058786670c175316a39b",
+    "commit_id_repair": "4ac865fb94c56361b11c6d80e78f0e2e6056aaa9",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If WDF_DECLARE_CONTEXT_TYPE_WITH_NAME is a macro then please configure it.",
+    "hash_id": "5004fe974be80301d800136bdf490a88a6429780af44f9432b85dc3dc29287c6",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

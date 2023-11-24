@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%s in format string (no. 1) requires \u0027char *\u0027 but the argument type is \u0027signed int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/ly/src/main.c",
+    "line_number": "38",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fairyglade/ly.git",
+    "commit_id": "57a8eecb1a8e5c2c1207315e55708e9f6294ffa0",
+    "commit_id_repair": "d775efb4143e1dd0e170a8e208b5e160b4af6185",
+    "warning_message": "%s in format string (no. 1) requires \u0027char *\u0027 but the argument type is \u0027signed int\u0027.",
+    "hash_id": "2a8ca2cd453b156e341279ed220beb0ca08e174240030259383ad0b71f99fa6c",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_s"
+  }
+]

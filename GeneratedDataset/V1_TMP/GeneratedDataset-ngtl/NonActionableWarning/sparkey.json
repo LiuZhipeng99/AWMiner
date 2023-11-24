@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Syntax Error: AST broken, \u0027assert\u0027 doesn\u0027t have two operands.",
+    "file_path": "tmp_github/sparkey/src/main.c",
+    "line_number": "32",
+    "column_number": "19",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/spotify/sparkey.git",
+    "commit_id": "1c499c0ebcfc9c380dcb082293f77e50d565d1a9",
+    "commit_id_repair": "7bd98498ff67742a2e340d6dd0443f041212c2b4",
+    "warning_message": "Syntax Error: AST broken, \u0027assert\u0027 doesn\u0027t have two operands.",
+    "hash_id": "e998315e4f0628722150552ff53f802444e6157fadf1c4e722549a4e521971e5",
+    "bug_severity": "error",
+    "bug_type": "internalAstError"
+  }
+]

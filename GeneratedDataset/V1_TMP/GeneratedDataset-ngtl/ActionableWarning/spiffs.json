@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Buffer is accessed out of bounds: buff",
+    "cwe": "788",
+    "file_path": "tmp_github/spiffs/src/test/test_bugreports.c",
+    "line_number": "631",
+    "column_number": "13",
+    "info": "Buffer overrun",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/pellepl/spiffs.git",
+    "commit_id": "7e96ab1ee8201a723414dd314bf6f95df83b6e14",
+    "commit_id_repair": "3ebfeb50324d4d1cd0a200d92149b90ced015bcf",
+    "warning_message": "Buffer is accessed out of bounds: buff",
+    "hash_id": "20a5796d0455ad90022467b9c8757d9c2494012b962ef9eb2dab9ce7c03923d2",
+    "bug_severity": "error",
+    "bug_type": "bufferAccessOutOfBounds"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Buffer is accessed out of bounds: buff",
+    "cwe": "788",
+    "file_path": "tmp_github/spiffs/src/test/test_bugreports.c",
+    "line_number": "631",
+    "column_number": "13",
+    "info": "Buffer overrun",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/pellepl/spiffs.git",
+    "commit_id": "37e6339f42750d9ae301b77cb221d0b3be57cf7c",
+    "commit_id_repair": "4bf552354cc760d0d7a1ac2334fe97005ca51523",
+    "warning_message": "Buffer is accessed out of bounds: buff",
+    "hash_id": "20a5796d0455ad90022467b9c8757d9c2494012b962ef9eb2dab9ce7c03923d2",
+    "bug_severity": "error",
+    "bug_type": "bufferAccessOutOfBounds"
+  }
+]

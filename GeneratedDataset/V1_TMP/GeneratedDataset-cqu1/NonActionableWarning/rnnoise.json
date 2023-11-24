@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Null pointer dereference: (int*)0",
+    "cwe": "476",
+    "file_path": "tmp_github/rnnoise/src/rnn.c",
+    "line_number": "104",
+    "column_number": "7",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/xiph/rnnoise.git",
+    "commit_id": "0bcf788e8bbca2a6aed2a6cb986125694c70b288",
+    "commit_id_repair": "b3abc616661a9a528d98e7efce31faa0988517ba",
+    "warning_message": "Null pointer dereference: (int*)0",
+    "hash_id": "c960632e1f855cbf5a6e955ce1def378a67f1ca87f37ce71274ac3502f808673",
+    "bug_severity": "error",
+    "bug_type": "nullPointer"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Null pointer dereference: (int*)0",
+    "cwe": "476",
+    "file_path": "tmp_github/rnnoise/src/rnn.c",
+    "line_number": "150",
+    "column_number": "13",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/xiph/rnnoise.git",
+    "commit_id": "0bcf788e8bbca2a6aed2a6cb986125694c70b288",
+    "commit_id_repair": "b3abc616661a9a528d98e7efce31faa0988517ba",
+    "warning_message": "Null pointer dereference: (int*)0",
+    "hash_id": "c960632e1f855cbf5a6e955ce1def378a67f1ca87f37ce71274ac3502f808673",
+    "bug_severity": "error",
+    "bug_type": "nullPointer"
+  }
+]

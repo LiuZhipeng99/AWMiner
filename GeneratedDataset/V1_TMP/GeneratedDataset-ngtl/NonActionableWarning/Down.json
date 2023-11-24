@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027url\u0027 is redundant or there is possible null pointer dereference: url.",
+    "cwe": "476",
+    "file_path": "tmp_github/Down/Sources/cmark/latex.c",
+    "line_number": "170",
+    "column_number": "20",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/johnxnguyen/Down.git",
+    "commit_id": "4fb13c2facb2b3414278dc249f714d4c1102f2d9",
+    "commit_id_repair": "0bcd20dc56ad7fd47bbb99a1d2302a8bfa43b6d0",
+    "warning_message": "Either the condition \u0027url\u0027 is redundant or there is possible null pointer dereference: url.",
+    "hash_id": "bab8dc6955e334a70418bc4d7c856a4aa415826479fcf09e627947bb8bba9d78",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027url\u0027 is redundant or there is possible null pointer dereference: url.",
+    "cwe": "476",
+    "file_path": "tmp_github/Down/Sources/cmark/latex.c",
+    "line_number": "166",
+    "column_number": "7",
+    "info": "Assuming that condition \u0027url\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/johnxnguyen/Down.git",
+    "commit_id": "4fb13c2facb2b3414278dc249f714d4c1102f2d9",
+    "commit_id_repair": "0bcd20dc56ad7fd47bbb99a1d2302a8bfa43b6d0",
+    "warning_message": "Either the condition \u0027url\u0027 is redundant or there is possible null pointer dereference: url.",
+    "hash_id": "30abb275232064cc34451eba39c3d453fedff1dbe68bf4693f54e06cbf4aa79b",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\\012\\012Sample program that can crash:\\012\\012#include \u003cstdio.h\u003e\\012int main()\\012{\\012    char c[5];\\012    scanf(\"%s\", c);\\012    return 0;\\012}\\012\\012Typing in 5 or more characters may make the program crash. The correct usage here is \u0027scanf(\"%4s\", c);\u0027, as the maximum field width does not include the terminating null byte.\\012Source: http://linux.die.net/man/3/scanf\\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c",
+    "cwe": "119",
+    "file_path": "tmp_github/mimipenguin/src/scanner.c",
+    "line_number": "95",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/huntergregal/mimipenguin.git",
+    "commit_id": "331ce5ad356f87e971a025c473451118b7575210",
+    "commit_id_repair": "9f638ab6ef546c8d3c903a8ded176c0b85fa0a3e",
+    "warning_message": "sscanf() without field width limits can crash with huge input data.",
+    "hash_id": "ab03e9e0c46b94a576c7cb7e1b7b48e7df5fd0bc3d7c76104b1e1d9a5dcfad22",
+    "bug_severity": "warning",
+    "bug_type": "invalidscanf"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/mimipenguin/src/users.c",
+    "line_number": "125",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/huntergregal/mimipenguin.git",
+    "commit_id": "331ce5ad356f87e971a025c473451118b7575210",
+    "commit_id_repair": "9f638ab6ef546c8d3c903a8ded176c0b85fa0a3e",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "c4c70d58ed81f98790eb70ebe886ca9f18ab6d4eb89622aeea3f4787eca27b8f",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  }
+]

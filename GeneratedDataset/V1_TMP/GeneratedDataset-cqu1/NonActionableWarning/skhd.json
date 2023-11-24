@@ -1,0 +1,33 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/skhd/src/notify.c",
+    "line_number": "5",
+    "column_number": "58",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/koekeishiya/skhd.git",
+    "commit_id": "1fbce35a78563f915f3699724623295020f66167",
+    "commit_id_repair": "62ba56b82c32bc9754b733fa8ea48378f417c058",
+    "warning_message": "syntax error",
+    "hash_id": "d682c105cb0e60d7ab70268848c9150cfa76c1bf3eca42de2e50ad4558519e10",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: new_hdr",
+    "cwe": "401",
+    "file_path": "tmp_github/skhd/src/sbuffer.h",
+    "line_number": "36",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/koekeishiya/skhd.git",
+    "commit_id": "d7f5fd5730ca252c2635efd263ba40282a31ca57",
+    "commit_id_repair": "847c2c873c06a3866981834d29eccef1041f5410",
+    "warning_message": "Memory leak: new_hdr",
+    "hash_id": "207eda6a09de9e91c9e743664892b94f9ba014d328aa609fe5363663ae37f924",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]

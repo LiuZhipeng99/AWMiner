@@ -1,0 +1,52 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: test_ip",
+    "cwe": "457",
+    "file_path": "tmp_github/ChinaDNS/src/chinadns.c",
+    "line_number": "422",
+    "column_number": "30",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/shadowsocks/ChinaDNS.git",
+    "commit_id": "ec1039e7dd213ae13f8369c6a6ac7dca41da2da4",
+    "commit_id_repair": "c716f9b044f4c89287505ad4750a4503994d04a4",
+    "warning_message": "Uninitialized variable: test_ip",
+    "hash_id": "8d11a4213b0a23b8c0ae98fa04f8ebda5353431a8a14f3136c3e28cf9c08ee63",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027id_addr\u0027 is redundant or there is possible null pointer dereference: id_addr.",
+    "cwe": "476",
+    "file_path": "tmp_github/ChinaDNS/src/chinadns.c",
+    "line_number": "322",
+    "column_number": "5",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/shadowsocks/ChinaDNS.git",
+    "commit_id": "02ca811449dbdeb2229d6793114c6d53e8061e9b",
+    "commit_id_repair": "a87b2d15e526faf6bd68a12323f7207be79e1480",
+    "warning_message": "Either the condition \u0027id_addr\u0027 is redundant or there is possible null pointer dereference: id_addr.",
+    "hash_id": "f0a64e40024bd8837ba2fe8aaee156cb0d60b92ae232560a3f3ba88620b969cd",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027id_addr\u0027 is redundant or there is possible null pointer dereference: id_addr.",
+    "cwe": "476",
+    "file_path": "tmp_github/ChinaDNS/src/chinadns.c",
+    "line_number": "323",
+    "column_number": "9",
+    "info": "Assuming that condition \u0027id_addr\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/shadowsocks/ChinaDNS.git",
+    "commit_id": "02ca811449dbdeb2229d6793114c6d53e8061e9b",
+    "commit_id_repair": "a87b2d15e526faf6bd68a12323f7207be79e1480",
+    "warning_message": "Either the condition \u0027id_addr\u0027 is redundant or there is possible null pointer dereference: id_addr.",
+    "hash_id": "833f709346b6044ca68c7d60a2f226380ab534c7057339ded968088459bcf05f",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

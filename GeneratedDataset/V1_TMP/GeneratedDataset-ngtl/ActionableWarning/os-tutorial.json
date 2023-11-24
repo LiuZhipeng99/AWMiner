@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: tick_ascii",
+    "cwe": "457",
+    "file_path": "tmp_github/os-tutorial/20-interrupts-timer/cpu/timer.c",
+    "line_number": "13",
+    "column_number": "24",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cfenollosa/os-tutorial.git",
+    "commit_id": "46094a0e9615961480b6efa06490d669578326be",
+    "commit_id_repair": "5aaabf189d36a30dfc927c6b28b31b20128711c2",
+    "warning_message": "Uninitialized variable: tick_ascii",
+    "hash_id": "3a1705ab403b22d3eeb8042410ba7a3ecec3356b507af9b04cf1291e67305a6a",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

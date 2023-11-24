@@ -1,0 +1,47 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If G_GUINT64_FORMAT is a macro then please configure it.",
+    "file_path": "tmp_github/vimb/src/normal.c",
+    "line_number": "573",
+    "column_number": "66",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fanglingsu/vimb.git",
+    "commit_id": "3f9a42b9501b8d062be94e0aaa7c440e3deb7e8b",
+    "commit_id_repair": "652f4111b6e11d0ce280ae2a7b5d8f09f85bb253",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If G_GUINT64_FORMAT is a macro then please configure it.",
+    "hash_id": "4a47b788a1afa9a6281f06ee0a2ffb4e5cc8af87d5825f7e82ac9f96b4c28d3e",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/vimb/tests/test-file-storage.c",
+    "line_number": "44",
+    "column_number": "41",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fanglingsu/vimb.git",
+    "commit_id": "a602753067a74b429edbf252062033406bda4dbd",
+    "commit_id_repair": "67d30637c4a02ea37d2ec5ea9c7b9b1285911a49",
+    "warning_message": "syntax error",
+    "hash_id": "3618a981c5d17d7fad6b593e46a4256d16847bd6f9a5ab121d41765c4d261940",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If PROJECT is a macro then please configure it.",
+    "file_path": "tmp_github/vimb/src/setting.c",
+    "line_number": "88",
+    "column_number": "131",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/fanglingsu/vimb.git",
+    "commit_id": "dd0c7a939aa20b86e917cdc15efa786117e039de",
+    "commit_id_repair": "fb57ccc02c8f48cedda71efe65ddc0439c5fb1b4",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If PROJECT is a macro then please configure it.",
+    "hash_id": "9e6e9632fd8fbbc26ba41498a1ca534e94233f1b39a3adca2397106c253caf9b",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

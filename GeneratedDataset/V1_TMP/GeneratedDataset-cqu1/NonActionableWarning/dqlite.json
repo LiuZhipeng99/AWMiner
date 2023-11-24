@@ -1,0 +1,33 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%I64d in format string (no. 1) requires \u0027__int64\u0027 but the argument type is \u0027signed long\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/dqlite/test/integration/test_vfs.c",
+    "line_number": "317",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/canonical/dqlite.git",
+    "commit_id": "14e14c942b7bc341dcf4696a6bb851adf9ab0132",
+    "commit_id_repair": "9fea33ca4ff72056fe6ada53051510b40a3eca07",
+    "warning_message": "%I64d in format string (no. 1) requires \u0027__int64\u0027 but the argument type is \u0027signed long\u0027.",
+    "hash_id": "eae5826550569943db282ecca88a7ebe3355eb357bf7ca0f221e20f4105da7cb",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/dqlite/test/integration/test_vfs.c",
+    "line_number": "317",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/canonical/dqlite.git",
+    "commit_id": "14e14c942b7bc341dcf4696a6bb851adf9ab0132",
+    "commit_id_repair": "9fea33ca4ff72056fe6ada53051510b40a3eca07",
+    "warning_message": "syntax error",
+    "hash_id": "e27e7d16ec7b3273387e4acd2d9a7288c6dffdfdad755093346b9fc4aafd776b",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

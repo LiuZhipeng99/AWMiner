@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If RD_KAFKA_DEBUG_CONTEXTS is a macro then please configure it.",
+    "file_path": "tmp_github/kcat/kcat.c",
+    "line_number": "1319",
+    "column_number": "41",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/edenhill/kcat.git",
+    "commit_id": "3fc21aa1e9facc5fa546b9c922fc26a41666a0c1",
+    "commit_id_repair": "36577070db9757ae3cc4c895f833e3ec7d01bf99",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If RD_KAFKA_DEBUG_CONTEXTS is a macro then please configure it.",
+    "hash_id": "bddc4e3e9f9c8235f416fe4a2da9089105792de8dd93ff2e3d2b82bf6a98fffc",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

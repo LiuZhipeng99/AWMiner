@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027child_exit_status\u0027 is redundant or there is possible null pointer dereference: child_exit_status.",
+    "cwe": "476",
+    "file_path": "tmp_github/Atlas/src/chassis-unix-daemon.c",
+    "line_number": "183",
+    "column_number": "11",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Qihoo360/Atlas.git",
+    "commit_id": "979ee75b7a78b24b6fcca4073ec4825db9ca0085",
+    "commit_id_repair": "c0e0a8daf22dab6917923d067085a7d899791955",
+    "warning_message": "Either the condition \u0027child_exit_status\u0027 is redundant or there is possible null pointer dereference: child_exit_status.",
+    "hash_id": "fb16ded56e518623be94b435d1d79cf38dc0d229bdc1ae72e395f84dac27dc11",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027child_exit_status\u0027 is redundant or there is possible null pointer dereference: child_exit_status.",
+    "cwe": "476",
+    "file_path": "tmp_github/Atlas/src/chassis-unix-daemon.c",
+    "line_number": "181",
+    "column_number": "10",
+    "info": "Assuming that condition \u0027child_exit_status\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Qihoo360/Atlas.git",
+    "commit_id": "979ee75b7a78b24b6fcca4073ec4825db9ca0085",
+    "commit_id_repair": "c0e0a8daf22dab6917923d067085a7d899791955",
+    "warning_message": "Either the condition \u0027child_exit_status\u0027 is redundant or there is possible null pointer dereference: child_exit_status.",
+    "hash_id": "e3df69a88deea8ef29e86dbfffe38783d87e5a25218c76286f506dcc602dbdd7",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

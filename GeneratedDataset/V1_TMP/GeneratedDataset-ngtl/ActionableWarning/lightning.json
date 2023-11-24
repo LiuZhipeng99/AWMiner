@@ -1,0 +1,35 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: pc-\u003ecmd",
+    "cwe": "457",
+    "file_path": "tmp_github/lightning/lightningd/pay.c",
+    "line_number": "535",
+    "column_number": "32",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ElementsProject/lightning.git",
+    "commit_id": "c2d89e462477c9b08a1b15ae2bc543a7516c93f0",
+    "commit_id_repair": "52b1ba2992a481ca94a90e91151c38c2e7210cf1",
+    "warning_message": "Uninitialized variable: pc-\u003ecmd",
+    "hash_id": "7f00ec95509883cc0f5202485373db3ec8be92bdc323f636ba4f848f73176f2f",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: pc-\u003ecmd",
+    "cwe": "457",
+    "file_path": "tmp_github/lightning/lightningd/pay.c",
+    "line_number": "531",
+    "column_number": "7",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ElementsProject/lightning.git",
+    "commit_id": "c2d89e462477c9b08a1b15ae2bc543a7516c93f0",
+    "commit_id_repair": "52b1ba2992a481ca94a90e91151c38c2e7210cf1",
+    "warning_message": "Uninitialized variable: pc-\u003ecmd",
+    "hash_id": "2644a93fb6560928601a84fc147694a8bb2347d58fd5f27d0902ed93572c3fc7",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]
