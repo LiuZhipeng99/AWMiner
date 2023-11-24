@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class ProcessUtils {
     static Logger logger = LoggerFactory.getLogger(ProcessUtils.class);
-    public static void run_process(List<String> os_command, String errorFilePath, String logFilePath){
+    public static void run_process(List<String> os_command, String errorFilePath, String logFilePath, int minutes){
         //        start command
         ProcessBuilder processBuilder = null;
         try { //用Runtime.exec执行命令时会阻塞不知道为啥，Linux不会阻塞但产生不了文件。在win下，用命令行产生文件有cppcheck报错：所在位置 行:1 字符: 1，但用proBuilder就解决了
@@ -39,12 +39,12 @@ public class ProcessUtils {
                 Runtime.getRuntime().exec(command); // 使得运行并发的cppcheck优先级为10 不影响服务器其他任务
             }
             // Object.wait 让当前线程等待某个条件而暂时停止：线程间通信
-            if (process.waitFor(5, TimeUnit.MINUTES)) {
+            if (process.waitFor(minutes, TimeUnit.MINUTES)) {
                 // 未超时结束
                 if(process.exitValue()!=0) logger.error(os_command.get(0) + " exit abnormal, 可能项目当前commit没有c文件");
             }else {
                 // 超时处理逻辑 （没在时间内完成）
-                logger.error(os_command.get(0)  + " run over 5 min, stopping pid "+ processHandle); //本来这个run_process应该有exit返回的用于进程间通信，刚好如果这cppcheck不正常退出后续的parser会catch进而退出循环
+                logger.error(os_command.get(0)  + " run over "+ minutes +"min, stopping pid "+ processHandle); //本来这个run_process应该有exit返回的用于进程间通信，刚好如果这cppcheck不正常退出后续的parser会catch进而退出循环
                 process.destroy(); // 可以选择终止子进程
             }
 //           下面使用 thread.join 当前线程等待thread这个线程程超时：线程间同步 。 同时Process.watfor是进程版

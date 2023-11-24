@@ -3,5 +3,10 @@ requirement:
 加入环境变量：cppcheck和python（扫描misra所需）和Java运行和调试环境
 bugtrace的工具，可使用自定义实现的jar。
 
-
+目前运行问题：1，堆溢出没分析heapmap是不是泄露了，https://chat.openai.com/share/8ec91bde-9d08-4fd0-93da-e5f11c901a8c
+2.有些项目checkout conflict异常，通过恢复git的脚本解决了，但有的项目还会打印出checkout失败的文件。
+有些项目所需内存很大有一次物理内存占了100G但没溢出JVM不知道为何，有些项目扫描时间很长，有些项目有上百万次commit的linux
 仓库信息csv要求第一个是id、第二个是star第三个的link第四个是名字，可以使用镜像link。有些仓库clone过程中会要求进行认证，这说明仓库有问题
+3.稳定运行的超时策略，目前时间瓶颈在cppcheck虽然能并发但扫描是每个文件一个进程最后可能被某个文件拖累大部分时间，而调用上而这每个项目的commit数量差距大，需要设置超时过滤那些长时间运行的，
+目前有三个点timeout，第一个是并发扫描每个项目时候控制每个项目的超时，第二个是控制cppcheck返回超时，第三个是通过commit数乘第一个commit扫描时间预估总体时间。
+每个地方设置或多或少会浪费时间会超时那些值得扫描能在可控时间完成的。所以目前是用cppcheck超时+预计超时12小时来控制。

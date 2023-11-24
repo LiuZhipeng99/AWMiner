@@ -2,7 +2,7 @@ tmp/
 log/
 tmp_github/
 # GeneratedDataset/
-c_repos/
+repos_csv/
 
 
 target/

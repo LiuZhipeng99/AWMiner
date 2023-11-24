@@ -59,9 +59,13 @@ public class GithubTraverser {
                 String nextCommitId = commit_pair[2];
                 // Step2: 对两个版本分别SPA和解析
                 //v1
+                long commitStart = System.currentTimeMillis();
                 GitUtils.checkout(repo.getRepo(), currentCommitId);
                 ArrayList<StaticWarning> cur_wr = SPA(repo, currentCommitId);
-
+                // 预估时间是否超过12小时（12小时 = 12 * 60 * 60 * 1000 毫秒）
+                if((System.currentTimeMillis() - startTime) * commitPairList.size() > 3 * 60 * 60 * 1000){
+                    break;
+                }
                 //v2
                 GitUtils.checkout(repo.getRepo(), nextCommitId);
                 ArrayList<StaticWarning> next_wr = SPA(repo, nextCommitId);
@@ -118,7 +122,6 @@ public class GithubTraverser {
 
         }
 
-//        long elapsedTime =  System.currentTimeMillis() - startTime; // 计算已经经过的时间
 //        System.out.println(introduced_all.size());
         introduced_all.removeAll(fixed_all); // 这里intro - fixed 操作：考虑到某个bug在未来被fix了fixed会记录但introduced_all仍然保留着。
         if (!fixed_all.isEmpty() || !introduced_all.isEmpty()) { //是否保存的条件，同时前面会出现解析异常和git空指针的异常 此处选择全部认为

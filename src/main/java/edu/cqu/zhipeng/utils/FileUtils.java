@@ -70,7 +70,7 @@ public class FileUtils {
                 repoList.add(hub);
             } catch (Exception e) {
                 //throw new RuntimeException(e); //打印出错误栈能知道详细信息 国内环境大概率需要魔法。
-                logger.error(" Try git clone failed, there is a network problem. Please run Script_clone_github.py repoList.csv");
+                logger.error(" Try git clone failed, there is a network problem. Please run Script/Script_clone_github.py repoList.csv");
                 e.printStackTrace();
             }
         }

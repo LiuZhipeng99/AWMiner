@@ -30,7 +30,7 @@ public class SAWMiner {
         int numThread = 1;
 //        int numThreads = Runtime.getRuntime().availableProcessors() / 8; // 获取可用的处理器数量 ， 考虑到不好控制如果用cpu数量那么每个cpu最大负载是cpuNum个cppcheck
         if(args[0].endsWith(".csv")){
-            logger.warn("Start load " + args[0] + "\n  If there is no output for a while, please run 'python3 Script_clone_github.py "+args[0]+"' first");
+            logger.warn("Start load " + args[0] + "\n  If there is no output for a while, please run 'python3 Script/Script_clone_github.py "+args[0]+"' first");
             ArrayList<GithubDetail> gds = FileUtils.getGithubSet(args[0]);
             if(args.length==2 && args[1].matches("\\d+")) numThread = Integer.parseInt(args[1]);
             logger.warn(numThread + " threads start scanning (./tmp_github): " + gds.size());

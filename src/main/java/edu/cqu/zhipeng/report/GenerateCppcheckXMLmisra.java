@@ -22,6 +22,6 @@ public class GenerateCppcheckXMLmisra {
         List<String> os_command = List.of(new String[]{"cppcheck", "-j", String.valueOf(cpuCores),"--rule=misra_c","--addon=/usr/share/cppcheck/addons/misra.json", "--xml", scanFilesPath});
 
         ProcessUtils util = new ProcessUtils();
-        util.run_process(os_command,reportXmlPath,logFilePath);
+        util.run_process(os_command,reportXmlPath,logFilePath,5);
     }
 }
