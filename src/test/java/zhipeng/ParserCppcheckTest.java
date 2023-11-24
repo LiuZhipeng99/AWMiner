@@ -1,17 +1,8 @@
 package zhipeng;
 
-import edu.cqu.zhipengliu.entity.StaticWarning;
-import edu.cqu.zhipengliu.entity.WarningCppcheck;
-import edu.cqu.zhipengliu.parser.ParserCppcheckWarning;
 import org.dom4j.DocumentException;
-import org.junit.Test;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
 
 public class ParserCppcheckTest {
-
 
     public void testCppcheckwarning() throws DocumentException {
 //        ArrayList<StaticWarning> wr = new ParserCppcheckWarning().parseXml("D:\\0Workspace\\IDEA-CODE\\SAWMiner\\src\\test\\java\\zhipeng\\cppcheckreport-no-addon.xml", "testgit","testid");

@@ -1,0 +1,52 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027num\u003d\u003d-1\u0027 is redundant or the array \u0027detailledScores[10][16]\u0027 is accessed at index detailledScores[-1][*], which is out of bounds.",
+    "cwe": "786",
+    "file_path": "tmp_github/SGDK/sample/bench/src/main.c",
+    "line_number": "225",
+    "column_number": "28",
+    "info": "Negative array index",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Stephane-D/SGDK.git",
+    "commit_id": "d45a4010151057e8a7f03ac8400355f24a32b673",
+    "commit_id_repair": "c457a511aa8130fe88cfd59718b44f4c5c6d2f26",
+    "warning_message": "Either the condition \u0027num\u003d\u003d-1\u0027 is redundant or the array \u0027detailledScores[10][16]\u0027 is accessed at index detailledScores[-1][*], which is out of bounds.",
+    "hash_id": "8329982b05871a01385b1090191a4bf1eb4e0123b66bfdc09dc5cce525d65db1",
+    "bug_severity": "warning",
+    "bug_type": "negativeIndex"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027num\u003d\u003d-1\u0027 is redundant or the array \u0027detailledScores[10][16]\u0027 is accessed at index detailledScores[-1][*], which is out of bounds.",
+    "cwe": "786",
+    "file_path": "tmp_github/SGDK/sample/bench/src/main.c",
+    "line_number": "217",
+    "column_number": "13",
+    "info": "Assuming that condition \u0027num\u003d\u003d-1\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Stephane-D/SGDK.git",
+    "commit_id": "d45a4010151057e8a7f03ac8400355f24a32b673",
+    "commit_id_repair": "c457a511aa8130fe88cfd59718b44f4c5c6d2f26",
+    "warning_message": "Either the condition \u0027num\u003d\u003d-1\u0027 is redundant or the array \u0027detailledScores[10][16]\u0027 is accessed at index detailledScores[-1][*], which is out of bounds.",
+    "hash_id": "9523de640caa0d4cbc78a6d7c7d0724df4d8ea33afa817093c612185656cc53d",
+    "bug_severity": "warning",
+    "bug_type": "negativeIndex"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%ld in format string (no. 2) requires \u0027long\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/SGDK/sample/flash-save/src/main.c",
+    "line_number": "32",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Stephane-D/SGDK.git",
+    "commit_id": "2ef3ae64566fe5d8fe36d3c03162b4be74bd8a89",
+    "commit_id_repair": "b2c2ab9b280a8a45305961d5ba6abcc043992299",
+    "warning_message": "%ld in format string (no. 2) requires \u0027long\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "9050bc3da84ee4bfd9af364e49c60dc3f3b9c399bee938082c210af133792ae8",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

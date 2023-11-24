@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "cwe": "398",
+    "file_path": "tmp_github/tio/src/tty.c",
+    "line_number": "353",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/tio/tio.git",
+    "commit_id": "81607424f859411e39efa9b2b137ecd2a6792c65",
+    "commit_id_repair": "ab885713b954446a7fc6997fa551f193386181e5",
+    "warning_message": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "hash_id": "e0cbafef614d6f989e6e6d25cb5c7d028758324e64da635c7c95a39dcd4c8aa7",
+    "bug_severity": "warning",
+    "bug_type": "uselessAssignmentPtrArg"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Width 10 given in format string (no. 1) is larger than destination buffer \u0027keyname[10]\u0027, use %9[^\u003d] to prevent overflowing it.",
+    "cwe": "687",
+    "file_path": "tmp_github/tio/src/options.c",
+    "line_number": "192",
+    "column_number": "13",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/tio/tio.git",
+    "commit_id": "15bef05179033377906d5a9c37485f66a9de07df",
+    "commit_id_repair": "75aa066bf82122007013d4883ce2636369c43a88",
+    "warning_message": "Width 10 given in format string (no. 1) is larger than destination buffer \u0027keyname[10]\u0027, use %9[^\u003d] to prevent overflowing it.",
+    "hash_id": "2a6e8799ce5d9d671890a8fa73868817d68813655d6130fbbd4165d5b8edad05",
+    "bug_severity": "error",
+    "bug_type": "invalidScanfFormatWidth"
+  }
+]

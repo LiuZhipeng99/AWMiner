@@ -1,0 +1,35 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: i",
+    "cwe": "457",
+    "file_path": "tmp_github/donut/format.c",
+    "line_number": "94",
+    "column_number": "11",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/TheWover/donut.git",
+    "commit_id": "e39e57ab57994f4208feb87325f083751b7ca2bf",
+    "commit_id_repair": "cbc4357343c2f1b1e26af851a0eda2a23da21800",
+    "warning_message": "Uninitialized variable: i",
+    "hash_id": "05a7fb74314a60ab20325f8fdb13551d8351e90171e2649f65b0a3a85e42661c",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: i",
+    "cwe": "457",
+    "file_path": "tmp_github/donut/format.c",
+    "line_number": "77",
+    "column_number": "17",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/TheWover/donut.git",
+    "commit_id": "e39e57ab57994f4208feb87325f083751b7ca2bf",
+    "commit_id_repair": "cbc4357343c2f1b1e26af851a0eda2a23da21800",
+    "warning_message": "Uninitialized variable: i",
+    "hash_id": "a045df736a2ef34d1c2e3e807933a002bb03661c11c1cf3b11be0d5c8547a1e9",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  }
+]

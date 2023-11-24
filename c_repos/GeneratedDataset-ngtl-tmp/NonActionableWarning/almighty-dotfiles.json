@@ -1,0 +1,48 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If VERSION is a macro then please configure it.",
+    "file_path": "tmp_github/almighty-dotfiles/.dwm/dmenu_custom/dmenu.c",
+    "line_number": "106",
+    "column_number": "17",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/addy-dclxvi/almighty-dotfiles.git",
+    "commit_id": "7366ff42b51cb1ebeaa98af6ad3c355f473af66e",
+    "commit_id_repair": "c21d4b0119657eadb17e65cf31ace4ed9ea5109f",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If VERSION is a macro then please configure it.",
+    "hash_id": "da83cfca544d94601183e29289889e3582adf5a993a96b428da7bcabffdf485b",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "snprintf format string requires 0 parameters but 1 is given.",
+    "cwe": "685",
+    "file_path": "tmp_github/almighty-dotfiles/.dwm/dwmstatus_custom/dwmstatus.c",
+    "line_number": "136",
+    "column_number": "10",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/addy-dclxvi/almighty-dotfiles.git",
+    "commit_id": "7366ff42b51cb1ebeaa98af6ad3c355f473af66e",
+    "commit_id_repair": "c21d4b0119657eadb17e65cf31ace4ed9ea5109f",
+    "warning_message": "snprintf format string requires 0 parameters but 1 is given.",
+    "hash_id": "925aae5fa87eeefd557d556e200df28dc4ca29520a109109051788f79de5ddaa",
+    "bug_severity": "warning",
+    "bug_type": "wrongPrintfScanfArgNum"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If VERSION is a macro then please configure it.",
+    "file_path": "tmp_github/almighty-dotfiles/.dwm/dwm_custom/dwm.c",
+    "line_number": "2762",
+    "column_number": "13",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/addy-dclxvi/almighty-dotfiles.git",
+    "commit_id": "7366ff42b51cb1ebeaa98af6ad3c355f473af66e",
+    "commit_id_repair": "c21d4b0119657eadb17e65cf31ace4ed9ea5109f",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If VERSION is a macro then please configure it.",
+    "hash_id": "4e045c4c6db327dcf9a59b12741471873c6ef122fe8ec51b6409913a2750ff1a",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

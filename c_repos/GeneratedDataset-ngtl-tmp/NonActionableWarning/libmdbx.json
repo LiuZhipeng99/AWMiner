@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "No header in #include",
+    "file_path": "tmp_github/libmdbx/src/internals.h",
+    "line_number": "16",
+    "column_number": "0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/erthink/libmdbx.git",
+    "commit_id": "971f924c4419245a38a4714497bc185969467cc0",
+    "commit_id_repair": "5d7d45f0e549f0935c2e8d4f94f629014879b213",
+    "warning_message": "No header in #include",
+    "hash_id": "41faa2e1a28036f0a2c7923d80fa8b2004b519595c7eed5727338f4499f6892f",
+    "bug_severity": "error",
+    "bug_type": "preprocessorErrorDirective"
+  }
+]

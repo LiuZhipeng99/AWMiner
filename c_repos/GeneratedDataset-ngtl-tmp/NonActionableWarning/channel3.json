@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/channel3/common/mdns.c",
+    "line_number": "18",
+    "column_number": "40",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cnlohr/channel3.git",
+    "commit_id": "47700656013a3d4d5d05bc6a7801ab8604442807",
+    "commit_id_repair": "faec31d8dbac56c885ba7ca29abb5e396abc4f63",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "8d2a858cda2df431447aaaf7fa7871545253857f5581e6448d702a2e820c1d2c",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  }
+]

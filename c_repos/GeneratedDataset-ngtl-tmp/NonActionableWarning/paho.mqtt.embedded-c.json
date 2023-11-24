@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Member variable \u0027IPStack::mysock\u0027 is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.",
+    "cwe": "398",
+    "file_path": "tmp_github/paho.mqtt.embedded-c/MQTTClient/samples/linux/main.cpp",
+    "line_number": "30",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/eclipse/paho.mqtt.embedded-c.git",
+    "commit_id": "3d36ea63fe1ea9716a79ab1de4a75fceedf5366d",
+    "commit_id_repair": "2248dee36e9806ed50d2213317d6dfa0800f3f93",
+    "warning_message": "Member variable \u0027IPStack::mysock\u0027 is not initialized in the constructor.",
+    "hash_id": "0b1f3633d5224adcdfc3a74b9698d5e63ecc03dcb480f3ba8da1bec5bf7cf43e",
+    "bug_severity": "warning",
+    "bug_type": "uninitMemberVar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Member variable \u0027IPStack::mysock\u0027 is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.",
+    "cwe": "398",
+    "file_path": "tmp_github/paho.mqtt.embedded-c/MQTTClient/src/linux/linux.cpp",
+    "line_number": "25",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/eclipse/paho.mqtt.embedded-c.git",
+    "commit_id": "ae4deaed01ba05b284449982c578028e4ddd4e33",
+    "commit_id_repair": "be624044b47a30e80ebbc0fa6864c57808ee7883",
+    "warning_message": "Member variable \u0027IPStack::mysock\u0027 is not initialized in the constructor.",
+    "hash_id": "dbe41ea0e4b9d1da27780cd702ec8e9ad4fa7b416d4d2a29968bb01a268fe53f",
+    "bug_severity": "warning",
+    "bug_type": "uninitMemberVar"
+  }
+]

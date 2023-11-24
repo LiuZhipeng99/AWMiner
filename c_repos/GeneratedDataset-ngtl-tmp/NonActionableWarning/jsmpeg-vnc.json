@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: self",
+    "cwe": "401",
+    "file_path": "tmp_github/jsmpeg-vnc/source/app.c",
+    "line_number": "90",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/phoboslab/jsmpeg-vnc.git",
+    "commit_id": "25cd113843d09016160a6dd9b480165e19666090",
+    "commit_id_repair": "f3b7fdf6d58128b832001d53f475635e2d1db2c7",
+    "warning_message": "Memory leak: self",
+    "hash_id": "7f3a4b1106aebc3fe7cc29e0960b8e060f20a154dcd6f635124ba09399ff5f2d",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]

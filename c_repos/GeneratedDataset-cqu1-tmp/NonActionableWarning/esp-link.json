@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Logical disjunction always evaluates to true: value \u003e\u003d 1 || value \u003c\u003d 13. Are these conditions necessary? Did you intend to use \u0026\u0026 instead? Are the numbers correct? Are you comparing the correct variables?",
+    "cwe": "571",
+    "file_path": "tmp_github/esp-link/esp-link/cgiwifi.c",
+    "line_number": "647",
+    "column_number": "24",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/jeelabs/esp-link.git",
+    "commit_id": "5995df787d0c99d016d2f81471308ab2e6bac2d3",
+    "commit_id_repair": "ef3d68d8f04342cd593ef6d9c887bbf5cb77dbf5",
+    "warning_message": "Logical disjunction always evaluates to true: value \u003e\u003d 1 || value \u003c\u003d 13.",
+    "hash_id": "ff7b552d664942bd56d1cb305fdf898d0ad1fc5b13f7b993a76de34beac1daf8",
+    "bug_severity": "warning",
+    "bug_type": "incorrectLogicOperator"
+  }
+]

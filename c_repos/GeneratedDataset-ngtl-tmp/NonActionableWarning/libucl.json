@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: var-\u003evalue_len",
+    "cwe": "457",
+    "file_path": "tmp_github/libucl/src/ucl_parser.c",
+    "line_number": "462",
+    "column_number": "23",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/vstakhov/libucl.git",
+    "commit_id": "9b898eaa88b4b1a33f7813018b40d4ff4e1105bf",
+    "commit_id_repair": "110428d7aabf41a62e71ce512f4af860a6db9c2f",
+    "warning_message": "Uninitialized variable: var-\u003evalue_len",
+    "hash_id": "a3fd724cfb519ecda56d03d73d1f21a83e817932ebe8de4f934ac42b7b6a388f",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

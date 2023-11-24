@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%llu in format string (no. 1) requires \u0027unsigned long long\u0027 but the argument type is \u0027signed long long\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/Bumblebee/src/bblogger.c",
+    "line_number": "112",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Bumblebee-Project/Bumblebee.git",
+    "commit_id": "71c877af79c9fa2c2762570996e5117c3ddd21e2",
+    "commit_id_repair": "17fe107f5f3dabffcdcfe1a02a62df8e8e299fc8",
+    "warning_message": "%llu in format string (no. 1) requires \u0027unsigned long long\u0027 but the argument type is \u0027signed long long\u0027.",
+    "hash_id": "84d3cb3dfa2a1fac46eed562ed15b1fcdf12621896e9dfb03fc38541fb09796f",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_uint"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Resource leak: fp",
+    "cwe": "775",
+    "file_path": "tmp_github/Bumblebee/src/pci.c",
+    "line_number": "125",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Bumblebee-Project/Bumblebee.git",
+    "commit_id": "4d85a08d408e340f3f6dd6e5be1fde63bea79fad",
+    "commit_id_repair": "c7668f4926c5339f5fa810a24db31b95d9a3efa0",
+    "warning_message": "Resource leak: fp",
+    "hash_id": "943bfaf9d1786367ecef79c1857164f96989684b0fd6371164742eea59f893a0",
+    "bug_severity": "error",
+    "bug_type": "resourceLeak"
+  }
+]

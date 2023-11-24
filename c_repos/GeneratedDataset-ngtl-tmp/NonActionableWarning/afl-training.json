@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Memory leak: out",
+    "cwe": "401",
+    "file_path": "tmp_github/afl-training/quickstart/vulnerable.c",
+    "line_number": "22",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/mykter/afl-training.git",
+    "commit_id": "078554766d13de01135ed863ad7ff4eb1d89c199",
+    "commit_id_repair": "0d5e18356e511808d7c22c88285be6b6c24b0c43",
+    "warning_message": "Memory leak: out",
+    "hash_id": "62d6c2891bb5faf5ed86ffd02fc44c180cc98b5b4d7ff2cea81acbb387b9f560",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]

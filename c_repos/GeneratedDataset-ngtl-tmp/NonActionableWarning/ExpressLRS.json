@@ -1,0 +1,33 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Member variable \u0027StringStream::length\u0027 is not initialized in the constructor. Member variables of native types, pointers, or references are left uninitialized when the class is instantiated. That may cause bugs or undefined behavior.",
+    "cwe": "398",
+    "file_path": "tmp_github/ExpressLRS/src/test/test_msp/mock_serial.h",
+    "line_number": "11",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ExpressLRS/ExpressLRS.git",
+    "commit_id": "df44dd3f1464fb5f470e95b36daa5e5951b5ad5d",
+    "commit_id_repair": "ccf8146ca2d884a9aec25394ee7eca5a19e0c520",
+    "warning_message": "Member variable \u0027StringStream::length\u0027 is not initialized in the constructor.",
+    "hash_id": "7368e9d21b0d54748d7e2937ef6f52c42d00c120dc98bc93d5a80109cad02246",
+    "bug_severity": "warning",
+    "bug_type": "uninitMemberVar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "failed to expand \u0027IO_CREATE\u0027, Wrong number of parameters for macro \u0027IO_CREATE_IMPL\u0027.",
+    "file_path": "tmp_github/ExpressLRS/src/bootloader/src/Src/main.h",
+    "line_number": "88",
+    "column_number": "0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ExpressLRS/ExpressLRS.git",
+    "commit_id": "4033e29a9e051b1d73865b3b96a17bedbe3b040f",
+    "commit_id_repair": "149b8aaffef5d27d3b42c3500df01846328dc691",
+    "warning_message": "failed to expand \u0027IO_CREATE\u0027, Wrong number of parameters for macro \u0027IO_CREATE_IMPL\u0027.",
+    "hash_id": "c09b7a5f256ec5360070ef4a3e6c87d84c14ba04078a520b36a05fe904070804",
+    "bug_severity": "error",
+    "bug_type": "preprocessorErrorDirective"
+  }
+]

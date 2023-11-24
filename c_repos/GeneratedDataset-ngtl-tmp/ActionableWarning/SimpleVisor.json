@@ -1,0 +1,47 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If DECLSPEC_ALIGN is a macro then please configure it.",
+    "file_path": "tmp_github/SimpleVisor/shv_x.h",
+    "line_number": "60",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ionescu007/SimpleVisor.git",
+    "commit_id": "f5dd1af02f22e2caf564dea4705bce2d42167061",
+    "commit_id_repair": "98af3a870a27d66e820379056ea09153ef823332",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If DECLSPEC_ALIGN is a macro then please configure it.",
+    "hash_id": "9b2569d27dd61530e762b9c4ade8c08f367625ece6c6dffd28e95a99b84d4121",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/SimpleVisor/shv.c",
+    "line_number": "43",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ionescu007/SimpleVisor.git",
+    "commit_id": "f35f5b35bf3dfda2b65b92ccf47a2e7953351563",
+    "commit_id_repair": "2bc0a27d447902930ed725269a35a96a3d32f562",
+    "warning_message": "syntax error",
+    "hash_id": "d8e2a77ef10582ce6dfc0b4e7d92345202493b5e1e6e577ff77954af87e62b4c",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If DECLSPEC_ALIGN is a macro then please configure it.",
+    "file_path": "tmp_github/SimpleVisor/shv.h",
+    "line_number": "49",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ionescu007/SimpleVisor.git",
+    "commit_id": "f35f5b35bf3dfda2b65b92ccf47a2e7953351563",
+    "commit_id_repair": "2bc0a27d447902930ed725269a35a96a3d32f562",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If DECLSPEC_ALIGN is a macro then please configure it.",
+    "hash_id": "b806851622d53aa8b0c8e4461a3d3cd68d978e69cc570ea170e40e84beac3606",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

@@ -27,9 +27,27 @@
             <version>1.18.28</version>
         </dependency>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.7.25</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.10</version>
+        </dependency>
+<!--下面是功能所需库-->
+        <dependency>
+            <groupId>org.eclipse.jgit</groupId>
+            <artifactId>org.eclipse.jgit</artifactId>
+            <version>6.5.0.202303070854-r</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
         </dependency>
 
         <dependency>
@@ -38,44 +56,48 @@
             <version>5.8</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>com.itsaky.androidide.treesitter</groupId>-->
+<!--            <artifactId>tree-sitter-java</artifactId>-->
+<!--            <version>4.0.0</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>org.eclipse.jgit</groupId>
-            <artifactId>org.eclipse.jgit</artifactId>
-            <version>6.5.0.202303070854-r</version>
-            <scope>compile</scope>
+            <groupId>org.antlr</groupId>
+            <artifactId>antlr4</artifactId>
+            <version>4.9.2</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-simple</artifactId>
-            <version>1.7.25</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.tsantalis</groupId>
-            <artifactId>refactoring-miner</artifactId>
-            <version>3.0.0</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.tsantalis</groupId>-->
+<!--            <artifactId>refactoring-miner</artifactId>-->
+<!--            <version>3.0.0</version>-->
+<!--        </dependency>-->
 
         <!--    gpt库-->
-        <dependency>
-            <groupId>com.github.plexpt</groupId>
-            <artifactId>chatgpt</artifactId>
-            <version>4.0.5</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.plexpt</groupId>-->
+<!--            <artifactId>chatgpt</artifactId>-->
+<!--            <version>4.0.5</version>-->
+<!--        </dependency>-->
 
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
                 <version>3.2.4</version>
+                <configuration>
+                    <createDependencyReducedPom>false</createDependencyReducedPom>
+                </configuration>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -85,16 +107,19 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>edu.cqu.zhipengliu.SAWMiner</mainClass>
+                                    <mainClass>edu.cqu.zhipeng.SAWMiner</mainClass>
                                 </transformer>
                             </transformers>
                             <filters> //用maven插件打包后 java.lang.SecurityException通过添加filter解决
                                 <filter>
                                     <artifact>*:*</artifact>
                                     <excludes>
+<!--                     解决诸多警告如: some class files are present in two or more JARs. When this happens, only one present in two or more JARs.-->
+                                        <exclude>module-info.class</exclude>
                                         <exclude>META-INF/*.MF</exclude>
                                         <exclude>META-INF/DEPENDENCIES</exclude>
                                         <exclude>META-INF/LICENSE*</exclude>
+                                        <exclude>LICENSE</exclude>
                                         <exclude>META-INF/NOTICE*</exclude>
                                         <exclude>META-INF/MANIFEST*</exclude>
                                         <exclude>META-INF/*.SF</exclude>

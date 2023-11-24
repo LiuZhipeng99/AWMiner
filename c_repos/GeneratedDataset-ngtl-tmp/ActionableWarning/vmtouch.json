@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Char literal compared with pointer \u0027tp\u0027. Did you intend to dereference it?",
+    "cwe": "595",
+    "file_path": "tmp_github/vmtouch/vmtouch.c",
+    "line_number": "213",
+    "column_number": "22",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/hoytech/vmtouch.git",
+    "commit_id": "9b474d827a0980b5192065cb860d2e1410ceb731",
+    "commit_id_repair": "0b0e1b477e7e664e42d2a844d501418b5fdf5be9",
+    "warning_message": "Char literal compared with pointer \u0027tp\u0027. Did you intend to dereference it?",
+    "hash_id": "7c1c0fd5bd555126455547bc2038a956b664ea41965bfafc59283e84638fdfba",
+    "bug_severity": "warning",
+    "bug_type": "charLiteralWithCharPtrCompare"
+  }
+]

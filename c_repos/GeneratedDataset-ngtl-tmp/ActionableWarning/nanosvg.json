@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Unused variable value \u0027closed\u0027",
+    "cwe": "398",
+    "file_path": "tmp_github/nanosvg/example/main.c",
+    "line_number": "124",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/memononen/nanosvg.git",
+    "commit_id": "c7baafd4935fd3298b21448c430550715c59a958",
+    "commit_id_repair": "9ea087a788b23c5e4aa2f721f5e359cbbcbac206",
+    "warning_message": "Unused variable value \u0027closed\u0027",
+    "hash_id": "6e17446fdf88876fea16a21d6fbfddde90bfbe0549202e07c25ab688a2389c53",
+    "bug_severity": "warning",
+    "bug_type": "constStatement"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Unused variable value \u0027width\u0027",
+    "cwe": "398",
+    "file_path": "tmp_github/nanosvg/example/main.c",
+    "line_number": "231",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/memononen/nanosvg.git",
+    "commit_id": "c7baafd4935fd3298b21448c430550715c59a958",
+    "commit_id_repair": "9ea087a788b23c5e4aa2f721f5e359cbbcbac206",
+    "warning_message": "Unused variable value \u0027width\u0027",
+    "hash_id": "5fd5ecfff9ae7d3ef97221a294969ab7451718439b6d94ac2b0d1eb9ad54c28d",
+    "bug_severity": "warning",
+    "bug_type": "constStatement"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Unused variable value \u0027height\u0027",
+    "cwe": "398",
+    "file_path": "tmp_github/nanosvg/example/main.c",
+    "line_number": "231",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/memononen/nanosvg.git",
+    "commit_id": "c7baafd4935fd3298b21448c430550715c59a958",
+    "commit_id_repair": "9ea087a788b23c5e4aa2f721f5e359cbbcbac206",
+    "warning_message": "Unused variable value \u0027height\u0027",
+    "hash_id": "160973eab32636908c835610ea1f2aba64974280df92b2f444dd7afb3c787ec3",
+    "bug_severity": "warning",
+    "bug_type": "constStatement"
+  }
+]

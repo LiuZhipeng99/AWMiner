@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "The code contains unhandled character(s) (character code\u003d239). Neither unicode nor extended ascii is supported.",
+    "file_path": "tmp_github/Android-Inline-Hook/include/inlineHook.h",
+    "line_number": "30",
+    "column_number": "0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ele7enxxh/Android-Inline-Hook.git",
+    "commit_id": "dcefaeba443ccc8c9eed05e9e2e36a34b213c20d",
+    "commit_id_repair": "37c7373224a34cea26051cfa444b83da17e00425",
+    "warning_message": "The code contains unhandled character(s) (character code\u003d239). Neither unicode nor extended ascii is supported.",
+    "hash_id": "17aa60dcd2c66da79ed32622f16d3c88e18b4a70408722829efd4b7a950015b3",
+    "bug_severity": "error",
+    "bug_type": "preprocessorErrorDirective"
+  }
+]

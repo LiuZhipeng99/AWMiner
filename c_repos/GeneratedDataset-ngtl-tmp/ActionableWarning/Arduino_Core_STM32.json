@@ -1,0 +1,35 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: sdmmc_clk",
+    "cwe": "457",
+    "file_path": "tmp_github/Arduino_Core_STM32/system/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_sd.c",
+    "line_number": "2429",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/stm32duino/Arduino_Core_STM32.git",
+    "commit_id": "a1b78a93ff70161516551871ea689e1bfddef791",
+    "commit_id_repair": "7ae7d34ca728667f6f00788f7cbd957fa1591a25",
+    "warning_message": "Uninitialized variable: sdmmc_clk",
+    "hash_id": "84f755561b6a0ffd6eff9b4bc71b2a81007eaa45cbdc5becdf999ffdbd9b2902",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: sdmmc_clk",
+    "cwe": "457",
+    "file_path": "tmp_github/Arduino_Core_STM32/system/Drivers/STM32H5xx_HAL_Driver/Src/stm32h5xx_hal_sd.c",
+    "line_number": "2419",
+    "column_number": "23",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/stm32duino/Arduino_Core_STM32.git",
+    "commit_id": "a1b78a93ff70161516551871ea689e1bfddef791",
+    "commit_id_repair": "7ae7d34ca728667f6f00788f7cbd957fa1591a25",
+    "warning_message": "Uninitialized variable: sdmmc_clk",
+    "hash_id": "337ef06fe20d4f24354d58982a8fc7352238e64cc458bac5af9af2d09b592305",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  }
+]

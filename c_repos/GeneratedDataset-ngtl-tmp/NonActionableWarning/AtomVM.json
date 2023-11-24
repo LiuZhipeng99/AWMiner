@@ -1,0 +1,49 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory pointed to by \u0027host_str\u0027 is freed twice.",
+    "cwe": "415",
+    "file_path": "tmp_github/AtomVM/src/libAtomVM/otp_net.c",
+    "line_number": "178",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/atomvm/AtomVM.git",
+    "commit_id": "b8b74c67cf00c5dbb5e8b94102d64ab7d722ed8d",
+    "commit_id_repair": "6643ea77294c5f70d783d1df54c737905743fc85",
+    "warning_message": "Memory pointed to by \u0027host_str\u0027 is freed twice.",
+    "hash_id": "eee8401af3c13a21d616f939e1b712094dfc667ceb7a9e756e03beb00e790f1d",
+    "bug_severity": "error",
+    "bug_type": "doubleFree"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory pointed to by \u0027host_str\u0027 is freed twice.",
+    "cwe": "415",
+    "file_path": "tmp_github/AtomVM/src/libAtomVM/otp_net.c",
+    "line_number": "147",
+    "column_number": "13",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/atomvm/AtomVM.git",
+    "commit_id": "b8b74c67cf00c5dbb5e8b94102d64ab7d722ed8d",
+    "commit_id_repair": "6643ea77294c5f70d783d1df54c737905743fc85",
+    "warning_message": "Memory pointed to by \u0027host_str\u0027 is freed twice.",
+    "hash_id": "eee8401af3c13a21d616f939e1b712094dfc667ceb7a9e756e03beb00e790f1d",
+    "bug_severity": "error",
+    "bug_type": "doubleFree"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If ATOMVM_VERSION is a macro then please configure it.",
+    "file_path": "tmp_github/AtomVM/src/platforms/stm32/src/main.c",
+    "line_number": "132",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/atomvm/AtomVM.git",
+    "commit_id": "6062b0aae504ddc01fd428df14e2a154e7a249ed",
+    "commit_id_repair": "574d273261072cc35c0c3c9769a2a947984b33f4",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If ATOMVM_VERSION is a macro then please configure it.",
+    "hash_id": "1319155054025b32b5ebed588009071b788ce955ae8edc459cd71a7e9f2a0bf9",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

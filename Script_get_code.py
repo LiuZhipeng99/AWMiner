@@ -12,7 +12,7 @@ def read_json_files(folder_path):
                     data = json.load(file)
                     json_data.extend(data)
                 except json.JSONDecodeError:
-                    print(f"Error decoding JSON in file: {file_path}")
+                    print(f"edu.cqu.zhipeng.parser.Error decoding JSON in file: {file_path}")
     
     return json_data
 

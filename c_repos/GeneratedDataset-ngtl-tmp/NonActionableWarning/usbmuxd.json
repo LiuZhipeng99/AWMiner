@@ -1,0 +1,47 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If ENDFOREACH is a macro then please configure it.",
+    "file_path": "tmp_github/usbmuxd/src/usb.c",
+    "line_number": "389",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/libimobiledevice/usbmuxd.git",
+    "commit_id": "0fdad22f14b0da6fe864df3aae1f84d385e95b73",
+    "commit_id_repair": "1eb5a01477da3a29803ce5602c85e9e98e4a4b72",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If ENDFOREACH is a macro then please configure it.",
+    "hash_id": "7bc250b756f8ca788b34d261b9941c16fbaa6f62d1b19bb2201fe92b1152356d",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If ENDFOREACH is a macro then please configure it.",
+    "file_path": "tmp_github/usbmuxd/src/device.c",
+    "line_number": "163",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/libimobiledevice/usbmuxd.git",
+    "commit_id": "32a8ebedc695dfae21497977bf2f77a3d5b50f91",
+    "commit_id_repair": "cddc7683e4ce003eb4ffaead8146f21a5bf4cb81",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If ENDFOREACH is a macro then please configure it.",
+    "hash_id": "f8134920b549068cfa6f90427969f73398321080257c1fca76739f9dc2f791d5",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If PACKAGE_URL is a macro then please configure it.",
+    "file_path": "tmp_github/usbmuxd/src/main.c",
+    "line_number": "391",
+    "column_number": "26",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/libimobiledevice/usbmuxd.git",
+    "commit_id": "638438237ce92dd72caccd5ed5d0635753a59d32",
+    "commit_id_repair": "8604ed93a812e20f357d120464b0097a6a4b7020",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If PACKAGE_URL is a macro then please configure it.",
+    "hash_id": "b482fa0340f15c7e0b8fd64d6bdf362dce7e029b04c8c067e79987cc1c69dc92",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

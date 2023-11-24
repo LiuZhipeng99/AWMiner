@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it.",
+    "file_path": "tmp_github/obs-ndi/src/plugin-main.cpp",
+    "line_number": "45",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Palakis/obs-ndi.git",
+    "commit_id": "79b2f80b645efebf276f4cd2567775384970e093",
+    "commit_id_repair": "7d6cf540dae94b6bdc234347b7d9e2717e75aab6",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If OBS_DECLARE_MODULE is a macro then please configure it.",
+    "hash_id": "53e8384715d2b95e17c001082e46a4713e434cf7bd5c754e996375566879ea80",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it.",
+    "file_path": "tmp_github/obs-ndi/src/forms/output-settings.h",
+    "line_number": "36",
+    "column_number": "11",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Palakis/obs-ndi.git",
+    "commit_id": "57ae3a3fbb3a603b430e5362831f478337bca3ef",
+    "commit_id_repair": "82eed031f79cebd22754ba1e3dfee658b39cc12a",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If slots is a macro then please configure it.",
+    "hash_id": "da5dbccdece24fd62f11a1296cf28e649a653b5e684bb6ce79fe49fffc0721ae",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

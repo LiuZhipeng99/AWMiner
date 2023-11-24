@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Resource leak: fp",
+    "cwe": "775",
+    "file_path": "tmp_github/CRoaring/microbenchmarks/bench.h",
+    "line_number": "64",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/RoaringBitmap/CRoaring.git",
+    "commit_id": "0eafc44b6f83522ab158676dd3553cbcd32e2eb3",
+    "commit_id_repair": "e9c28ecde95f4f4b6940b8e89ef54c11658bbc59",
+    "warning_message": "Resource leak: fp",
+    "hash_id": "0eb345878a184df0561d93c5e0e85d46a5ad656a17ab74e1181c2a1689708e8a",
+    "bug_severity": "error",
+    "bug_type": "resourceLeak"
+  }
+]

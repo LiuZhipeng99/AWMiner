@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027pIdx\u003d\u003d7\u0027 is redundant or the array \u0027pattern[7]\u0027 is accessed at index 8, which is out of bounds.",
+    "cwe": "788",
+    "file_path": "tmp_github/RemotePotato0/RelayLib.cpp",
+    "line_number": "171",
+    "column_number": "26",
+    "info": "Array index out of bounds",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antonioCoco/RemotePotato0.git",
+    "commit_id": "4d4a3687207f318c1956b3fe3037c201a5fdce3a",
+    "commit_id_repair": "9d264afdf3e700b9fa0cb5b43a6cf04bfa757547",
+    "warning_message": "Either the condition \u0027pIdx\u003d\u003d7\u0027 is redundant or the array \u0027pattern[7]\u0027 is accessed at index 8, which is out of bounds.",
+    "hash_id": "ef5f0fbd0872b02ffe15107f395111629430ab0aa87712d77dfff1cba659a900",
+    "bug_severity": "warning",
+    "bug_type": "arrayIndexOutOfBoundsCond"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Either the condition \u0027pIdx\u003d\u003d7\u0027 is redundant or the array \u0027pattern[7]\u0027 is accessed at index 8, which is out of bounds.",
+    "cwe": "788",
+    "file_path": "tmp_github/RemotePotato0/RelayLib.cpp",
+    "line_number": "172",
+    "column_number": "4",
+    "info": "Compound assignment \u0027\u003d\u0027, assigned value is 8",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/antonioCoco/RemotePotato0.git",
+    "commit_id": "4d4a3687207f318c1956b3fe3037c201a5fdce3a",
+    "commit_id_repair": "9d264afdf3e700b9fa0cb5b43a6cf04bfa757547",
+    "warning_message": "Either the condition \u0027pIdx\u003d\u003d7\u0027 is redundant or the array \u0027pattern[7]\u0027 is accessed at index 8, which is out of bounds.",
+    "hash_id": "dfe09d46add6ba9988d02afa9abf7a79f20aec92b26414dbe5ddcd87aa4b8967",
+    "bug_severity": "warning",
+    "bug_type": "arrayIndexOutOfBoundsCond"
+  }
+]

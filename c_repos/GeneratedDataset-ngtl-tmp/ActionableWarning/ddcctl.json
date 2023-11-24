@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: data",
+    "cwe": "457",
+    "file_path": "tmp_github/ddcctl/DDC.c",
+    "line_number": "184",
+    "column_number": "63",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/kfix/ddcctl.git",
+    "commit_id": "efb00bdd7c512beaf547326ddfc49a3e62b0ea8b",
+    "commit_id_repair": "d729da4a1805ceed43e23ed384fb6e7aa6982929",
+    "warning_message": "Uninitialized variable: data",
+    "hash_id": "67919d77abaefe4b7d1a576e4bbe5f6f3a5079739f330a7c47079336ebf93840",
+    "bug_severity": "error",
+    "bug_type": "legacyUninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: data[0]",
+    "cwe": "457",
+    "file_path": "tmp_github/ddcctl/DDC.c",
+    "line_number": "214",
+    "column_number": "71",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/kfix/ddcctl.git",
+    "commit_id": "efb00bdd7c512beaf547326ddfc49a3e62b0ea8b",
+    "commit_id_repair": "d729da4a1805ceed43e23ed384fb6e7aa6982929",
+    "warning_message": "Uninitialized variable: data[0]",
+    "hash_id": "cf628cdc4bf87e5670a184700ea6309a0fecdb1d0d10e0f462606a9983fc0670",
+    "bug_severity": "error",
+    "bug_type": "legacyUninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: data[0]",
+    "cwe": "457",
+    "file_path": "tmp_github/ddcctl/DDC.c",
+    "line_number": "195",
+    "column_number": "71",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/kfix/ddcctl.git",
+    "commit_id": "2944cbacdaa8309051467c6a751ed7ad9ca5309c",
+    "commit_id_repair": "42acbde40b46256b0259126526c9a4f337759bce",
+    "warning_message": "Uninitialized variable: data[0]",
+    "hash_id": "cf628cdc4bf87e5670a184700ea6309a0fecdb1d0d10e0f462606a9983fc0670",
+    "bug_severity": "error",
+    "bug_type": "legacyUninitvar"
+  }
+]

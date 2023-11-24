@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/libpcap/pcap-dos.c",
+    "line_number": "331",
+    "column_number": "31",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/the-tcpdump-group/libpcap.git",
+    "commit_id": "b1b1895e55cf2406a7d4f66333a45d7379d43844",
+    "commit_id_repair": "f4f6feec8497ab25ac2f4f62da32d18d2ed464fb",
+    "warning_message": "syntax error",
+    "hash_id": "ee59d16646f08d42d9310206ba056a979505a68cffdc7e10788c6eda54f364b0",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

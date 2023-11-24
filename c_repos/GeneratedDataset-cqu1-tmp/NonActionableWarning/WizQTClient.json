@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it.",
+    "file_path": "tmp_github/WizQTClient/src/share/WizWebEngineView.h",
+    "line_number": "28",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/WizTeam/WizQTClient.git",
+    "commit_id": "daa93b75b81bc7f9ae984ef9ed46a616275db5a6",
+    "commit_id_repair": "eeaef6e56e3615d47a212f1649da2d2c26f54421",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If Q_PROPERTY is a macro then please configure it.",
+    "hash_id": "7361fd287453dbc391947261c06cf8e2cf289f97210f00ddf33560e92a271435",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "The code contains unhandled character(s) (character code\u003d239). Neither unicode nor extended ascii is supported.",
+    "file_path": "tmp_github/WizQTClient/src/WizDocumentWebEngine.cpp",
+    "line_number": "2110",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/WizTeam/WizQTClient.git",
+    "commit_id": "ea3b4f361dd910dfec556a4c34b8605baafcb27f",
+    "commit_id_repair": "874107adfb965447a100a344411ace86892e9321",
+    "warning_message": "The code contains unhandled character(s) (character code\u003d239). Neither unicode nor extended ascii is supported.",
+    "hash_id": "058dcb30c8afe7dde45ca3639cd2a793c2d0de2a7d2668f02566a018e2b33387",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

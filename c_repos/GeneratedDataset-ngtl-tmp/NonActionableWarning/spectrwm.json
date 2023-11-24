@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/spectrwm/spectrwm.c",
+    "line_number": "8973",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/conformal/spectrwm.git",
+    "commit_id": "a83c96be07f59fc35bd5359ceae259b5e0ef8c6e",
+    "commit_id_repair": "575f0bd2c5164584851b2ca71a5cc2ab0293e58a",
+    "warning_message": "syntax error",
+    "hash_id": "c74918cbcdae2a4c072f970bac5e3008e07fe20661288ed4064a7e4f02998725",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

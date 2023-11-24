@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Class \u0027Player\u0027 does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).",
+    "cwe": "398",
+    "file_path": "tmp_github/LearningVideo/app/src/main/cpp/media/player.cpp",
+    "line_number": "10",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ChenLittlePing/LearningVideo.git",
+    "commit_id": "b80d404d6c24c95172ea8d25f9ef09aec37318de",
+    "commit_id_repair": "1183767328926a0c55d67936ad2dc00851360272",
+    "warning_message": "Class \u0027Player\u0027 does not have a copy constructor which is recommended since it has dynamic memory/resource allocation(s).",
+    "hash_id": "d071230298059a644264e4e0bb9069ce85aaaa5f3b5e02dba1bb104f4b94bfe6",
+    "bug_severity": "warning",
+    "bug_type": "noCopyConstructor"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Class \u0027Player\u0027 does not have a operator\u003d which is recommended since it has dynamic memory/resource allocation(s).",
+    "cwe": "398",
+    "file_path": "tmp_github/LearningVideo/app/src/main/cpp/media/player.cpp",
+    "line_number": "10",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ChenLittlePing/LearningVideo.git",
+    "commit_id": "b80d404d6c24c95172ea8d25f9ef09aec37318de",
+    "commit_id_repair": "1183767328926a0c55d67936ad2dc00851360272",
+    "warning_message": "Class \u0027Player\u0027 does not have a operator\u003d which is recommended since it has dynamic memory/resource allocation(s).",
+    "hash_id": "9bab1e78214642570540055522333017d070bd35bf9af03bc806e99820c733be",
+    "bug_severity": "warning",
+    "bug_type": "noOperatorEq"
+  }
+]

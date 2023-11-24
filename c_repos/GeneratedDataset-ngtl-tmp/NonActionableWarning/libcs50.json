@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "va_start() or va_copy() called subsequently on \u0027ap\u0027 without va_end() in between.",
+    "cwe": "664",
+    "file_path": "tmp_github/libcs50/src/cs50.c",
+    "line_number": "160",
+    "column_number": "13",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cs50/libcs50.git",
+    "commit_id": "ecbc40b3e64468b492ced05c1ccc8db7417cac20",
+    "commit_id_repair": "552f50ce1f32bf13e345bc059755ba281ab72947",
+    "warning_message": "va_start() or va_copy() called subsequently on \u0027ap\u0027 without va_end() in between.",
+    "hash_id": "546479f71961198e72044e9b5c79ca027b823a15f8bd3741e912bab16506a7be",
+    "bug_severity": "error",
+    "bug_type": "va_start_subsequentCalls"
+  }
+]

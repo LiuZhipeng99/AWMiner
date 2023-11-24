@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Buffer is accessed out of bounds: RADIUS",
+    "cwe": "788",
+    "file_path": "tmp_github/Openwrt-NetKeeper/src/sxplugin.c",
+    "line_number": "42",
+    "column_number": "12",
+    "info": "Buffer overrun",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/miao1007/Openwrt-NetKeeper.git",
+    "commit_id": "2b32875df53e5881f6f850155c0c48b3db6217f5",
+    "commit_id_repair": "84bb8df02f20befd17de22c14b5fedeefc702dd1",
+    "warning_message": "Buffer is accessed out of bounds: RADIUS",
+    "hash_id": "c9241303b3c83fa6171d196b474c710ce5d21cd167d59fa9e478a6ddde131707",
+    "bug_severity": "error",
+    "bug_type": "bufferAccessOutOfBounds"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Buffer is accessed out of bounds: RADIUS",
+    "cwe": "788",
+    "file_path": "tmp_github/Openwrt-NetKeeper/src/wndr3800/sxplugin.c",
+    "line_number": "50",
+    "column_number": "12",
+    "info": "Buffer overrun",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/miao1007/Openwrt-NetKeeper.git",
+    "commit_id": "9f8e8829d7f6f25e4fd3b310a7ae8c264a6f2171",
+    "commit_id_repair": "ede7507bf7442c51eb74a8e0576e3199e7d28316",
+    "warning_message": "Buffer is accessed out of bounds: RADIUS",
+    "hash_id": "c70dc73376633395e17c01074bf98a10b41aa583a189926f61100e94091fb9b2",
+    "bug_severity": "error",
+    "bug_type": "bufferAccessOutOfBounds"
+  }
+]

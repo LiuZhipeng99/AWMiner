@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Identical condition \u0027tempshelldata\u003d\u003dNULL\u0027, second condition is always false",
+    "cwe": "398",
+    "file_path": "tmp_github/trevorc2/agents/c/src/main.c",
+    "line_number": "326",
+    "column_number": "27",
+    "info": "Testing identical condition \u0027tempshelldata\u003d\u003dNULL\u0027",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/trustedsec/trevorc2.git",
+    "commit_id": "b00383c75575979ba0bbf88949d52bbdc1c195a4",
+    "commit_id_repair": "56cbeeec98f8e2b87bf7cdd3abaa80c3d512b5b6",
+    "warning_message": "Identical condition \u0027tempshelldata\u003d\u003dNULL\u0027, second condition is always false",
+    "hash_id": "f7768c1ad52f5bfa24c4f89815706a9a2aed77dbc1e25972665b18b58c66d877",
+    "bug_severity": "warning",
+    "bug_type": "identicalConditionAfterEarlyExit"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Identical condition \u0027tempshelldata\u003d\u003dNULL\u0027, second condition is always false",
+    "cwe": "398",
+    "file_path": "tmp_github/trevorc2/agents/c/src/main.c",
+    "line_number": "323",
+    "column_number": "27",
+    "info": "If condition \u0027tempshelldata\u003d\u003dNULL\u0027 is true, the function will return/exit",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/trustedsec/trevorc2.git",
+    "commit_id": "b00383c75575979ba0bbf88949d52bbdc1c195a4",
+    "commit_id_repair": "56cbeeec98f8e2b87bf7cdd3abaa80c3d512b5b6",
+    "warning_message": "Identical condition \u0027tempshelldata\u003d\u003dNULL\u0027, second condition is always false",
+    "hash_id": "47614c6c26fe6ef9fd717f45b114125b2b5822ae35415adecc2946bfb036beac",
+    "bug_severity": "warning",
+    "bug_type": "identicalConditionAfterEarlyExit"
+  }
+]

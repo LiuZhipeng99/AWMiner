@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%i in format string (no. 2) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/density/benchmark/src/benchmark.c",
+    "line_number": "307",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/k0dai/density.git",
+    "commit_id": "f7e0d9fbbc8576a97446d4b127807dd0d49954a3",
+    "commit_id_repair": "37dfff51250fcf9bbb13c69fccd609961b152801",
+    "warning_message": "%i in format string (no. 2) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "0bf0b660094f00e845a4e26ea512041497712e801dd4e18b31ef1fe798cc9b71",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

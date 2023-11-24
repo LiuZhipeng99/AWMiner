@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Found an exit path from function with non-void return type that has missing return statement",
+    "cwe": "758",
+    "file_path": "tmp_github/PetitPotam/PetitPotam/PetitPotam.cpp",
+    "line_number": "88",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/topotam/PetitPotam.git",
+    "commit_id": "a37bd1f4feb0d8ff3c29e4857cb20d57e0a7b1f4",
+    "commit_id_repair": "96c52984aa204c28c4c5ef16e10df16f1dc0255f",
+    "warning_message": "Found an exit path from function with non-void return type that has missing return statement",
+    "hash_id": "5d637cbc53aad55c040d42bd9fbc67723fd9a96b8aac533affcd3c79d7a0b6f7",
+    "bug_severity": "error",
+    "bug_type": "missingReturn"
+  }
+]

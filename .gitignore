@@ -2,6 +2,8 @@ tmp/
 log/
 tmp_github/
 # GeneratedDataset/
+c_repos/
+
 
 target/
 !.mvn/wrapper/maven-wrapper.jar
