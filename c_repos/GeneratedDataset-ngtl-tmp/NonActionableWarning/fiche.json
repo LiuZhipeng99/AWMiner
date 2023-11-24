@@ -1,0 +1,35 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: *output",
+    "cwe": "457",
+    "file_path": "tmp_github/fiche/fiche.c",
+    "line_number": "666",
+    "column_number": "14",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/solusipse/fiche.git",
+    "commit_id": "8ff08a04093e51dfdbde0b6a4f8f3e58dcbe43be",
+    "commit_id_repair": "54838f5dab34c94113893dc6443e362f715749eb",
+    "warning_message": "Uninitialized variable: *output",
+    "hash_id": "4081f14ea97c5c3439cb9e49bbc49f8118976bff151b171a20cf3c0a14c4368c",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: *output",
+    "cwe": "457",
+    "file_path": "tmp_github/fiche/fiche.c",
+    "line_number": "591",
+    "column_number": "23",
+    "info": "Calling function \u0027generate_slug\u0027, 1st argument \u0027\u0026slug\u0027 value is \u003cUninit\u003e",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/solusipse/fiche.git",
+    "commit_id": "8ff08a04093e51dfdbde0b6a4f8f3e58dcbe43be",
+    "commit_id_repair": "54838f5dab34c94113893dc6443e362f715749eb",
+    "warning_message": "Uninitialized variable: *output",
+    "hash_id": "f160c8117d6adda4973cb251bf5eb3b3ad9c1bf531d5877b899d2408daad2ba9",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  }
+]

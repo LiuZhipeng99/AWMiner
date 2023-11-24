@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/Remotery/sample/dump.c",
+    "line_number": "10",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/Celtoys/Remotery.git",
+    "commit_id": "2ddcad97fa51c9de1722ea8d0a9361e02b39900c",
+    "commit_id_repair": "93f6998e4957918ed9506ff3435227f4e2978fbd",
+    "warning_message": "syntax error",
+    "hash_id": "0fb3ff4a16cd499490e14af497f9b5085b51fc4c946cb0d8365421c9dfcff96b",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

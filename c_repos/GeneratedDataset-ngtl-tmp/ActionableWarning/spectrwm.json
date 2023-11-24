@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If TAILQ_FOREACH is a macro then please configure it.",
+    "file_path": "tmp_github/spectrwm/spectrwm.c",
+    "line_number": "2578",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/conformal/spectrwm.git",
+    "commit_id": "4cb0225527ef2d5acc4a290915538285f5c83112",
+    "commit_id_repair": "a83c96be07f59fc35bd5359ceae259b5e0ef8c6e",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If TAILQ_FOREACH is a macro then please configure it.",
+    "hash_id": "a5c13ddec248a378d508199aa559cff08faef885d9e65b00791d403d1d89a05f",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If TAILQ_FOREACH is a macro then please configure it.",
+    "file_path": "tmp_github/spectrwm/scrotwm.c",
+    "line_number": "518",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/conformal/spectrwm.git",
+    "commit_id": "8c31749c460eed867089f661efd70e0c50e4d657",
+    "commit_id_repair": "367ce80e698570928030a44ab023521c0ad9ee89",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If TAILQ_FOREACH is a macro then please configure it.",
+    "hash_id": "26a5b02eab89f092d2790779b7bfd2e52e50f1d19b772eb0dbcf2ddf40c7fc68",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

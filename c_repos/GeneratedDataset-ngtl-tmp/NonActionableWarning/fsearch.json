@@ -1,0 +1,47 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.",
+    "file_path": "tmp_github/fsearch/src/fsearch_statusbar.c",
+    "line_number": "32",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cboxdoerfer/fsearch.git",
+    "commit_id": "af366f01bd8d49f594ce03f73be90070fef15765",
+    "commit_id_repair": "88fd1bd3e148115358ebfff8cde34e43ddd0414e",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.",
+    "hash_id": "956b6bd8035ba0da63146c41356f46f34c859dc9519eccda4ffa5a6aa3e591b2",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/fsearch/src/fsearch_list_view.h",
+    "line_number": "33",
+    "column_number": "0",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cboxdoerfer/fsearch.git",
+    "commit_id": "dd535f168d94d97883b68156c5b72415e239bed8",
+    "commit_id_repair": "4ffd4d79db5a63d785b084d328f2f98f4fbac10a",
+    "warning_message": "syntax error",
+    "hash_id": "5867b3b1e8cd8a75f8870510c7c728606c7e859304a028881e37ea8e8c4fb40f",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE_WITH_CODE is a macro then please configure it.",
+    "file_path": "tmp_github/fsearch/src/fsearch_list_view.c",
+    "line_number": "79",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cboxdoerfer/fsearch.git",
+    "commit_id": "dd535f168d94d97883b68156c5b72415e239bed8",
+    "commit_id_repair": "4ffd4d79db5a63d785b084d328f2f98f4fbac10a",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE_WITH_CODE is a macro then please configure it.",
+    "hash_id": "ee61353f2a1ed54ca90e55f1794d78a918127df77295109c5aef2fe926014b3f",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

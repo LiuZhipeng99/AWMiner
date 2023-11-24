@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Syntax Error: AST broken, \u0027assert\u0027 doesn\u0027t have two operands.",
+    "file_path": "tmp_github/thinscript/out/compiled.c",
+    "line_number": "956",
+    "column_number": "12",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/evanw/thinscript.git",
+    "commit_id": "c6a078d642edafbe224e95853579a2a589778272",
+    "commit_id_repair": "9e3df47935f51c6741bf80f7a67fff96a14722ab",
+    "warning_message": "Syntax Error: AST broken, \u0027assert\u0027 doesn\u0027t have two operands.",
+    "hash_id": "4af614b44a532a2f24f40cd3df037ccfd902e1bafd77671a6369e53dd5cf5791",
+    "bug_severity": "error",
+    "bug_type": "internalAstError"
+  }
+]

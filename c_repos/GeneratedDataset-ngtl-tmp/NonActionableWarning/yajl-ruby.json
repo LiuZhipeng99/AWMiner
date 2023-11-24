@@ -1,0 +1,51 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: result",
+    "cwe": "457",
+    "file_path": "tmp_github/yajl-ruby/ext/yajl/yajl_ext.c",
+    "line_number": "953",
+    "column_number": "12",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/brianmario/yajl-ruby.git",
+    "commit_id": "b86a2609de1e07bb8b33046d3a82679195f3b3d7",
+    "commit_id_repair": "6e69b5a4e23be91b5fb39e5920e36470f3331990",
+    "warning_message": "Uninitialized variable: result",
+    "hash_id": "bf4065dd62377672ed39f7983a683a9f30020c025bd6a10a5579f9621d026d4b",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: result",
+    "cwe": "457",
+    "file_path": "tmp_github/yajl-ruby/ext/yajl/yajl_ext.c",
+    "line_number": "944",
+    "column_number": "44",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/brianmario/yajl-ruby.git",
+    "commit_id": "b86a2609de1e07bb8b33046d3a82679195f3b3d7",
+    "commit_id_repair": "6e69b5a4e23be91b5fb39e5920e36470f3331990",
+    "warning_message": "Uninitialized variable: result",
+    "hash_id": "a69acaa7f035aa127675e36f5ceac2f1e8e15cadf23e7493d51fb63e07821bc7",
+    "bug_severity": "warning",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "String literal compared with variable \u0027NULL\u0027. Did you intend to use strcmp() instead?",
+    "cwe": "595",
+    "file_path": "tmp_github/yajl-ruby/ext/yajl/yajl_encode.c",
+    "line_number": "179",
+    "column_number": "55",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/brianmario/yajl-ruby.git",
+    "commit_id": "41e6b7da1dd61455033c140ec9e879c72008e4d7",
+    "commit_id_repair": "7fa1c3c357a406e1c65e7e2dc42ea471c9d38c55",
+    "warning_message": "String literal compared with variable \u0027NULL\u0027. Did you intend to use strcmp() instead?",
+    "hash_id": "54c1f4c22c8ae005c7f2df4ca8a82ac606e7e76f968c50b5f747e146283b8a45",
+    "bug_severity": "warning",
+    "bug_type": "literalWithCharPtrCompare"
+  }
+]

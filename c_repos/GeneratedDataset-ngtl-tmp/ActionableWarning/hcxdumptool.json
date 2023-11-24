@@ -1,0 +1,52 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%ld in format string (no. 1) requires \u0027long\u0027 but the argument type is \u0027unsigned long\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/hcxdumptool/hcxdumptool.c",
+    "line_number": "5213",
+    "column_number": "26",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ZerBea/hcxdumptool.git",
+    "commit_id": "c38d0a762ce64333ff3d9ef93b9ec6b256630dd7",
+    "commit_id_repair": "144900f3a292bba9a1bef750a0ae47ed2e812918",
+    "warning_message": "%ld in format string (no. 1) requires \u0027long\u0027 but the argument type is \u0027unsigned long\u0027.",
+    "hash_id": "db9293973142bb7379924a95c195379eb68cd360e0a5c064c2f6ccbe1adcbbb9",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Buffer is accessed out of bounds: timestring",
+    "cwe": "788",
+    "file_path": "tmp_github/hcxdumptool/hcxdumptool.c",
+    "line_number": "523",
+    "column_number": "11",
+    "info": "Buffer overrun",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ZerBea/hcxdumptool.git",
+    "commit_id": "073a4c70dd044bcbcd960cadbac962625db2dd21",
+    "commit_id_repair": "6052f6a76ee5d769d50c47d17775e62f8d22f4cf",
+    "warning_message": "Buffer is accessed out of bounds: timestring",
+    "hash_id": "89d9be30a850f8d9389abe3aefd29d1da0dbb4b70c69c3543697445ed6dab4fc",
+    "bug_severity": "error",
+    "bug_type": "bufferAccessOutOfBounds"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Buffer is accessed out of bounds: pmkid-\u003epmkid",
+    "cwe": "788",
+    "file_path": "tmp_github/hcxdumptool/hcxdumptool.c",
+    "line_number": "1757",
+    "column_number": "20",
+    "info": "Buffer overrun",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ZerBea/hcxdumptool.git",
+    "commit_id": "2059769b4ae1d39476e7b746e59a382ee52fe4ad",
+    "commit_id_repair": "ade502f75500882e6c54b78cf5b309d575ff5020",
+    "warning_message": "Buffer is accessed out of bounds: pmkid-\u003epmkid",
+    "hash_id": "ee8bb1e278c7662d45393f94087c4ef28312581e430fb08a9f82322724151964",
+    "bug_severity": "error",
+    "bug_type": "bufferAccessOutOfBounds"
+  }
+]

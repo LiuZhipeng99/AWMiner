@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Common realloc mistake: \u0027selfpath\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/envchain/envchain.c",
+    "line_number": "153",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/sorah/envchain.git",
+    "commit_id": "d6d5d2b7c93db9ba887a3acac3ccf48ec5933ca5",
+    "commit_id_repair": "0d682b3071658a249e4191ce4e2958186c57b840",
+    "warning_message": "Common realloc mistake: \u0027selfpath\u0027 nulled but not freed upon failure",
+    "hash_id": "8e5c1a6f9d7cbf3f44fb6054add2672f20bb22b9e4bcaf6fa0736f8f486d645e",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  }
+]

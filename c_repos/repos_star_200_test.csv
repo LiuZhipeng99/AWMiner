@@ -1,0 +1,23 @@
+Repository Name,Repository URL,Default Branch,Star Count,Description,Update_date
+HdrHistogram_c,https://github.com/HdrHistogram/HdrHistogram_c,main,214,C port of the HdrHistogram,2023-10-30T15:29:41Z
+abstract-machine,https://github.com/NJU-ProjectN/abstract-machine,master,336,"A minimal, modularized, and machine-independent hardware abstraction layer",2023-11-21T02:46:04Z
+brdgrd,https://github.com/NullHypothesis/brdgrd,master,217,Protects Tor bridges from being scanned (and as a result blocked) by GFW probes.,2023-11-09T13:48:25Z
+VulDeePecker,https://github.com/CGCL-codes/VulDeePecker,master,252,VulDeePecker: A Deep Learning-Based System for Vulnerability Detection,2023-11-20T14:33:33Z
+src,https://github.com/ahay/src,master,237,Main Madagascar source,2023-11-19T18:52:30Z
+mac-keyboard-brightness,https://github.com/pirate/mac-keyboard-brightness,master,216,🔆 Programmatically get & set the keyboard & display backlight brightness on Macs. Flash your keyboard to the music! (only works on <2015 Macs),2023-11-16T01:33:43Z
+pgsql-ogr-fdw,https://github.com/pramsey/pgsql-ogr-fdw,master,222,PostgreSQL foreign data wrapper for OGR,2023-11-06T15:16:28Z
+dethrace,https://github.com/dethrace-labs/dethrace,main,562,"Reverse engineering the 1997 game ""Carmageddon""",2023-11-20T12:12:17Z
+pmtud,https://github.com/cloudflare/pmtud,master,219,Path MTU daemon - broadcast lost ICMP packets on ECMP networks,2023-11-11T01:25:00Z
+stinger,https://github.com/stingergraph/stinger,master,206,The STINGER in-memory graph store and dynamic graph analysis platform.  Millions to billions of vertices and edges at thousands to millions of updates per second.,2023-10-27T10:16:31Z
+wolfssl-examples,https://github.com/wolfSSL/wolfssl-examples,master,230,Example applications using the wolfSSL lightweight SSL/TLS library,2023-11-13T11:24:45Z
+RocketBootstrap,https://github.com/rpetrich/RocketBootstrap,master,214,API to securely expose global services on jailbroken iOS,2023-11-21T06:31:22Z
+LighthouseRedox,https://github.com/nairol/LighthouseRedox,master,213,Lighthouse Reverse-Engineered Documentation,2023-11-13T12:42:56Z
+a314,https://github.com/niklasekstrom/a314,main,240,"A314, a trapdoor expansion that lets you use a Raspberry Pi as a co-processor to an Amiga 500",2023-10-30T09:49:11Z
+frotz,https://github.com/DavidGriffith/frotz,master,207,Infocom-style interactive fiction player for Unix and DOS (moved to https://gitlab.com/DavidGriffith/frotz),2023-09-16T20:46:35Z
+freertos.rs,https://github.com/hashmismatch/freertos.rs,master,224,A Rust wrapper for FreeRTOS.,2023-10-18T02:17:11Z
+cmusfm,https://github.com/Arkq/cmusfm,master,221,Last.fm standalone scrobbler for the cmus music player,2023-11-01T13:11:25Z
+ircd-seven,https://github.com/freenode/ircd-seven,master,200,freenode's IRC server daemon,2023-11-16T18:09:49Z
+multipart-parser-c,https://github.com/iafonov/multipart-parser-c,master,217,Http multipart parser implemented in C,2023-11-15T03:30:07Z
+Study-PlayWithDataStruct,https://github.com/YaoGuangyuan/Study-PlayWithDataStruct,master,234,《大话数据结构》源代码,2023-11-11T06:53:40Z
+passcat,https://github.com/twelvesec/passcat,master,215,Passwords Recovery Tool,2023-10-17T06:03:54Z
+rnnois,https://github.com/xiph/rnnoise,master,3324,Recurrent neural network for audio noise reduction,2023-11-22T09:35:56Z

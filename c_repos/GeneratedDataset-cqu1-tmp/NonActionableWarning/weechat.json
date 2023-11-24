@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Conversion of string literal \"waitpid\" to bool always evaluates to true.",
+    "cwe": "571",
+    "file_path": "tmp_github/weechat/src/core/wee-command.c",
+    "line_number": "6756",
+    "column_number": "9",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/weechat/weechat.git",
+    "commit_id": "3cc400a9d60eba98cd4f62046664f927796fa6fd",
+    "commit_id_repair": "0fe7eec90b0ed2431dd51152a2e727001466bb48",
+    "warning_message": "Conversion of string literal \"waitpid\" to bool always evaluates to true.",
+    "hash_id": "a796abe8a891ab57bc0ab17a529fc511ffad72f8f7242f8e23d44f7b263a3209",
+    "bug_severity": "warning",
+    "bug_type": "incorrectStringBooleanError"
+  }
+]

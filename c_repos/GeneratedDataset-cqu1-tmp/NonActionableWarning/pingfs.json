@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Common realloc mistake: \u0027chunkdata\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/pingfs/fs.c",
+    "line_number": "276",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yarrick/pingfs.git",
+    "commit_id": "29fa1af9aaf5c89ab62c851bd11d4145b19633c5",
+    "commit_id_repair": "909f28a8b89d12d464dc252b343ada99134e78f1",
+    "warning_message": "Common realloc mistake: \u0027chunkdata\u0027 nulled but not freed upon failure",
+    "hash_id": "83ba667538f491631517dc3c24c7d2b3e7567ca9dad5828da162c832806f0ea3",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%d in format string (no. 5) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/pingfs/icmp.c",
+    "line_number": "117",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yarrick/pingfs.git",
+    "commit_id": "19c847b8463a9e063b8d617fa4cfd7c500828919",
+    "commit_id_repair": "722e0dadcc721ee72d92547e2158225672d345af",
+    "warning_message": "%d in format string (no. 5) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "b501be5202c203734a9c6f522aac9024f5cdfc4210bda3f5d79182046e7896e9",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

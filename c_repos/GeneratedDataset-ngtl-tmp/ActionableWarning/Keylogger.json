@@ -1,0 +1,51 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: \u0026tm",
+    "cwe": "457",
+    "file_path": "tmp_github/Keylogger/windows/klog_main.cpp",
+    "line_number": "137",
+    "column_number": "16",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/GiacomoLaw/Keylogger.git",
+    "commit_id": "4f30c97e9181e6f9e26f71e98d0195a8aa27c916",
+    "commit_id_repair": "090d626ae2c99436899ab9aab0b03f2ed18c50a3",
+    "warning_message": "Uninitialized variable: \u0026tm",
+    "hash_id": "3454be8b2cb405bf4d524d2d84822be38d1c1552bc7d01fb3b3539ef6c65cd9d",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: lastwindow",
+    "cwe": "457",
+    "file_path": "tmp_github/Keylogger/windows/klog_main.cpp",
+    "line_number": "83",
+    "column_number": "33",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/GiacomoLaw/Keylogger.git",
+    "commit_id": "f19b98285aca505973618df85727d2ffdf7ee486",
+    "commit_id_repair": "97ce36cffde44fbda537292f132954e704e16e0c",
+    "warning_message": "Uninitialized variable: lastwindow",
+    "hash_id": "1c16e211f9ace99460ca6e53a3d17c17daf360a0b9edf19d6d7ef295026bcb46",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: lastwindow",
+    "cwe": "457",
+    "file_path": "tmp_github/Keylogger/windows/klog_main.cpp",
+    "line_number": "66",
+    "column_number": "24",
+    "info": "Assuming condition is false",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/GiacomoLaw/Keylogger.git",
+    "commit_id": "f19b98285aca505973618df85727d2ffdf7ee486",
+    "commit_id_repair": "97ce36cffde44fbda537292f132954e704e16e0c",
+    "warning_message": "Uninitialized variable: lastwindow",
+    "hash_id": "3fd8acea0248f594fab8e7127abd6546e47bdf8798c9ee5331e4b7aa45ead683",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

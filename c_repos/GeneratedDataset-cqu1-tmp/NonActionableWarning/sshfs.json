@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%i in format string (no. 4) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/sshfs/sshfs.c",
+    "line_number": "650",
+    "column_number": "13",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/osxfuse/sshfs.git",
+    "commit_id": "5dc1d26e7075a81c284c48f4e751b4b5d811baf3",
+    "commit_id_repair": "c73761963b977b53be292f892e222220c2e6b78f",
+    "warning_message": "%i in format string (no. 4) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "4fe5cf691d8d4a20b970f7ee0f92689bd866feb1fe6cb8a20d46f7a4a339b4ee",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

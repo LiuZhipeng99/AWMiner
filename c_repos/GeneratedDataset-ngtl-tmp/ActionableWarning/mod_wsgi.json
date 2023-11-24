@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: info",
+    "cwe": "457",
+    "file_path": "tmp_github/mod_wsgi/src/server/wsgi_memory.c",
+    "line_number": "102",
+    "column_number": "31",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/GrahamDumpleton/mod_wsgi.git",
+    "commit_id": "8587db73b28668cd7c158dc02d5e6dbda178f6f6",
+    "commit_id_repair": "ef727d9e2446df78016e1b7791fe47766718630e",
+    "warning_message": "Uninitialized variable: info",
+    "hash_id": "e22baaebc261ccb439c7464d3332d43a4f76e9e73a30e499956a05da8fc3777a",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

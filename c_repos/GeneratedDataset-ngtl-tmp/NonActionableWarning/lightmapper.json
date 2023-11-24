@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%d in format string (no. 1) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/lightmapper/example/example.c",
+    "line_number": "74",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ands/lightmapper.git",
+    "commit_id": "0a387d00e4f8a1656171f89601418d666496c587",
+    "commit_id_repair": "3231300d9d21e15d545992c45ea5b5600f16bd5e",
+    "warning_message": "%d in format string (no. 1) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "52df3388f1303391f3e09acb7549521f30b208ee7ef014efca47646a6bd927c0",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

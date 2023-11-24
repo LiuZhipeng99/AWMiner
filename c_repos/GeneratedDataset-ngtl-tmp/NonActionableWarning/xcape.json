@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error: \u003c)",
+    "file_path": "tmp_github/xcape/xcape.c",
+    "line_number": "238",
+    "column_number": "55",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/alols/xcape.git",
+    "commit_id": "8144c425b821711119e22d8519c032d01dbc6b20",
+    "commit_id_repair": "3045c1f268bd4d918ca2660a16e586996d4d1d88",
+    "warning_message": "syntax error: \u003c)",
+    "hash_id": "03c9939fd4b0e2a3407977be5aef789dc6cc4eb73f7a2d2d03642f13d0d8399a",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

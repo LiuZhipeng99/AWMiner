@@ -1,0 +1,36 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027encodedDataWrap\u003d\u003dNULL\u0027 is redundant or there is possible null pointer dereference: encodedDataWrap.",
+    "cwe": "476",
+    "file_path": "tmp_github/trevorc2/agents/c/src/main.c",
+    "line_number": "274",
+    "column_number": "22",
+    "info": "Null pointer dereference",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/trustedsec/trevorc2.git",
+    "commit_id": "5ed4764ef611fa34f59b22b8dd307886ec88a457",
+    "commit_id_repair": "1b60555afc3688a651f395c9920d50a13c4080c3",
+    "warning_message": "Either the condition \u0027encodedDataWrap\u003d\u003dNULL\u0027 is redundant or there is possible null pointer dereference: encodedDataWrap.",
+    "hash_id": "b58fd662b67cfe7d47e38f6d0fee2b1a76f9f6aa74c0f5bea2790d99306c56d3",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Either the condition \u0027encodedDataWrap\u003d\u003dNULL\u0027 is redundant or there is possible null pointer dereference: encodedDataWrap.",
+    "cwe": "476",
+    "file_path": "tmp_github/trevorc2/agents/c/src/main.c",
+    "line_number": "276",
+    "column_number": "25",
+    "info": "Assuming that condition \u0027encodedDataWrap\u003d\u003dNULL\u0027 is not redundant",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/trustedsec/trevorc2.git",
+    "commit_id": "5ed4764ef611fa34f59b22b8dd307886ec88a457",
+    "commit_id_repair": "1b60555afc3688a651f395c9920d50a13c4080c3",
+    "warning_message": "Either the condition \u0027encodedDataWrap\u003d\u003dNULL\u0027 is redundant or there is possible null pointer dereference: encodedDataWrap.",
+    "hash_id": "cf4977587662b5f23a8e83e415c981253cd2b466459982d9c143d36cbfc492bd",
+    "bug_severity": "warning",
+    "bug_type": "nullPointerRedundantCheck"
+  }
+]

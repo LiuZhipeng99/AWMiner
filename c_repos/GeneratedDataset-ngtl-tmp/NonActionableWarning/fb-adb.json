@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/fb-adb/cmd_jdwp.c",
+    "line_number": "1675",
+    "column_number": "15",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/facebookarchive/fb-adb.git",
+    "commit_id": "5e970a4577e6f0229c7536014e1a00f937e238e9",
+    "commit_id_repair": "f8146585002a157f13888177ed47085feb21e6bb",
+    "warning_message": "syntax error",
+    "hash_id": "5eda62d8e72bb8931c396461fdc665357fd205a3318442c54cbb01d81cb1b076",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/fb-adb/cmd_tar.c",
+    "line_number": "103",
+    "column_number": "17",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/facebookarchive/fb-adb.git",
+    "commit_id": "36633436110bfdf5c968b803cf3ffb723dbc97c5",
+    "commit_id_repair": "cdeb58bad3c291093da3e1c58207c50e5ffe9675",
+    "warning_message": "syntax error",
+    "hash_id": "0161b6066d332e52bed3c5d060e45bdee7637809235c019f92d2cb6d4e9e7d44",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

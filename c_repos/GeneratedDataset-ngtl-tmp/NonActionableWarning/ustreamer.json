@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Variable \u0027cmdline\u0027 is modified inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug.",
+    "cwe": "398",
+    "file_path": "tmp_github/ustreamer/src/libs/process.h",
+    "line_number": "108",
+    "column_number": "2",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/pikvm/ustreamer.git",
+    "commit_id": "90e51c061912a2f0e043ff846250f322b8f2cf19",
+    "commit_id_repair": "0745f0a75a27559c64fce7faf28e2f9e43de2f18",
+    "warning_message": "Assert statement modifies \u0027cmdline\u0027.",
+    "hash_id": "9d890f4dacaca7bdd64671f22cfcd434b44aaf403acbb807b5e0f1112d88dc3b",
+    "bug_severity": "warning",
+    "bug_type": "assignmentInAssert"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Variable \u0027cmdline\u0027 is modified inside assert statement. Assert statements are removed from release builds so the code inside assert statement is not executed. If the code is needed also in release builds, this is a bug.",
+    "cwe": "398",
+    "file_path": "tmp_github/ustreamer/src/libs/process.h",
+    "line_number": "115",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/pikvm/ustreamer.git",
+    "commit_id": "90e51c061912a2f0e043ff846250f322b8f2cf19",
+    "commit_id_repair": "0745f0a75a27559c64fce7faf28e2f9e43de2f18",
+    "warning_message": "Assert statement modifies \u0027cmdline\u0027.",
+    "hash_id": "9d890f4dacaca7bdd64671f22cfcd434b44aaf403acbb807b5e0f1112d88dc3b",
+    "bug_severity": "warning",
+    "bug_type": "assignmentInAssert"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Common realloc mistake: \u0027cmdline\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/ustreamer/src/libs/process.h",
+    "line_number": "115",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/pikvm/ustreamer.git",
+    "commit_id": "90e51c061912a2f0e043ff846250f322b8f2cf19",
+    "commit_id_repair": "0745f0a75a27559c64fce7faf28e2f9e43de2f18",
+    "warning_message": "Common realloc mistake: \u0027cmdline\u0027 nulled but not freed upon failure",
+    "hash_id": "70849b42abba2d6d6dda039df1cd39233723c15faa316250299603f4ec530b54",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  }
+]

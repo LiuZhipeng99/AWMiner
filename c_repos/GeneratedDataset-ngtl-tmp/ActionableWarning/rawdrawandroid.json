@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "cwe": "398",
+    "file_path": "tmp_github/rawdrawandroid/android_usb_devices.c",
+    "line_number": "202",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cnlohr/rawdrawandroid.git",
+    "commit_id": "a8790e1a0593d623607570d36587ecfdf7b7a226",
+    "commit_id_repair": "aead04e3de30cf722e999cc6b4064aa3f71887e8",
+    "warning_message": "Assignment of function parameter has no effect outside the function. Did you forget dereferencing it?",
+    "hash_id": "df268f8a21472d3bee3751f0e18bcbec8f6dc7ff0f163576da127110bcf45f6d",
+    "bug_severity": "warning",
+    "bug_type": "uselessAssignmentPtrArg"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "%d in format string (no. 1) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/rawdrawandroid/test.c",
+    "line_number": "278",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/cnlohr/rawdrawandroid.git",
+    "commit_id": "5c54feebe932690f6dcff97a7ab6aec480a16ba4",
+    "commit_id_repair": "4b7abaa618c44505a3db3ccad8312c3c67b6aa02",
+    "warning_message": "%d in format string (no. 1) requires \u0027int\u0027 but the argument type is \u0027unsigned int\u0027.",
+    "hash_id": "35cf63e0fd6ae0a50bd7466994d58b9325892c704f9163ef9c83b9ce5420a1d3",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_sint"
+  }
+]

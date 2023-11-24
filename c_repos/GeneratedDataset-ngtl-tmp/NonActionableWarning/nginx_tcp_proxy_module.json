@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Uninitialized variable: \u0026key.value",
+    "cwe": "457",
+    "file_path": "tmp_github/nginx_tcp_proxy_module/test/ragel/http11.c",
+    "line_number": "171",
+    "column_number": "42",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yaoweibin/nginx_tcp_proxy_module.git",
+    "commit_id": "2406f8c0dab25da32f0f580b3182980e1c5d6925",
+    "commit_id_repair": "2a82727a2496b3d713f0fe24188ab82133923477",
+    "warning_message": "Uninitialized variable: \u0026key.value",
+    "hash_id": "637d10cf9fa1530867419bfc925a66d9b8bff32ffebf1ec1fc0e71d0edf2bb6e",
+    "bug_severity": "error",
+    "bug_type": "uninitvar"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%x in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027void *\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/abstract-machine/am/src/native/vme.c",
+    "line_number": "94",
+    "column_number": "3",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/NJU-ProjectN/abstract-machine.git",
+    "commit_id": "a94708b3b57cbe2e4bbd3be9acf9dfb8a5721ee6",
+    "commit_id_repair": "1a4ad391764a7e160ad99e5fbf2b9d096ad25234",
+    "warning_message": "%x in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027void *\u0027.",
+    "hash_id": "96f6eb10b52053ef07531e0a8d93961f779764d77a142e39c8cc8f0810ada2e1",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_uint"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "%x in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027void *\u0027.",
+    "cwe": "686",
+    "file_path": "tmp_github/abstract-machine/am/src/native/vme.c",
+    "line_number": "100",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/NJU-ProjectN/abstract-machine.git",
+    "commit_id": "a94708b3b57cbe2e4bbd3be9acf9dfb8a5721ee6",
+    "commit_id_repair": "1a4ad391764a7e160ad99e5fbf2b9d096ad25234",
+    "warning_message": "%x in format string (no. 1) requires \u0027unsigned int\u0027 but the argument type is \u0027void *\u0027.",
+    "hash_id": "96f6eb10b52053ef07531e0a8d93961f779764d77a142e39c8cc8f0810ada2e1",
+    "bug_severity": "warning",
+    "bug_type": "invalidPrintfArgType_uint"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Redundant assignment of \u0027host\u0027 to itself.",
+    "cwe": "398",
+    "file_path": "tmp_github/pingfs/host.c",
+    "line_number": "245",
+    "column_number": "22",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yarrick/pingfs.git",
+    "commit_id": "94921ba80261e8bea77a881c256f53da36c333cf",
+    "commit_id_repair": "7b6274c6dd162ca2164114f81c7362bda5ef51b2",
+    "warning_message": "Redundant assignment of \u0027host\u0027 to itself.",
+    "hash_id": "2c439f01c57d7578b05db121565d73794e4cf55ea4c277717153d6543d47caa3",
+    "bug_severity": "warning",
+    "bug_type": "selfAssignment"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Uninitialized variable: host",
+    "cwe": "457",
+    "file_path": "tmp_github/pingfs/host.c",
+    "line_number": "245",
+    "column_number": "24",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yarrick/pingfs.git",
+    "commit_id": "94921ba80261e8bea77a881c256f53da36c333cf",
+    "commit_id_repair": "7b6274c6dd162ca2164114f81c7362bda5ef51b2",
+    "warning_message": "Uninitialized variable: host",
+    "hash_id": "f0c0ffac61bf05e8502de2b72c54beff22d4c5ef4aadc878e1b24c3899d5dc72",
+    "bug_severity": "error",
+    "bug_type": "legacyUninitvar"
+  },
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "Common realloc mistake: \u0027gais\u0027 nulled but not freed upon failure",
+    "cwe": "401",
+    "file_path": "tmp_github/pingfs/pingfs.c",
+    "line_number": "48",
+    "column_number": "4",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yarrick/pingfs.git",
+    "commit_id": "b83b9754d8d195891e2ed46f2e5746b336ac185b",
+    "commit_id_repair": "98eb7099ec08f75ab3ef9673b2bfe71d5aea8044",
+    "warning_message": "Common realloc mistake: \u0027gais\u0027 nulled but not freed upon failure",
+    "hash_id": "e1df9acdae214b9d99b7fe3a9598aa299fd23f18089a68ae936a0ae0776cf429",
+    "bug_severity": "error",
+    "bug_type": "memleakOnRealloc"
+  }
+]

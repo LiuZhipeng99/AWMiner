@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.10",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If ZEND_BEGIN_MODULE_GLOBALS is a macro then please configure it.",
+    "file_path": "tmp_github/yar/php_yar.h",
+    "line_number": "48",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/laruence/yar.git",
+    "commit_id": "ee6bb2e94431ca54713f86814b220b8268bfe2cd",
+    "commit_id_repair": "0ff66699a01e99cd68f257133d790e84b237b509",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If ZEND_BEGIN_MODULE_GLOBALS is a macro then please configure it.",
+    "hash_id": "670e1c4da97f9de8ac0e13c7986bccbae4809e20b6da58285e89e94d1d9f4f19",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

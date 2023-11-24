@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/PEzor/fluctuate.cpp",
+    "line_number": "82",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/phra/PEzor.git",
+    "commit_id": "99d34801f412c61b760b7587190f8ed97f5fce82",
+    "commit_id_repair": "14e5e63cc1be778db612be0b831ba80e88d1309b",
+    "warning_message": "syntax error",
+    "hash_id": "82d72e22b88943289ad895e4033d5c4b52c4393c2918ee633580348e16e06fd2",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

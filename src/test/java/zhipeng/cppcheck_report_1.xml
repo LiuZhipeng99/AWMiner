@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<results version="2">
+    <cppcheck version="2.12.0"/>
+    <errors>
+        <error id="selfAssignment" severity="warning" msg="Redundant assignment of &apos;score&apos; to itself." verbose="Redundant assignment of &apos;score&apos; to itself." cwe="398" file0="githubTmp/darknet/examples/art.c">
+            <location file="githubTmp\darknet\examples\art.c" line="35" column="15"/>
+            <symbol>score</symbol>
+        </error>
+        <error id="uninitvar" severity="warning" msg="Uninitialized variable: input" verbose="Uninitialized variable: input" cwe="457" file0="githubTmp/darknet/examples/lsd.c">
+            <location file="githubTmp\darknet\examples\lsd.c" line="460" column="50"/>
+            <location file="githubTmp\darknet\examples\lsd.c" line="423" column="34" info="Assuming condition is false"/>
+            <location file="githubTmp\darknet\examples\lsd.c" line="419" column="19" info="Assignment &apos;input=buff&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>input</symbol>
+        </error>
+        <error id="uninitvar" severity="error" msg="Uninitialized variable: input" verbose="Uninitialized variable: input" cwe="457" file0="githubTmp/darknet/examples/lsd.c">
+            <location file="githubTmp\darknet\examples\lsd.c" line="497" column="50"/>
+            <location file="githubTmp\darknet\examples\lsd.c" line="477" column="19" info="Assignment &apos;input=buff&apos;, assigned value is &lt;Uninit&gt;"/>
+            <symbol>input</symbol>
+        </error>
+        <error id="identicalInnerCondition" severity="warning" msg="Identical inner &apos;if&apos; condition is always true." verbose="Identical inner &apos;if&apos; condition is always true (outer condition is &apos;curr&lt;m&apos; and inner condition is &apos;curr&lt;m&apos;)." cwe="398" file0="githubTmp/darknet/examples/classifier.c">
+            <location file="githubTmp\darknet\examples\classifier.c" line="728" column="17" info="identical inner condition: curr&lt;m"/>
+            <location file="githubTmp\darknet\examples\classifier.c" line="722" column="33" info="outer condition: curr&lt;m"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;d&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;d&apos; nulled but not freed upon failure" cwe="401" file0="githubTmp/darknet/examples/rnn.c">
+            <location file="githubTmp\darknet\examples\rnn.c" line="36" column="13"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;d&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;d&apos; nulled but not freed upon failure" cwe="401" file0="githubTmp/darknet/examples/rnn.c">
+            <location file="githubTmp\darknet\examples\rnn.c" line="42" column="5"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;d&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;d&apos; nulled but not freed upon failure" cwe="401" file0="githubTmp/darknet/examples/rnn.c">
+            <location file="githubTmp\darknet\examples\rnn.c" line="58" column="13"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;d&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;d&apos; nulled but not freed upon failure" cwe="401" file0="githubTmp/darknet/examples/rnn.c">
+            <location file="githubTmp\darknet\examples\rnn.c" line="64" column="5"/>
+            <symbol>d</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="fscanf() without field width limits can crash with huge input data." verbose="fscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/src/data.c">
+            <location file="githubTmp\darknet\src\data.c" line="379" column="12"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="fscanf() without field width limits can crash with huge input data." verbose="fscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/src/data.c">
+            <location file="githubTmp\darknet\src\data.c" line="416" column="12"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="fscanf() without field width limits can crash with huge input data." verbose="fscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/src/data.c">
+            <location file="githubTmp\darknet\src\data.c" line="690" column="11"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="fscanf() without field width limits can crash with huge input data." verbose="fscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/src/data.c">
+            <location file="githubTmp\darknet\src\data.c" line="721" column="11"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;boxes&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;boxes&apos; nulled but not freed upon failure" cwe="401" file0="githubTmp/darknet/src/data.c">
+            <location file="githubTmp\darknet\src\data.c" line="151" column="13"/>
+            <symbol>boxes</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/data.c">
+            <location file="githubTmp\darknet\src\data.c" line="1436" column="31" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\data.c" line="1433" column="8" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/data.c">
+            <location file="githubTmp\darknet\src\data.c" line="1499" column="35" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\data.c" line="1496" column="12" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="duplicateAssignExpression" severity="style" msg="Same expression used in consecutive assignments of &apos;w_offset&apos; and &apos;h_offset&apos;." verbose="Finding variables &apos;w_offset&apos; and &apos;h_offset&apos; that are assigned the same expression is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398" file0="githubTmp/darknet/src/maxpool_layer.c">
+            <location file="githubTmp\darknet\src\maxpool_layer.c" line="82" column="9"/>
+            <location file="githubTmp\darknet\src\maxpool_layer.c" line="83" column="9"/>
+        </error>
+        <error id="funcArgOrderDifferent" severity="warning" msg="Function &apos;resize_normalization_layer&apos; argument order different: declaration &apos;layer, h, w&apos; definition &apos;layer, w, h&apos;" verbose="Function &apos;resize_normalization_layer&apos; argument order different: declaration &apos;layer, h, w&apos; definition &apos;layer, w, h&apos;" cwe="683" file0="githubTmp/darknet/src/normalization_layer.c">
+            <location file="githubTmp\darknet\src\normalization_layer.c" line="40" column="40"/>
+            <location file="githubTmp\darknet\src\normalization_layer.h" line="9" column="40"/>
+            <symbol>resize_normalization_layer</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!l&apos; is redundant or there is possible null pointer dereference: l." verbose="Either the condition &apos;!l&apos; is redundant or there is possible null pointer dereference: l." cwe="476" file0="githubTmp/darknet/src/parser.c">
+            <location file="githubTmp\darknet\src\parser.c" line="604" column="22" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\parser.c" line="605" column="8" info="Assuming that condition &apos;!l&apos; is not redundant"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/parser.c">
+            <location file="githubTmp\darknet\src\parser.c" line="1021" column="36" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\parser.c" line="1016" column="8" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/parser.c">
+            <location file="githubTmp\darknet\src\parser.c" line="1022" column="36" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\parser.c" line="1016" column="8" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/parser.c">
+            <location file="githubTmp\darknet\src\parser.c" line="1023" column="39" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\parser.c" line="1016" column="8" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/parser.c">
+            <location file="githubTmp\darknet\src\parser.c" line="1024" column="42" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\parser.c" line="1016" column="8" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/parser.c">
+            <location file="githubTmp\darknet\src\parser.c" line="1233" column="35" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\parser.c" line="1228" column="8" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/parser.c">
+            <location file="githubTmp\darknet\src\parser.c" line="1234" column="35" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\parser.c" line="1228" column="8" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." verbose="Either the condition &apos;!fp&apos; is redundant or there is possible null pointer dereference: fp." cwe="476" file0="githubTmp/darknet/src/parser.c">
+            <location file="githubTmp\darknet\src\parser.c" line="1235" column="38" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\parser.c" line="1228" column="8" info="Assuming that condition &apos;!fp&apos; is not redundant"/>
+            <symbol>fp</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="sscanf() without field width limits can crash with huge input data." verbose="sscanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/src/tree.c">
+            <location file="githubTmp\darknet\src\tree.c" line="96" column="9"/>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;map&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;map&apos; nulled but not freed upon failure" cwe="401" file0="githubTmp/darknet/src/utils.c">
+            <location file="githubTmp\darknet\src\utils.c" line="68" column="9"/>
+            <symbol>map</symbol>
+        </error>
+        <error id="memleak" severity="error" msg="Memory leak: p" verbose="Memory leak: p" cwe="401" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="753" column="4"/>
+            <symbol>p</symbol>
+        </error>
+        <error id="memleakOnRealloc" severity="error" msg="Common realloc mistake: &apos;out&apos; nulled but not freed upon failure" verbose="Common realloc mistake: &apos;out&apos; nulled but not freed upon failure" cwe="401" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image.h" line="6526" column="16"/>
+            <symbol>out</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(out)==0&apos; is redundant or there is possible null pointer dereference: out." verbose="Either the condition &apos;(out)==0&apos; is redundant or there is possible null pointer dereference: out." cwe="476" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="913" column="7" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="914" column="7" info="Assuming that condition &apos;(out)==0&apos; is not redundant"/>
+            <symbol>out</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;(out)==0&apos; is redundant or there is possible null pointer dereference: out." verbose="Either the condition &apos;(out)==0&apos; is redundant or there is possible null pointer dereference: out." cwe="476" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="914" column="7" info="Null pointer dereference"/>
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="915" column="7" info="Assuming that condition &apos;(out)==0&apos; is not redundant"/>
+            <symbol>out</symbol>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;(out)==0&apos; is redundant or there is overflow in pointer subtraction." verbose="Either the condition &apos;(out)==0&apos; is redundant or there is overflow in pointer subtraction." cwe="682" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="913" column="7" info="Null pointer subtraction"/>
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="914" column="7" info="Assuming that condition &apos;(out)==0&apos; is not redundant"/>
+        </error>
+        <error id="nullPointerArithmeticRedundantCheck" severity="warning" msg="Either the condition &apos;(out)==0&apos; is redundant or there is overflow in pointer subtraction." verbose="Either the condition &apos;(out)==0&apos; is redundant or there is overflow in pointer subtraction." cwe="682" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="914" column="7" info="Null pointer subtraction"/>
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="915" column="7" info="Assuming that condition &apos;(out)==0&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 4294967295 bits is undefined behaviour. See condition at line 1907." verbose="Shifting 32-bit value by 4294967295 bits is undefined behaviour. See condition at line 1907." cwe="758" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image.h" line="1906" column="8" info="Shift"/>
+            <location file="githubTmp\darknet\src\stb_image.h" line="1907" column="4" info="Assuming that condition &apos;n&gt;=0&apos; is not redundant"/>
+        </error>
+        <error id="shiftTooManyBits" severity="warning" msg="Shifting 32-bit value by 33 bits is undefined behaviour. See condition at line 1907." verbose="Shifting 32-bit value by 33 bits is undefined behaviour. See condition at line 1907." cwe="758" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image.h" line="1906" column="8" info="Shift"/>
+            <location file="githubTmp\darknet\src\stb_image.h" line="1907" column="4" info="Assuming that condition &apos;n&gt;=0&apos; is not redundant"/>
+        </error>
+        <error id="signConversionCond" severity="warning" msg="Expression &apos;n&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." verbose="Expression &apos;n&apos; can have a negative value. That is converted to an unsigned value and used in an unsigned calculation." cwe="195" file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image.h" line="1906" column="8" info="Negative value is converted to an unsigned value"/>
+            <location file="githubTmp\darknet\src\stb_image.h" line="1907" column="4" info="Assuming that condition &apos;n&gt;=0&apos; is not redundant"/>
+            <symbol>n</symbol>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/examples/go.c">
+            <location file="githubTmp\darknet\examples\go.c" line="844" column="9"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/examples/go.c">
+            <location file="githubTmp\darknet\examples\go.c" line="867" column="13"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/examples/go.c">
+            <location file="githubTmp\darknet\examples\go.c" line="884" column="13"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/examples/go.c">
+            <location file="githubTmp\darknet\examples\go.c" line="949" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/examples/go.c">
+            <location file="githubTmp\darknet\examples\go.c" line="995" column="17"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/examples/go.c">
+            <location file="githubTmp\darknet\examples\go.c" line="1043" column="13"/>
+        </error>
+        <error id="invalidscanf" severity="warning" msg="scanf() without field width limits can crash with huge input data." verbose="scanf() without field width limits can crash with huge input data. Add a field width specifier to fix this problem.\012\012Sample program that can crash:\012\012#include &lt;stdio.h&gt;\012int main()\012{\012    char c[5];\012    scanf(&quot;%s&quot;, c);\012    return 0;\012}\012\012Typing in 5 or more characters may make the program crash. The correct usage here is &apos;scanf(&quot;%4s&quot;, c);&apos;, as the maximum field width does not include the terminating null byte.\012Source: http://linux.die.net/man/3/scanf\012Source: http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/libkern/stdio/scanf.c" cwe="119" file0="githubTmp/darknet/examples/go.c">
+            <location file="githubTmp\darknet\examples\go.c" line="1068" column="13"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Cyclic reverse analysis." verbose="Cyclic reverse analysis." file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image_write.h" line="825" column="51"/>
+        </error>
+        <error id="cppcheckError" severity="error" msg="Cyclic reverse analysis." verbose="Cyclic reverse analysis." file0="githubTmp/darknet/src/image.c">
+            <location file="githubTmp\darknet\src\stb_image.h" line="3955" column="15"/>
+        </error>
+    </errors>
+</results>

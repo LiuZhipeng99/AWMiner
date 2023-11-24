@@ -1,0 +1,18 @@
+Repository Name,Repository URL,Default Branch,Star Count,Description,Update_date
+scrcpy,https://github.com/Genymobile/scrcpy,master,94248,Display and control your Android device,2023-11-22T10:21:24Z
+redis,https://github.com/redis/redis,unstable,62323,"Redis is an in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, Streams, HyperLogLogs, Bitmaps.",2023-11-22T10:32:53Z
+wrk,https://github.com/wg/wrk,master,35839,Modern HTTP benchmarking tool,2023-11-22T10:33:28Z
+curl,https://github.com/curl/curl,master,32438,"A command line tool and library for transferring data with URL syntax, supporting DICT, FILE, FTP, FTPS, GOPHER, GOPHERS, HTTP, HTTPS, IMAP, IMAPS, LDAP, LDAPS, MQTT, POP3, POP3S, RTMP, RTMPS, RTSP, SCP, SFTP, SMB, SMBS, SMTP, SMTPS, TELNET, TFTP, WS and WSS. libcurl offers a myriad of powerful features",2023-11-22T09:27:02Z
+tmux,https://github.com/tmux/tmux,master,30984,tmux source code,2023-11-22T09:24:32Z
+ijkplayer,https://github.com/bilibili/ijkplayer,master,31798,"Android/iOS video player based on FFmpeg n3.4, with MediaCodec, VideoToolbox support.",2023-11-22T09:27:22Z
+the_silver_searcher,https://github.com/ggreer/the_silver_searcher,master,25333,"A code-searching tool similar to ack, but faster.",2023-11-22T06:49:19Z
+jq,https://github.com/stedolan/jq,master,27152,Command-line JSON processor,2023-11-22T09:55:45Z
+emscripten,https://github.com/emscripten-core/emscripten,main,24519,Emscripten: An LLVM-to-WebAssembly Compiler,2023-11-22T07:29:49Z
+darknet,https://github.com/pjreddie/darknet,master,24814,Convolutional Neural Networks,2023-11-22T10:21:35Z
+rufus,https://github.com/pbatard/rufus,master,25243,The Reliable USB Formatting Utility,2023-11-22T09:39:20Z
+mpv,https://github.com/mpv-player/mpv,master,24121,🎥 Command line video player,2023-11-22T10:34:16Z
+stb,https://github.com/nothings/stb,master,23721,stb single-file public domain libraries for C/C++,2023-11-22T09:52:50Z
+masscan,https://github.com/robertdavidgraham/masscan,master,21897,"TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes.",2023-11-22T09:48:59Z
+lede,https://github.com/coolsnowwolf/lede,master,27540,Lean's LEDE source,2023-11-22T09:32:31Z
+libuv,https://github.com/libuv/libuv,v1.x,22475,Cross-platform asynchronous I/O,2023-11-22T03:26:09Z
+TDengine,https://github.com/taosdata/TDengine,main,22258,"TDengine is an open source, high-performance, cloud native time-series database optimized for Internet of Things (IoT), Connected Cars, Industrial IoT and DevOps.",2023-11-22T08:58:03Z

@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Finding the same expression more than once in a condition is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.",
+    "cwe": "398",
+    "file_path": "tmp_github/nginx_tcp_proxy_module/ngx_tcp_upstream_check.c",
+    "line_number": "1077",
+    "column_number": "56",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/yaoweibin/nginx_tcp_proxy_module.git",
+    "commit_id": "2c053b7a4d4d961ed4d3f5f46c997db2bae18715",
+    "commit_id_repair": "dd222aecc72a38162719564aa7854067442d3c7c",
+    "warning_message": "Same expression \u0027NGX_TCP_CHECK_SSL_HELLO\u0027 found multiple times in chain of \u0027|\u0027 operators.",
+    "hash_id": "9f5286d913caa46a7450c0fdcf8c771b917e65f8908badd4110ba0717b759316",
+    "bug_severity": "style",
+    "bug_type": "duplicateExpression"
+  }
+]

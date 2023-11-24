@@ -1,0 +1,32 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.",
+    "file_path": "tmp_github/tilda/src/tilda-search-box.c",
+    "line_number": "48",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/lanoxx/tilda.git",
+    "commit_id": "c416e0ac74b90330bbeb2f6eb4eebdf18451fa98",
+    "commit_id_repair": "2f9827f2700396ed268109b89c4b678ca5ad53f9",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.",
+    "hash_id": "90d0c51dce2c280cc102ae49fe13e8fadbbabcdc8ead9ed3b1d6c31b0d927d79",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  },
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "syntax error",
+    "file_path": "tmp_github/tilda/src/tilda_window.c",
+    "line_number": "561",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/lanoxx/tilda.git",
+    "commit_id": "1f006afc41ef6611b302da31068686f23ea12a41",
+    "commit_id_repair": "abd7544869716fdeb1d9192cb968f79dfee63202",
+    "warning_message": "syntax error",
+    "hash_id": "19cf3064b24f9831eeb8ba4b8b340762744a4b43663207685689502855f8ac48",
+    "bug_severity": "error",
+    "bug_type": "syntaxError"
+  }
+]

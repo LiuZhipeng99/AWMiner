@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "snprintf format string requires 0 parameters but 1 is given.",
+    "cwe": "685",
+    "file_path": "tmp_github/almighty-dotfiles/.dwm/dwmstatus.c",
+    "line_number": "136",
+    "column_number": "10",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/addy-dclxvi/almighty-dotfiles.git",
+    "commit_id": "b57236442dbcabbb990f28b68d42001129f3e40a",
+    "commit_id_repair": "7366ff42b51cb1ebeaa98af6ad3c355f473af66e",
+    "warning_message": "snprintf format string requires 0 parameters but 1 is given.",
+    "hash_id": "ded5fa92acfc7d27b7d0094c376532a2ae7a3e31290fe88a6046c1d6cd12d43f",
+    "bug_severity": "warning",
+    "bug_type": "wrongPrintfScanfArgNum"
+  }
+]

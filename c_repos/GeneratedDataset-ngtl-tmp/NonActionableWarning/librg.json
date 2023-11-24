@@ -1,0 +1,17 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "There is an unknown macro here somewhere. Configuration is required. If LIBRG_DEPRECATED is a macro then please configure it.",
+    "file_path": "tmp_github/librg/code/source/entity.c",
+    "line_number": "182",
+    "column_number": "1",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/zpl-c/librg.git",
+    "commit_id": "99150ee3afd28f485b31f85d164dad3f56e4a180",
+    "commit_id_repair": "06ca629f93e89e0b9557190f7b29c5ef60d02589",
+    "warning_message": "There is an unknown macro here somewhere. Configuration is required. If LIBRG_DEPRECATED is a macro then please configure it.",
+    "hash_id": "65a4cc9a12b1113a5a218d6fcc99f9065d7a3f97e9bc0d2d374393c4bac0b194",
+    "bug_severity": "error",
+    "bug_type": "unknownMacro"
+  }
+]

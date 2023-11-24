@@ -1,0 +1,18 @@
+[
+  {
+    "cppcheck_version": "2.13 dev",
+    "verbose": "Memory leak: tmp.data",
+    "cwe": "401",
+    "file_path": "tmp_github/ngx_waf/src/ngx_http_waf_module_check.c",
+    "line_number": "864",
+    "column_number": "5",
+    "tool_name": "cppcheck",
+    "git_link": "https://github.com/ADD-SP/ngx_waf.git",
+    "commit_id": "da97dfb813904326c5d5a429b1b27e1468ff9e6b",
+    "commit_id_repair": "7aa05d9b4cda529f945c300cba2057387ff3fc63",
+    "warning_message": "Memory leak: tmp.data",
+    "hash_id": "6c9fbdbdd79032f95938135373ac22b49fda290136f3a2e6756a2d6c140d0648",
+    "bug_severity": "error",
+    "bug_type": "memleak"
+  }
+]
